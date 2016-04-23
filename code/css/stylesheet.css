@@ -7,52 +7,81 @@
 		padding: 0;
 	} 
 	
-	figure {margin: 0;}
-	
-	body,html {
-		width: 100%;
-		height: 100%;
-	}
-	
-	body {
-		background-size:cover;
-		background-attachment:fixed;
-		box-sizing:border-box;
-		-moz-box-sizing:border-box;
-		-webkit-box-sizing:border-box;
-		font-size:100%;
-		}
-	
-	ol, table, p, a, table, td, tr {
-		margin:0;
-		padding:0;
-	}
-	
-	#posts{
-		display:inline-block;
-		width:100%;
-		position:absolute;
-		height:100%;
-		left: 0;
-		top: 0;
-	}
-	
-	.post{
-		background-attachment:fixed;
-		width:100%;
-		height:100%;
-        
-		background-repeat:no-repeat;
-		background-position:center;
+figure {margin: 0;}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-size:cover;
+    background-attachment:fixed;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    font-size:100%;
+    }
+.row-height {
+    height: 6.5em;
+} 
+.footer {
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-top:0.8em;
+} 
+.footer a {
+  color: #414141;
+  text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: none;
+    /* color: #0052c1;
+    background-color: #e8f1fd; */
+    color: #414141;
+    background-color: #e8f1fd;
+    padding: 2px 0px;
+    webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+.col-sm-8 > img {
+    width: 100%;
+}
+
+ol, table, p, a, table, td, tr {
+    margin:0;
+    padding:0;
+}
+
+#posts{
+    display:inline-block;
+    width:100%;
+    position:absolute;
+    height:100%;
+    left: 0;
+    top: 0;
+}
+
+.post{
+    background-attachment:fixed;
+    width:100%;
+    height:100%;
+
+    background-repeat:no-repeat;
+    background-position:center;
 	}
 
 .post{
 		background-size:auto 80%;
 	}
 	
-	.post td{
-		width:34%;
-	}
+.post td{
+    width:34%;
+}
 	
 .caption{
 		font-size:11px;
@@ -62,9 +91,23 @@
 		max-width:80px;
 	}
 
+.noise {
+    max-width: 100%;
+}
+
 .noise:hover
 {
     opacity: 0;
+}
+
+.noise-xs {
+    max-width: 100%;
+    z-index: 1;
+}
+
+.noise-xs:hover
+{
+    opacity: 100;
 }
 	
 #noise {
@@ -74,11 +117,16 @@ left:0;
 right:0;
 text-align: center;
 display: block;
-z-index:500;
+z-index:501;
 	}
 	
 #namepadding{
 position: fixed;
+color: black;
+padding-top: 1px;
+font-family: 'Inconsolata', Courier, monospace;
+font-size: 0.85em;
+letter-spacing: 0.02em;  
 /* center the element */
 top:3%;
 right: 0;
@@ -88,57 +136,17 @@ margin-left: auto;
 /* give it dimensions */
 height:33px;
 width:102px;
-background-color:#d2e4fc;
+background-color:#fff;
 text-align: center;
 vertical-align: middle;
 line-height: 33px;  
+z-index: 500;
 	}	
-		
-	
-#footer {
-		position:fixed;
-		width:100%;
-		bottom:20px;
-		left:0;
-	}
-
-#footer a{
-		text-decoration:none;
-		margin:0 5px;
-		font-size:10px;
-	}
 
 
-.footertype {
-	font:verdana;
-}
 
-/*project pages*/
-#oldprojectdescription {
-	position:fixed;
-	left:80%;
-	top:10%;
-	font:verdana;
-	font-size:10px;
-	text-align:left;
-}
-
-.col-sm-2 {
-	background-color:#FFF;
-	}
-.col-sm-8 {
-    background-color:#FFF;
-        }        
-.col-sm-12 {
-	background-color:#FFF;
-	}
-.row-height {
-            height: 72px;
-        } 
-    
-.col-sm-8 img {
-    width: 100%;
-} 
+/* project pages */
+ 
     
 .fixed {
     position: fixed;
@@ -148,15 +156,16 @@ line-height: 33px;
     padding: 0 !important;
 }    
 
-/*Typesetting*/       
+/* typesetting */       
 p, h3, li {
     color: #414141;
     }    
 .projectcopy {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
-    min-width: 70%;
-    max-width: 90%
+    min-width: 10em;
+    max-width: 24em;
+    padding-right: 2em;
     } 
 .projectcopy-xs {
     font-family: 'Merriweather', serif;  
@@ -180,6 +189,8 @@ p, h3, li {
     font-size: 1em;
     line-height: 1.43;
     padding-bottom: 1em;
+    min-width: 10em;
+    max-width: 24em;
     }  
 .subhead {
     font-size: 0.75em;
@@ -193,4 +204,3 @@ li {
     line-height: 1.5;
     list-style-type: none;
     }
-    

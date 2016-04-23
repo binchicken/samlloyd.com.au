@@ -89,27 +89,36 @@ a.clickable {
 a.clickable:hover { 
     text-decoration:none; 
 }
-    
+ 
 </style>
   </head>
   
   
 <body>
 <div class="container">
-
-<!-- Header -->
 <div class="row">
-<div class="col-xs-12">
+
+<!-- Header [XS]-->
+<div class="col-xs-12 visible-xs-block">
 <div class="row-height">
-    <div id="namepadding">
-    <p>sam lloyd</p>
-    </div>
-    <div id="noise">
-    <img src="../links/noise.png" width="102" height="33" class="noise"  /> 
+<div id="namepadding">
+<span>&#x2727; sam lloyd &#x2727;</span></div>
+<div id="noise">
+<img src="../links/images/noise-xs.gif" width="102" height="33" class="noise-xs"  /></div>
 </div>
 </div>
+
+<!-- Header [SM+]-->    
+<div class="col-sm-12 hidden-xs">
+<div class="row-height">
+<div id="namepadding">
+<span>&#x2727; sam lloyd &#x2727;</span></div>
+<div id="noise">
+<img src="../links/images/noise.jpg" width="102" height="33" class="noise"  /></div>
 </div>
-    </div>
+</div>
+    
+</div>
 
 <!-- Project Info [XS] -->    
 <div class="row">
@@ -117,14 +126,14 @@ a.clickable:hover {
 
 
 <!-- Collapsible Container -->    
-    <div class="panel panel-primary">
-                <div class="panel-heading clickable">
-                    <h3 class="panel-title projectcopy-xs">
-                        Sydney Opera House</h3>
-                    <span class="pull-right"><i class="glyphicon glyphicon-menu-down"></i></span>
-                </div>
-                <div class="panel-body projectcopy intro">
-                    <p class="subhead"><u>Brand</u></p>
+<div class="panel panel-primary">
+<div class="panel-heading clickable">
+<h3 class="panel-title projectcopy-xs">
+Sydney Opera House</h3>
+<span class="pull-right"><i class="glyphicon glyphicon-menu-down"></i></span>
+</div>
+<div class="panel-body projectcopy intro">
+<p class="subhead"><u>Brand</u></p>
 
 <p class="intro">You probably wouldn’t expect the Sydney Opera House to have any problems attracting an audience. Yet&nbsp;when we started working with them back in 2014, we realised they were facing exactly that. So with a challenge to change perceptions and a vision of a sculptural form language, we set out to create a brand that could live up to the&nbsp;building.</p></div></div>
 
@@ -140,13 +149,27 @@ a.clickable:hover {
                 
 <!--Project Images-->
 <div class="col-sm-8">
-<img src="links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy6.jpg" alt=""/>
-<img src="links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt=""/>
-<img src="links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg" alt=""/>
-<img src="links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy12.jpg" alt=""/>
-<img src="links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy13.jpg" alt=""/>
-<img src="links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy14.jpg" alt=""/>                    
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy6.jpg" alt=""/>
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt=""/>
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg" alt=""/>
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy12.jpg" alt=""/>
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy13.jpg" alt=""/>
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy14.jpg" alt=""/>  
+
+<!-- Footer -->
+<div class="row">  
+<div class="col-xs-4 footer">  
+    <p class="text-left"><a href=#>&#x2190;&#x2003;back</a></p></div>
+    
+<div class="col-xs-4 footer">  
+<p class="text-center"><a href=#>&#x2591; more &#x2591;</a></p></div>
+    
+<div class="col-xs-4 footer">
+    <p class="text-right"><a href=#>next&#x2003;&#x2192;</a></p></div>
+</div>  
+    
 </div>
+    
 
 <!-- Project Info [SM+] -->    
 <div class="col-sm-2 hidden-xs">
@@ -179,6 +202,8 @@ a.clickable:hover {
             </div>
             </div>
         </div>
+
+   
         
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -189,3 +214,16 @@ a.clickable:hover {
 <script src="js/projectinfo.js" type="text/javascript"></script>
   </body>
 </html>
+
+<!-- To-do list
+/* TODO project page navigation */    
+/* NOTE could use HoverOnTouch.js for XS header rollover */  
+/* TODO project description [XS] - 2-col details */  
+/* TODO text boxes within projects */
+/* FUTURE gradient scroll */
+/* FUTURE seo/crawl google */
+/* FUTURE 404 page */
+/* FUTURE smooth page load in (like standapart) */
+/* FUTURE investigate smooth scrolling? could be annoying? */
+
+-->
