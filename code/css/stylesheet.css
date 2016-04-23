@@ -93,6 +93,7 @@ z-index:501;
 	
 #namepadding{
 position: fixed;
+color: black;
 padding-top: 1px;
 font-family: 'Inconsolata', Courier, monospace;
 font-size: 0.85em;
@@ -113,58 +114,19 @@ line-height: 33px;
 z-index: 500;
 	}	
 
-.underline {
-    width: auto;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    padding-bottom: 1px;
-    vertical-align: middle;
-    z-index: 502;
-}
-		
-	
-#footer {
-		position:fixed;
-		width:100%;
-		bottom:20px;
-		left:0;
-	}
-
-#footer a {
-		text-decoration:none;
-		margin:0 5px;
-		font-size:10px;
-	}
 
 
-.footertype {
-	font:verdana;
-}
-
-/*project pages*/
-#oldprojectdescription {
-	position:fixed;
-	left:80%;
-	top:10%;
-	font:verdana;
-	font-size:10px;
-	text-align:left;
-}
-
-.col-sm-2 {
-	background-color:#FFF;
-	}
-.col-sm-8 {
-    background-color:#FFF;
-        }        
-.col-sm-12 {
-	background-color:#FFF;
-	}
+/* project pages */
 .row-height {
-height: 7em;
-        } 
-    
-.col-sm-8 img {
+height: 6.5em;
+} 
+.footer {
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-top:0.5em;
+} 
+.col-sm-8 > img {
     width: 100%;
 } 
     
@@ -176,15 +138,16 @@ height: 7em;
     padding: 0 !important;
 }    
 
-/*Typesetting*/       
+/* typesetting */       
 p, h3, li {
     color: #414141;
     }    
 .projectcopy {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
-    min-width: 70%;
-    max-width: 90%
+    min-width: 10em;
+    max-width: 24em;
+    padding-right: 2em;
     } 
 .projectcopy-xs {
     font-family: 'Merriweather', serif;  
@@ -208,6 +171,8 @@ p, h3, li {
     font-size: 1em;
     line-height: 1.43;
     padding-bottom: 1em;
+    min-width: 10em;
+    max-width: 24em;
     }  
 .subhead {
     font-size: 0.75em;
@@ -221,4 +186,3 @@ li {
     line-height: 1.5;
     list-style-type: none;
     }
-    
