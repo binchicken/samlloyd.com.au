@@ -160,29 +160,61 @@ z-index: 500;
 p, h3, li {
     color: #414141;
     }    
-.projectcopy {
+.projectinfo {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
     min-width: 10em;
     max-width: 24em;
     padding-right: 2em;
     } 
-.projectcopy-xs {
+.projectinfo-xs {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
     }
-.projectcopy h3 {
+.projectinfo h3 {
     font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
     }  
-.projectcopy-xs h3 {
+.projectinfo-xs h3 {
     font-size:2em;
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
-    }      
+    }  
+/*.projectcopy {
+    font-family: 'Inconsolata', Courier, monospace;
+    font-weight: 300;
+    font-size: 0.85em;
+    letter-spacing: 0.02em;
+    min-width: 5em;
+    padding: 7.5em 0em 7em 0em;
+    } */
+.projectcopy {
+    font-family: 'Merriweather', serif; 
+    font-weight: 300;
+    font-size: 0.8em;
+    line-height: 1.52;
+    letter-spacing: 0.01em;
+    min-width: 5em;
+    padding: 7.5em 0em 7.5em 0em;
+    } 
+.projectcopy h3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+.left-col {
+    padding-left: 7em;
+    padding-right: 0em;
+}
+.right-col {
+    padding-left: 0em;
+    padding-right: 7em;
+}
+.copy {
+    background-color: #f5f5f5;
+}
 .intro {
     font-weight: 300;
     font-style: italic;
