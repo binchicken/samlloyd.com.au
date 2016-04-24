@@ -144,6 +144,50 @@ line-height: 33px;
 z-index: 500;
 	}	
 
+#header-container {
+    left: auto;
+    right: auto;
+    text-align: center;
+    position: fixed;
+    z-index: 50;
+    padding: 2em 0em;
+}
+
+#header-pattern {
+position:fixed;
+left:0;
+right:0;
+text-align: center;
+display: block;
+z-index:501;
+}
+
+#header-name {
+position: fixed;
+color: black;
+padding-top: 1px;
+font-family: 'Inconsolata', Courier, monospace;
+font-size: 0.85em;
+letter-spacing: 0.02em;  
+/* center the element */
+right: 0;
+left: 0;
+margin-right: auto;
+margin-left: auto;
+/* give it dimensions */
+height:33px;
+width:102px;
+background-color:#fff;
+text-align: center;
+vertical-align: middle;
+line-height: 33px;  
+z-index: 500;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 /* project pages */
@@ -242,38 +286,4 @@ li {
     list-style-type: none;
     }
 
-#header-container {
-    display: table;
-    table-layout: fixed;
-    position: fixed;
-    left: auto;
-    right: auto;
-    text-align: center;
-    vertical-align: middle;
-    z-index: 50;
-}
 
-#header-pattern {
-    display:table-cell;
-    vertical-align:middle;
-    text-align:center;
-    float: none;
-    z-index: 70;
-}
-
-#header-name {
-    display:table-cell;
-    float: none;
-    text-align:center;
-    vertical-align: middle;
-    z-index: 60;
-    position: fixed;
-    height:33px;
-    width:102px;
-    color: black;
-    padding-top: 1px;
-    font-family: 'Inconsolata', Courier, monospace;
-    font-size: 0.85em;
-    line-height: 2em;
-    letter-spacing: 0.02em;  
-}
