@@ -23,7 +23,7 @@ body {
     font-size: 1.4em;
     }
 .row-height {
-    height: 4.67em;
+    height: 4.4em;
 } 
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
@@ -144,6 +144,50 @@ line-height: 33px;
 z-index: 500;
 	}	
 
+#header-container {
+    left: auto;
+    right: auto;
+    text-align: center;
+    position: fixed;
+    z-index: 50;
+    padding: 1em 0em;
+}
+
+#header-pattern {
+position:fixed;
+left:0;
+right:0;
+text-align: center;
+display: block;
+z-index:501;
+}
+
+#header-name {
+position: fixed;
+color: black;
+padding-top: 1px;
+font-family: 'Inconsolata', Courier, monospace;
+font-size: 0.85em;
+letter-spacing: 0.02em;  
+/* center the element */
+right: 0;
+left: 0;
+margin-right: auto;
+margin-left: auto;
+/* give it dimensions */
+height:33px;
+width:102px;
+background-color:#fff;
+text-align: center;
+vertical-align: middle;
+line-height: 33px;  
+z-index: 500;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 /* project pages */
@@ -241,3 +285,5 @@ li {
     line-height: 1.5;
     list-style-type: none;
     }
+
+

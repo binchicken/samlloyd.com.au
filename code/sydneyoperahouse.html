@@ -94,34 +94,39 @@ a.clickable:hover {
  
 </style>
   </head>
-  
-  
+
+    
+    
 <body>
 <div class="container">
 <div class="row">
-
-<!-- Header [XS]-->
+    
+<!-- Header [test XS]-->    
 <div class="col-xs-12 visible-xs-block">
-<div class="row-height">
-<div id="namepadding">
-<span>&#x2727; sam lloyd &#x2727;</span></div>
-<div id="noise">
-<img src="../links/images/noise-xs.gif" width="102" height="33" class="noise-xs"  /></div>
-</div>
-</div>
-
-<!-- Header [SM+]-->    
-<div class="col-sm-12 hidden-xs">
-<div class="row-height">
-<div id="namepadding">
-<span>&#x2727; sam lloyd &#x2727;</span></div>
-<div id="noise">
-<img src="../links/images/noise.jpg" width="102" height="33" class="noise"  /></div>
-</div>
+    <div class="row-height">
+        <div id="header-container">    
+            <div id="header-pattern">
+            <img src="../links/images/noise-xs.gif" width="102" height="33" class="noise"  /></div>
+            <div id="header-name">&#x2727; sam lloyd &#x2727;</div>
+        </div>
+    </div>
 </div>
     
+
+    
+<!-- Header [test SM+]-->    
+<div class="col-sm-12 hidden-xs">
+    <div class="row-height">
+        <div id="header-container">    
+            <div id="header-pattern">
+            <img src="../links/images/noise.jpg" width="102" height="33" class="noise"  /></div>
+            <div id="header-name">&#x2727; sam lloyd &#x2727;</div>  
+        </div>
+    </div>     
+</div>
 </div>
 
+    
 <!-- Project Info [XS] -->    
 <div class="row">
 <div class="col-xs-12 visible-xs-block">   
@@ -224,14 +229,17 @@ Sydney Opera House</h3>
 <script src="js/bootstrap.min.js"></script>
 <!-- Experimental --> 
 <script src="js/projectinfo.js" type="text/javascript"></script>
-  </body>
+  
+    </body>
 </html>
 
 <!-- To-do list
-/* TODO [x]project page navigation */  
 /* TODO text boxes within projects */
 /* TODO ↳ ensure padding works at XS */
-/* TODO move collapsible container styling to css */  
+/* TODO ↳ should go down to single col at SM */
+/* TODO move collapsible container styling to css */ 
+/* TODO [x]project page navigation */  
+/* FIXME [x]header 3% from top */
 /* NOTE could use HoverOnTouch.js for XS header rollover */ 
 /* NOTE is favicon relevant to call in if browser auto picks it up? */
 /* FUTURE gradient scroll */
