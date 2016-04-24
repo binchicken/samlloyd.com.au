@@ -23,7 +23,7 @@ body {
     font-size: 1.4em;
     }
 .row-height {
-    height: 4.67em;
+    height: 6.5em;
 } 
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
@@ -241,3 +241,39 @@ li {
     line-height: 1.5;
     list-style-type: none;
     }
+
+#header-container {
+    display: table;
+    table-layout: fixed;
+    position: fixed;
+    left: auto;
+    right: auto;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 50;
+}
+
+#header-pattern {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    float: none;
+    z-index: 70;
+}
+
+#header-name {
+    display:table-cell;
+    float: none;
+    text-align:center;
+    vertical-align: middle;
+    z-index: 60;
+    position: fixed;
+    height:33px;
+    width:102px;
+    color: black;
+    padding-top: 1px;
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: 0.85em;
+    line-height: 2em;
+    letter-spacing: 0.02em;  
+}
