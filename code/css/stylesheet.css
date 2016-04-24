@@ -160,29 +160,37 @@ z-index: 500;
 p, h3, li {
     color: #414141;
     }    
-.projectcopy {
+.projectinfo {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
     min-width: 10em;
     max-width: 24em;
     padding-right: 2em;
     } 
-.projectcopy-xs {
+.projectinfo-xs {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
     }
-.projectcopy h3 {
+.projectinfo h3 {
     font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
     }  
-.projectcopy-xs h3 {
+.projectinfo-xs h3 {
     font-size:2em;
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
-    }      
+    }   
+.projectcopy {
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: 0.85em;
+    letter-spacing: 0.02em; 
+    min-width: 10em;
+    max-width: 24em;
+    padding-right: 2em;
+    } 
 .intro {
     font-weight: 300;
     font-style: italic;
