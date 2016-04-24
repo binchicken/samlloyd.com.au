@@ -182,15 +182,25 @@ p, h3, li {
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
-    }   
+    }  
 .projectcopy {
     font-family: 'Inconsolata', Courier, monospace;
+    font-weight: 300;
     font-size: 0.85em;
-    letter-spacing: 0.02em; 
-    min-width: 10em;
-    max-width: 24em;
-    padding-right: 2em;
+    letter-spacing: 0.02em;
+    min-width: 5em;
+    padding: 7.5em 0em;
     } 
+.left-col {
+    padding-left: 6em;
+}
+.right-col {
+    padding-left: 1em;
+    padding-right: 6em;
+}
+.copy {
+    background-color: #f0f0f0;
+}
 .intro {
     font-weight: 300;
     font-style: italic;
