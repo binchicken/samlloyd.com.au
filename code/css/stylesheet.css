@@ -23,7 +23,7 @@ body {
     font-size: 1.4em;
     }
 .row-height {
-    height: 6.5em;
+    height: 4.4em;
 } 
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
@@ -150,7 +150,7 @@ z-index: 500;
     text-align: center;
     position: fixed;
     z-index: 50;
-    padding: 2em 0em;
+    padding: 1em 0em;
 }
 
 #header-pattern {
