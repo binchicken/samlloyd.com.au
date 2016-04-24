@@ -189,7 +189,7 @@ p, h3, li {
     font-size: 0.85em;
     letter-spacing: 0.02em;
     min-width: 5em;
-    padding: 7.5em 0em;
+    padding: 7.5em 0em 7em 0em;
     } 
 .left-col {
     padding-left: 6em;
@@ -199,7 +199,7 @@ p, h3, li {
     padding-right: 6em;
 }
 .copy {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
 }
 .intro {
     font-weight: 300;
