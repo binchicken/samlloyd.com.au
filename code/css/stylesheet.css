@@ -20,16 +20,17 @@ body {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
-    font-size:100%;
+    font-size: 1.4em;
     }
 .row-height {
-    height: 6.5em;
+    height: 4.67em;
 } 
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
     padding-top:0.8em;
+    padding-bottom: 0.8em;
 } 
 .footer a {
   color: #414141;
@@ -220,7 +221,7 @@ p, h3, li {
     font-style: italic;
     font-size: 1em;
     line-height: 1.43;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     min-width: 10em;
     max-width: 24em;
     }  
@@ -228,7 +229,11 @@ p, h3, li {
     font-size: 0.75em;
     font-weight: 400;
     letter-spacing: 0.02em;
-    }    
+    padding-bottom: 1em;
+    } 
+.tag {
+    padding-bottom: 0em;
+}
 li {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.85em;
