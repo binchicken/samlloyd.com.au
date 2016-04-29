@@ -15,6 +15,10 @@ body,html {
 }
 
 body {
+    /* Experimental */
+    background-color: rgb(210,50,98);
+    min-height: 2000px;
+    
     background-size:cover;
     background-attachment:fixed;
     box-sizing:border-box;
@@ -286,4 +290,7 @@ li {
     list-style-type: none;
     }
 
-
+/* Experimental */
+#gradient {
+color: rgb(210,50,98);
+    } 
