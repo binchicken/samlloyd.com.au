@@ -16,8 +16,7 @@ body,html {
 
 body {
     /* Experimental */
-    background-color: rgb(210,50,98);
-    min-height: 2000px;
+    background-color: rgb(232,241,253);
     
     background-size:cover;
     background-attachment:fixed;
