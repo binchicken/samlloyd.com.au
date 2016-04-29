@@ -16,7 +16,7 @@ body,html {
 
 body {
     /* Experimental */
-    background-color: rgb(232,241,253);
+    background-color: rgb(255,255,255);
     
     background-size:cover;
     background-attachment:fixed;
@@ -44,7 +44,7 @@ body {
     /* color: #0052c1;
     background-color: #e8f1fd; */
     color: #414141;
-    background-color: #e8f1fd;
+    background-color: #fff;
     padding: 2px 0px;
     webkit-transition: background-color 400ms linear;
     -moz-transition: background-color 400ms linear;
@@ -261,7 +261,7 @@ p, h3, li {
     padding-right: 7em;
 }
 .copy {
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 .intro {
     font-weight: 300;
