@@ -193,9 +193,11 @@ Sydney Opera House</h3>
 <script src="js/jquery.color-2.1.2.min.js"></script>     
 <script>
 $(document).ready(function(){ 
-    //** notice we are including jquery and the color plugin at 
-    //** http://code.jquery.com/color/jquery.color-2.1.0.js
     
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+    if (!isMobile.matches) {
+    
+    //** original code by cgspicer http://jsfiddle.net/cgspicer/V4qh9/
     var scroll_pos = 0;
     var animation_begin_pos = 0; //where you want the animation to begin
     var animation_end_pos = 1000; //where you want the animation to stop
@@ -219,6 +221,7 @@ $(document).ready(function(){
              $('body').animate({ backgroundColor: beginning_color }, 0);
         } else { }
     });
+    }
 });
     </script>   
 
@@ -230,11 +233,7 @@ $(document).ready(function(){
         <div class="projectinfo">
                         
 <p class="subhead tag"><u>Brand</u></p>
-<h3>Sam Lloyd<br>
-    sam lloyd <br>
-    <span style="font-style: italic">Sam Lloyd<br>
-    sam lloyd <br></span>
-    Sydney Opera House</h3>
+<h3>Sydney Opera House</h3>
 <p class="intro">You probably wouldn’t expect the Sydney Opera House to have any problems attracting an audience. Yet&nbsp;when we started working with them back in 2014, we realised they were facing exactly that. So with a challenge to change perceptions and a vision of a sculptural form language, we set out to create a brand that could live up to the&nbsp;building.</p>
    
                     
