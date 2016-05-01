@@ -36,14 +36,14 @@ body {
     padding-bottom: 1.8em;
 } 
 .footer a {
-  color: #414141;
+  color: #000;
   text-decoration: none;
 }
 .footer a:hover {
     text-decoration: none;
     /* color: #0052c1;
     background-color: #e8f1fd; */
-    color: #414141;
+    color: #000;
     background-color: #fff;
     padding: 2px 0px;
     webkit-transition: background-color 400ms linear;
@@ -182,7 +182,7 @@ z-index: 500;
 
 /* typesetting */       
 p, h3, li {
-    color: #414141;
+    color: #000;
     }    
 .projectinfo {
     font-family: 'Merriweather', serif;  
