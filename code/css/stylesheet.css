@@ -263,6 +263,12 @@ p, h3, li {
 .copy {
     background-color: #fff;
 }
+@media only screen and (max-width: 760px) {
+    .copy {
+    background-color: #f5f5f5;
+}
+}
+
 .intro {
     font-weight: 300;
     font-style: italic;
