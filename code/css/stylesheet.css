@@ -275,3 +275,9 @@ li {
 #gradient {
 color: rgb(210,50,98);
     } 
+
+.whitebg {
+    background-color: #fff;
+    z-index: 5;
+    -webkit-transform: translate3d(0,0,0);
+}
