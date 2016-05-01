@@ -26,14 +26,14 @@ body {
     font-size: 1.4em;
     }
 .row-height {
-    height: 4.4em;
+    height: 6em;
 } 
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
-    padding-top:0.8em;
-    padding-bottom: 0.8em;
+    padding-top:1.8em;
+    padding-bottom: 1.8em;
 } 
 .footer a {
   color: #414141;
@@ -156,7 +156,7 @@ z-index: 500;
     right: 0;
     text-align: center;
     display: block;
-    padding: 1em 0em 1.2em 0em;
+    padding: 1.9em 0em 1.2em 0em;
 }
 
 #header-container > img {
