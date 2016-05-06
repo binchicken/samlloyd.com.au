@@ -28,6 +28,11 @@ body {
 .row-height {
     height: 6em;
 } 
+@media only screen and (max-width: 760px) {
+    .row-height {
+    height: 7em;
+} 
+}
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.8em;
@@ -158,6 +163,17 @@ z-index: 500;
     display: block;
     padding: 1.9em 0em 1.2em 0em;
 }
+@media only screen and (max-width: 760px) {
+    #header-container {   
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 1.9em 0em 4em 0em;
+}
+}
 
 #header-container > img {
     max-width: 100%;
@@ -168,18 +184,6 @@ z-index: 500;
     image-rendering: pixelated; /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
-
-@media only screen and (max-width: 760px) {
-    #header-container {
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: block;
-    padding: 1.9em 0em 4em 0em;
-}
 }
 
 
@@ -206,7 +210,7 @@ p, h3, li {
 .projectinfo-xs {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
-    font-size: 0.5em;
+    font-size: 1em;
     }
 .projectinfo h3 {
     font-size: 1.5em;
@@ -293,4 +297,5 @@ color: rgb(210,50,98);
     background-color: #fff;
     z-index: 5;
     -webkit-transform: translate3d(0,0,0);
+    height:100%;
 }
