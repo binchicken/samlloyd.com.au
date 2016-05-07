@@ -54,7 +54,8 @@
 }
 .panel {
     -webkit-box-shadow: none;
-    border: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,1);
+    border:none;
     border-radius: 0px;
     margin-bottom: 15px;
 }    
@@ -68,7 +69,7 @@
     border:none;
 }   
 .panel-heading {
-    padding: 10px 0px 0px 0px;
+    padding: 15px 0px 13px 0px;
     border-bottom: none;
     border-top-left-radius: none;
     border-top-right-radius: none;
@@ -81,9 +82,9 @@
 }
 .panel-body {
     display: none;
-    width: 100% !important;
+    width: 100%;
     border-bottom: none;
-    padding: 15px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 a.clickable { 
     color: inherit; 
@@ -119,8 +120,8 @@ a.clickable:hover {
 
 <!-- Collapsible Container -->    
 <div class="panel panel-primary">
-<div class="panel-heading clickable">
-<!-- Container Title -->  
+<!-- Container Title --> 
+<div class="panel-heading clickable"> 
 <h3 class="panel-title projectinfo-xs">
 Sydney Opera House</h3>
 <span class="pull-right"><i class="glyphicon glyphicon-menu-down"></i></span>
@@ -128,12 +129,12 @@ Sydney Opera House</h3>
 <!-- Container Body --> 
 <div class="panel-body projectinfo-xs">
 <div class="row"> 
-<div class="col-xs-7 visible-xs-block">     
+<div class="col-xs-12 visible-xs-block">     
 <p class="subhead"><u>Brand</u></p>
 
 <p class="intro-xs">You probably wouldn’t expect the Sydney Opera House to have any problems attracting an audience. Yet&nbsp;when we started working with them back in 2014, we realised they were facing exactly that. So with a challenge to change perceptions and a vision of a sculptural form language, we set out to create a brand that could live up to the&nbsp;building.</p>
 </div>
-<div class="col-xs-5 visible-xs-block">     
+<div class="col-xs-6 visible-xs-block">     
 <p class="subhead"><u>Projects</u></p>
 
 <li>Visual identity</li>
@@ -143,7 +144,9 @@ Sydney Opera House</h3>
 <li>Brand governance and education</li>
 <li>Typeface script development</li>
 <br>
-                        
+</div>
+    
+<div class="col-xs-6 visible-xs-block">                         
 <p class="subhead"><u>In collaboration with</u></p>
 
 <li>Studio Laurenz Brunner (Typography)</li>
