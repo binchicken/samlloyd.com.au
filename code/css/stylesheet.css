@@ -210,6 +210,8 @@ p, h3, li {
 .projectinfo-xs {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
+    min-width: 10em;
+    max-width: 100%;
     font-size: 1em;
     }
 .projectinfo h3 {
@@ -271,6 +273,15 @@ p, h3, li {
     min-width: 10em;
     max-width: 24em;
     }  
+.intro-xs {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.43;
+    padding-bottom: 1.5em;
+    min-width: 10em;
+    max-width: 100%;
+    }  
 .subhead {
     font-size: 0.75em;
     font-weight: 400;
@@ -279,6 +290,9 @@ p, h3, li {
     } 
 .tag {
     padding-bottom: 0em;
+}
+.tag-xs {
+    padding-bottom: 1em;
 }
 li {
     font-family: 'Inconsolata', Courier, monospace;
