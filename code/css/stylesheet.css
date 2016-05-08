@@ -21,8 +21,27 @@ body {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
-    font-size: 1.4em;
+    font-size: 1.35em;
     }
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+    font-size: 1.2em;
+    }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+    font-size: 1.25em;
+    }
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+
 .row-height {
     height: 6em;
 } 
