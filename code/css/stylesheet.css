@@ -24,23 +24,17 @@ body {
     -webkit-box-sizing:border-box;
     font-size: 1.35em;
     }
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-}
-/* Small devices (tablets, 768px and up) */
+/* SM - Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
     font-size: 1.2em;
     }
 }
-/* tablets/desktops and up ----------- */
+/* MD - tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
     font-size: 1.25em;
     }
-}
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
 }
 
 .row-height {
@@ -202,8 +196,11 @@ p, h3, li {
     line-height: 1.52;
     letter-spacing: 0.01em;
     min-width: 5em;
-    padding: 7.5em 0em 7.5em 0em;
     } 
+.padding-lg {
+    padding: 7.5em 0em;
+}
+
 .projectcopy h3 {
     font-size: 1em;
     font-weight: 400;
@@ -215,6 +212,17 @@ p, h3, li {
 .right-col {
     padding-left: 0em;
     padding-right: 7em;
+}
+/* XS --> SM - Small devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+    .left-col, .right-col {
+    margin: 1.5em 10%;
+    padding: 0em;  
+    min-width: 10em;    
+}
+    .copy {
+    padding: 7.5% 0em;
+    }
 }
 .copy {
     background-color: #fff;
