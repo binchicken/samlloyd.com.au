@@ -15,35 +15,58 @@ body,html {
 }
 
 body {
-    /* Experimental */
     background-color: rgb(255,255,255);
-    
+    color: #000;
     background-size:cover;
     background-attachment:fixed;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
-    font-size: 1.4em;
+    font-size: 1.35em;
     }
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+    font-size: 1.2em;
+    }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+    font-size: 1.25em;
+    }
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+
 .row-height {
-    height: 4.4em;
+    height: 6em;
 } 
+@media only screen and (max-width: 760px) {
+    .row-height {
+    height: 7em;
+} 
+}
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
-    padding-top:0.8em;
-    padding-bottom: 0.8em;
+    padding-top:1.8em;
+    padding-bottom: 1.8em;
 } 
 .footer a {
-  color: #414141;
+  color: #000;
   text-decoration: none;
 }
 .footer a:hover {
     text-decoration: none;
     /* color: #0052c1;
     background-color: #e8f1fd; */
-    color: #414141;
+    color: #000;
     background-color: #fff;
     padding: 2px 0px;
     webkit-transition: background-color 400ms linear;
@@ -54,6 +77,8 @@ body {
 }
 .col-sm-8 > img {
     width: 100%;
+    z-index: 10;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 ol, table, p, a, table, td, tr {
@@ -95,118 +120,54 @@ ol, table, p, a, table, td, tr {
 		max-width:80px;
 	}
 
-.noise {
-    max-width: 100%;
-}
-
-.noise:hover
-{
-    opacity: 0;
-}
-
-.noise-xs {
-    max-width: 100%;
-    z-index: 1;
-}
-
-.noise-xs:hover
-{
-    opacity: 100;
-}
-	
-#noise {
-position:fixed;
-top:3%;
-left:0;
-right:0;
-text-align: center;
-display: block;
-z-index:501;
-	}
-	
-#namepadding{
-position: fixed;
-color: black;
-padding-top: 1px;
-font-family: 'Inconsolata', Courier, monospace;
-font-size: 0.85em;
-letter-spacing: 0.02em;  
-/* center the element */
-top:3%;
-right: 0;
-left: 0;
-margin-right: auto;
-margin-left: auto;
-/* give it dimensions */
-height:33px;
-width:102px;
-background-color:#fff;
-text-align: center;
-vertical-align: middle;
-line-height: 33px;  
-z-index: 500;
-	}	
 
 #header-container {
-    left: auto;
-    right: auto;
-    text-align: center;
     position: fixed;
-    z-index: 50;
-    padding: 1em 0em;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 1.9em 0em 1.2em 0em;
+}
+@media only screen and (max-width: 760px) {
+    #header-container {   
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 1.9em 0em 4em 0em;
+}
 }
 
-#header-pattern {
-position:fixed;
-left:0;
-right:0;
-text-align: center;
-display: block;
-z-index:501;
+#header-container > img {
+    max-width: 100%;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
-
-#header-name {
-position: fixed;
-color: black;
-padding-top: 1px;
-font-family: 'Inconsolata', Courier, monospace;
-font-size: 0.85em;
-letter-spacing: 0.02em;  
-/* center the element */
-right: 0;
-left: 0;
-margin-right: auto;
-margin-left: auto;
-/* give it dimensions */
-height:33px;
-width:102px;
-background-color:#fff;
-text-align: center;
-vertical-align: middle;
-line-height: 33px;  
-z-index: 500;
-}
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
+/* remove 1px between rows */
+div.rowfix:before, div.rowfix:after { 
+    content:none; }
 
 /* project pages */
  
     
 .fixed {
     position: fixed;
-    /*
-    background-color:#f1f1f1;*/
     margin: 0;
     padding: 0 !important;
 }    
 
 /* typesetting */       
 p, h3, li {
-    color: #414141;
+    color: #000;
     }    
 .projectinfo {
     font-family: 'Merriweather', serif;  
@@ -218,6 +179,9 @@ p, h3, li {
 .projectinfo-xs {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
+    min-width: 10em;
+    max-width: 100%;
+    font-size: 1em;
     }
 .projectinfo h3 {
     font-size: 1.5em;
@@ -231,14 +195,6 @@ p, h3, li {
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
     }  
-/*.projectcopy {
-    font-family: 'Inconsolata', Courier, monospace;
-    font-weight: 300;
-    font-size: 0.85em;
-    letter-spacing: 0.02em;
-    min-width: 5em;
-    padding: 7.5em 0em 7em 0em;
-    } */
 .projectcopy {
     font-family: 'Merriweather', serif; 
     font-weight: 300;
@@ -266,7 +222,9 @@ p, h3, li {
 @media only screen and (max-width: 760px) {
     .copy {
     background-color: #f5f5f5;
-}
+    z-index: 4;
+    -webkit-transform: translate3d(0,0,0);
+    }
 }
 
 .intro {
@@ -278,6 +236,15 @@ p, h3, li {
     min-width: 10em;
     max-width: 24em;
     }  
+.intro-xs {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.43;
+    padding-bottom: 1.5em;
+    min-width: 10em;
+    max-width: 100%;
+    }  
 .subhead {
     font-size: 0.75em;
     font-weight: 400;
@@ -287,15 +254,26 @@ p, h3, li {
 .tag {
     padding-bottom: 0em;
 }
+.tag-xs {
+    padding-bottom: 1em;
+}
 li {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.85em;
     letter-spacing: 0.02em;
-    line-height: 1.5;
+    margin-bottom: 5px;
+    line-height: 1.1em;
     list-style-type: none;
     }
 
-/* Experimental */
+/* Gradient Scroll */
 #gradient {
 color: rgb(210,50,98);
     } 
+
+.whitebg {
+    background-color: #fff;
+    z-index: 2;
+    -webkit-transform: translate3d(0,0,0);
+    height: 100%;
+}
