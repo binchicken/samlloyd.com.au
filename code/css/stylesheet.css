@@ -298,7 +298,8 @@ li {
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.85em;
     letter-spacing: 0.02em;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
+    line-height: 1.1em;
     list-style-type: none;
     }
 
