@@ -153,12 +153,11 @@ ol, table, p, a, table, td, tr {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 /* remove 1px between rows */
-div.rowfix:before, div.rowfix:after { 
-    content:none; }
+.rowfix { 
+    margin-bottom:-1px; 
+}
 
-/* project pages */
- 
-    
+/* project pages */   
 .fixed {
     position: fixed;
     margin: 0;
@@ -276,4 +275,52 @@ color: rgb(210,50,98);
     z-index: 2;
     -webkit-transform: translate3d(0,0,0);
     height: 100%;
+}
+
+/* Collapsible container */   
+.clickable {
+    cursor: pointer;
+}
+.clickable .glyphicon {
+    display: inline-block;
+    padding: 6px 6px;
+}
+.panel {
+    -webkit-box-shadow: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,1);
+    border:none;
+    border-radius: 0px;
+    margin-bottom: 15px;
+}    
+.panel-primary, .panel-title, .panel-collapsed, .panel-heading {
+    border:none;
+    background-color: #fff;
+} 
+.panel-primary > .panel-heading {
+    color: #000;
+    background-color: #fff;
+    border:none;
+}   
+.panel-heading {
+    padding: 15px 0px 13px 0px;
+    border-bottom: none;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}    
+.panel-heading span {
+    margin-top: -23px;
+    font-size: 15px;
+    margin-right: -9px;
+}
+.panel-body {
+    display: none;
+    width: 100%;
+    border-bottom: none;
+    padding: 10px 0px 0px 0px;
+}
+a.clickable { 
+    color: inherit; 
+}
+a.clickable:hover { 
+    text-decoration:none; 
 }
