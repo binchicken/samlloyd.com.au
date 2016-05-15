@@ -337,3 +337,16 @@ a.clickable {
 a.clickable:hover { 
     text-decoration:none; 
 }
+/* 2-col images */
+.nopadding-left {
+    padding-left: 0px;
+}
+.nopadding-left > img {
+    width: 100%;
+}
+.nopadding-right {
+    padding-right: 0px;
+}
+.nopadding-right > img {
+    width: 100%;
+}
