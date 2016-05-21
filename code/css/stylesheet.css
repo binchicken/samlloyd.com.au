@@ -1,7 +1,8 @@
-/*Typefaces*/
+/* Typefaces */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300italic,300,400);	
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
+/* Page setup */
 * {
 		margin: 0;
 		padding: 0;
@@ -24,32 +25,83 @@ body {
     -webkit-box-sizing:border-box;
     font-size: 1.35em;
     }
-/* Extra small devices (phones, up to 480px) */
+/* extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
 }
-/* Small devices (tablets, 768px and up) */
+/* small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
     font-size: 1.2em;
     }
 }
-/* tablets/desktops and up ----------- */
+/* tablets/desktops and up */
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
     font-size: 1.25em;
     }
 }
-/* large desktops and up ----------- */
+/* large desktops and up */
 @media screen and (min-width: 1200px) {
 }
 
 .row-height {
     height: 6em;
 } 
+/* XS */
 @media only screen and (max-width: 760px) {
     .row-height {
     height: 7em;
 } 
+}
+/* LG+ */
+@media screen and (min-width: 1200px) {
+    .row-height {
+    height: 7.5em;
+} 
+}
+#header-container {
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 1.9em 0em 1.2em 0em;
+}
+/* XS */
+@media only screen and (max-width: 760px) {
+    #header-container {   
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 1.9em 0em 4em 0em;
+}
+}
+/* LG+ */
+@media screen and (min-width: 1200px) {
+    #header-container {   
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 2.5em 0em 2em 0em;
+}
+}
+
+#header-container > img {
+    max-width: 100%;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 .footer {
     font-family: 'Inconsolata', Courier, monospace;
@@ -120,38 +172,6 @@ ol, table, p, a, table, td, tr {
 		max-width:80px;
 	}
 
-
-#header-container {
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: block;
-    padding: 1.9em 0em 1.2em 0em;
-}
-@media only screen and (max-width: 760px) {
-    #header-container {   
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: block;
-    padding: 1.9em 0em 4em 0em;
-}
-}
-
-#header-container > img {
-    max-width: 100%;
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
 /* remove 1px between rows */
 .rowfix { 
     margin-bottom:-1px; 
