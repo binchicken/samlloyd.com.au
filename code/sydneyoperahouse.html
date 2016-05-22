@@ -258,14 +258,14 @@ $(document).ready(function(){
     var isMobile = window.matchMedia("only screen and (max-width: 760px)");
     if (!isMobile.matches) {
     
-    //** original code by cgspicer http://jsfiddle.net/cgspicer/V4qh9/
+    //** original 2-colour grad by cgspicer http://jsfiddle.net/cgspicer/V4qh9/
     var scroll_pos = 0;
     var animation_begin_pos = 0; //where you want the animation to begin
-    var animation_mid_pos = 2000; //where you want the animation to middle
+    var animation_mid_pos = 1200; //where you want the animation to...middle
     var animation_end_pos = 6200; //where you want the animation to stop
     var beginning_color = new $.Color( 'rgb(255,255,255)' ); //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.  
     var mid_color = new $.Color( 'rgb(232,241,253)' ); ;//what color we want to use in the middle
-    var ending_color = new $.Color( 'rgb(255,234,240)' ); ;//what color we want to use in the end
+    var ending_color = new $.Color( 'rgb(255,228,242)' ); ;//what color we want to use in the end
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop(); 
         if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_mid_pos ) { 
@@ -345,6 +345,7 @@ $(document).ready(function(){
 <!-- To-do list
 
 /* CHANGES curate final content */
+/* FIXME scroll performance - jittery on mobile. might be because fixed position */
 /* CHANGES [x]text boxes within projects */
 /* TODO [x]↳ ensure padding works at XS */
 /* TODO [x]↳ should go down to single col at SM */
