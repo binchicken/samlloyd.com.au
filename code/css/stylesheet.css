@@ -388,3 +388,8 @@ a.clickable:hover {
   filter: alpha(opacity=50);
   opacity: .5;
 }
+.quote {
+    font-style: italic;
+    font-size: 1.23em;
+    line-height: 1.658em;
+}
