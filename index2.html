@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>sam lloyd    &#x295;&#x2022;&#x1d25;&#x2022;&#x294;</title>    
+
+<script src="code/js/jquery-1.12.4.min.js"></script> 
+<link href="code/css/stylesheet.css" rel="stylesheet" type="text/css">
+     
+<!-- Favicon -->
+<link rel="shortcut icon" href="../links/favicon/favicon 2/favicon-16x16.png" type="image/x-icon" />
+
+</head>
+
+<body>
+<!--Header-->
+<div id="namepadding">
+<p>sam lloyd</p>
+</div>
+
+<div id="noise">
+<img src="../links/noise.png" width="102" height="33" class="noise"  /> 
+</div>
+
+
+<!-- Posts -->
+<div>
+	<div id="posts">
+		
+		<table class="post photo" style="background-image:url(../links/paintfull.png)" alt=""></table>
+      
+        <table class="post photo" style="background-image:url(../links/test5.png)" alt=""></table>
+       		
+        <table class="post photo" style="background-image:url(../links/red25_1_LR.png)" alt=""></table>
+               
+        <table class="post photo" style="background-image:url(../links/test4.png)" alt="Australian Red Cross Blood Service">
+		<td class="caption"><p><a href="pingpong.html">Australian Red Cross Blood Service</a></p></td></table>
+        
+        <table class="post photo" style="background-image:url(../links/test3.png)" alt="">
+		<td class="caption"><p><a href="code/pingpong.html">Ping Pong</a></p></td></table>
+        
+        <table class="post photo" style="background-image:url(../links/test7.png)" alt="">
+		<td class="caption"><p><a href="code/pingpong.html">Ping Pong</a></p><br><a href='#TOP'>Back to top &#8593;</a></td>
+		</table>
+        
+		</div>
+        
+        
+<!-- Footer -->
+<div id="footer">
+<a href="" target="_blank">&#x2591; <span class="footertype">more</span> &#x2591;</a>
+</div>
+       
+<!-- Script -->        
+<script type="text/javascript">
+	$(function(){
+		$(document).on("click", ".post", function(){
+			$("body,html").animate({ scrollTop: $(this).next(".post").offset().top }, 500)
+		})
+		
+		var lastpost = $(".post").last().offset().top
+		var page = 1
+		var loading = false
+		$(window).scroll(function(){
+			if (loading) return;
+			if ($(window).scrollTop() > lastpost - window.innerHeight*1.5) {
+				loading = true
+				var $div = $("<div>")
+				$div.load("/page/" + (++page) + " .post", function(){
+					$("#posts").append($div.find(".post"))
+					lastpost = $(".post").last().offset().top
+					loading = false
+				})
+
+			}
+		})
+		$(window).resize(function(){
+			lastpost = $(".post").last().offset().top
+		})
+		
+	})
+	</script>
+	
+</div>
+</body>
+</html>
