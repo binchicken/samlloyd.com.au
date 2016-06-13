@@ -301,6 +301,109 @@ li {
 
 /* Gradient Scroll */
 
+.section {
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(90deg, #ffffff, #ffffff, #e8f1fd, #ffe4f2, #ffffff);
+background-size: 1000% 1000%;
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+-o-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }}
+
+
+/* Gradient Scroll 
+
+.section {
+    width: 100%;
+    height: 100px;
+    background: 
+-webkit-linear-gradient(#fff, #fff),
+-webkit-linear-gradient(#fff, #e8f1fd);
+    background: 
+-o-linear-gradient(#fff, #fff),
+-o-linear-gradient(#fff, #e8f1fd);
+    background: 
+-moz-linear-gradient(#fff, #fff),
+-moz-linear-gradient(#fff, #e8f1fd);
+    background: 
+linear-gradient(#fff, #fff),
+linear-gradient(#fff, #e8f1fd);        
+    background-size: 100% 1000px, 100% 300px;
+    background-position: 0 0, 1000px 0;    
+}*/
+
+/* Gradient Scroll
+container {
+    position: absolute;
+    z-index: 200;
+}
+
+section {
+    display: block;
+    z-index: -100;
+    position: initial;
+}
+.section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -100;
+}
+#section1 {
+    height: 1500px;
+    width: 100%;
+    background-color: #fff;
+}
+#section1grad {
+    height: 600px;
+    width: 100%;
+    background: -webkit-linear-gradient(#fff, #e8f1fd);
+    background: -o-linear-gradient(#fff, #e8f1fd);
+    background: -moz-linear-gradient(#fff, #e8f1fd);
+    background: linear-gradient(#fff, #e8f1fd)
+}
+#section2 {
+    height: 1500px;
+    width: 100%;
+    z-index: -10;
+    position:absolute;
+    display: block;
+    background-color: #e8f1fd;
+}
+#section2grad {
+    height: 600px;
+    width: 100%;
+    z-index: -10;
+    position:absolute;
+    display: inline-block;
+    background: -webkit-linear-gradient(#e8f1fd, #ffe4f2);
+    background: -o-linear-gradient(#e8f1fd, #ffe4f2);
+    background: -moz-linear-gradient(#e8f1fd, #ffe4f2);
+    background: linear-gradient(#e8f1fd, #ffe4f2)
+} */
+
 
 
 .whitebg {
