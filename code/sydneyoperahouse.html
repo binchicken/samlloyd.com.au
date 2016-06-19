@@ -45,6 +45,11 @@
     
     
 <body>
+
+<!-- Background -->     
+<div class="bg-SOH">
+
+    
 <div class="container">
 
 <!-- Header --> 
@@ -57,6 +62,7 @@
     </div>
 </div>
 </div>
+
 
     
 <!-- Project Info [XS] -->    
@@ -115,6 +121,7 @@ Sydney Opera House</h3>
 <div class="col-sm-8">
     
     <!-- Carousel -->
+
     <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="false">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -248,57 +255,8 @@ Sydney Opera House</h3>
 </div>  
 </div>
     
-
-<!-- Gradient on scroll -->
+<!-- Load jquery after images -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
-<script src="js/jquery.color-2.1.2.min.js"></script>     
-<script>
-$(document).ready(function(){ 
-    
-    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-    if (!isMobile.matches) {
-    
-    //** original 2-colour grad by cgspicer http://jsfiddle.net/cgspicer/V4qh9/
-    var scroll_pos = 0;
-    var animation_begin_pos = 0; //where you want the animation to begin
-    var animation_mid_pos = 1200; //where you want the animation to...middle
-    var animation_end_pos = 6200; //where you want the animation to stop
-    var beginning_color = new $.Color( 'rgb(255,255,255)' ); //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.  
-    var mid_color = new $.Color( 'rgb(232,241,253)' ); ;//what color we want to use in the middle
-    var ending_color = new $.Color( 'rgb(255,228,242)' ); ;//what color we want to use in the end
-    $(document).scroll(function() {
-        scroll_pos = $(this).scrollTop(); 
-        if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_mid_pos ) { 
-           // console.log( 'scrolling and animating' );
-            //we want to calculate the relevant transitional rgb value
-            var percentScrolled = scroll_pos / ( animation_mid_pos - animation_begin_pos );
-            var newRed = beginning_color.red() + ( ( mid_color.red() - beginning_color.red() ) * percentScrolled );
-            var newGreen = beginning_color.green() + ( ( mid_color.green() - beginning_color.green() ) * percentScrolled );
-            var newBlue = beginning_color.blue() + ( ( mid_color.blue() - beginning_color.blue() ) * percentScrolled );
-            var newColor = new $.Color( newRed, newGreen, newBlue );
-            //console.log( newColor.red(), newColor.green(), newColor.blue() );
-            $('body').animate({ backgroundColor: newColor }, 0);
-        } else if(scroll_pos >= animation_mid_pos && scroll_pos <= animation_end_pos ) { 
-            console.log(scroll_pos, animation_mid_pos);
-           // console.log( 'scrolling and animating' );
-            //we want to calculate the relevant transitional rgb value
-            var percentScrolled = (scroll_pos - animation_mid_pos) / ( animation_end_pos - animation_mid_pos );
-            var newRed = mid_color.red() + ( ( ending_color.red() - mid_color.red() ) * percentScrolled );
-            var newGreen = mid_color.green() + ( ( ending_color.green() - mid_color.green() ) * percentScrolled );
-            var newBlue = mid_color.blue() + ( ( ending_color.blue() - mid_color.blue() ) * percentScrolled );
-            var newColor = new $.Color( newRed, newGreen, newBlue );
-            //console.log( newColor.red(), newColor.green(), newColor.blue() );
-            $('body').animate({ backgroundColor: newColor }, 0);
-        } else if ( scroll_pos > animation_end_pos ) {
-             $('body').animate({ backgroundColor: ending_color }, 0);
-        } else if ( scroll_pos < animation_begin_pos ) {
-             $('body').animate({ backgroundColor: beginning_color }, 0);
-        } else { }
-    });
-    }
-});
-    </script>   
-
     
     
 <!-- Project Info [SM+] -->    
@@ -332,10 +290,11 @@ $(document).ready(function(){
             </div>
             </div>
         </div>
-    
+    </div>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
 <!-- Collapsible container --> 
 <script src="js/projectinfo.js" type="text/javascript"></script>
   
