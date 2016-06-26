@@ -45,24 +45,6 @@
     
     
 <body>
-<!-- Load jquery after images -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>       
-<script>
-
-  // Hide Header on on scroll down
-var senseSpeed = 5;
-var previousScroll = 0;
-$(window).scroll(function(event){
-   var scroller = $(this).scrollTop();
-   if (scroller-senseSpeed > previousScroll){
-      $("div.header-container").filter(':not(:animated)').slideUp();
-   } else if (scroller+senseSpeed < previousScroll) {
-      $("div.button").filter(':not(:animated)').slideDown();
-   }
-   previousScroll = scroller;
-});
-    </script>    
-
 <!-- Background -->     
 <div class="bg-SOH">
 
@@ -72,14 +54,13 @@ $(window).scroll(function(event){
 <!-- Header --> 
 <div class="row">   
 <div class="col-xs-12">
-  <header>  <div class="row-height">
-        <div id="header-container" class="nav-down">    
-            <img src="../links/images/samlloyd.gif" alt="Sam Lloyd" height="41" width="172" />
+<div class="row-height">
+<div id="header-container">    
+            <img src="../links/images/samlloyd.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" />
         </div>
-    </div></header>
+    </div>
 </div>
 </div>
-
 
     
 <!-- Project Info [XS] -->    
@@ -226,7 +207,7 @@ Sydney Opera House</h3>
     
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy29.jpg" alt=""/>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy30.jpg" alt=""/>
-<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy31.jpg" alt=""/>   
+<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy31.gif" alt=""/>   
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy32.jpg" alt=""/>    
     <!-- Info Block 3 -->
     <div class="copy">
@@ -259,7 +240,21 @@ Sydney Opera House</h3>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy43.jpg" alt=""/>  
     <div class="videowrapper">
         <iframe src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-  
+
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<!-- Hide header -->
+<script>
+    $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y < 55) {
+        $('.headerimg').fadeIn();
+    } else {
+        $('.headerimg').fadeOut();
+    }
+
+});
+</script>    
 
 <!-- Footer -->
 <div class="row">    
@@ -322,6 +317,7 @@ Sydney Opera House</h3>
 <!-- To-do list
 
 /* CHANGES curate final content */
+/* TODO ↳ rename images */
 /* FIXME scroll performance - jittery on mobile. might be because fixed position */
 /* CHANGES [x]text boxes within projects */
 /* TODO [x]↳ ensure padding works at XS */

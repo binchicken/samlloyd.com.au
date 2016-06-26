@@ -40,9 +40,6 @@ body {
 
 /* header */
 
-.nav-up {
-    top: -6em;
-}
 .row-height {
     height: 6em;
 } 
@@ -64,7 +61,6 @@ body {
     text-align: center;
     display: block;
     padding: 1.9em 0em 1.2em 0em;
-    transition: top 0.2s ease-in-out;
 }
 @media only screen and (max-width: 760px) {
     #header-container {   
@@ -75,7 +71,6 @@ body {
     text-align: center;
     display: block;
     padding: 1.9em 0em 4em 0em;
-        transition: top 0.2s ease-in-out;
 }
 }
 @media screen and (min-width: 1200px) {
@@ -87,7 +82,6 @@ body {
     text-align: center;
     display: block;
     padding: 2.5em 0em 2em 0em;
-        transition: top 0.2s ease-in-out;
 }
 }
 #header-container > img {
