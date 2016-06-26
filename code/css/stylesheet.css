@@ -139,6 +139,11 @@ ol, table, p, a, table, td, tr {
     padding:0;
 }
 
+table {
+    height: 738px;
+    background-color: white;
+}
+
 #posts{
     display:inline-block;
     width:100%;
@@ -151,7 +156,6 @@ ol, table, p, a, table, td, tr {
 .post{
     background-attachment:fixed;
     width:100%;
-    height:100%;
 
     background-repeat:no-repeat;
     background-position:center;
