@@ -1,0 +1,16 @@
+table {
+height: 738px !important;
+}
+.footer-home {
+    position: fixed;
+    bottom: 1em;
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-top:1.8em;
+    padding-bottom: 1.8em;
+}
+.footer-home a {
+  color: #000;
+  text-decoration: none;
+}
