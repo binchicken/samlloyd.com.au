@@ -7,6 +7,14 @@
 		margin: 0;
 		padding: 0;
 	} 
+
+/* XS page setup */
+@media screen and (max-width: 767px) {
+    .container {
+      padding:0.75em;
+      margin:0;
+    }
+}
 	
 figure {margin: 0;}
 
@@ -289,6 +297,22 @@ li {
     line-height: 1.1em;
     list-style-type: none;
     }
+.quote {
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.55em;
+}
+.quoteauthor {
+    font-weight: 400;
+    padding-top:1.9em;
+}
+@media screen and (max-width: 767px) {
+    .quoteauthor {
+    font-weight: 400;
+    padding-top:1em;
+    padding-bottom: 1em;    
+}
+}
 
 
 /*Gradient Scroll*/
@@ -367,6 +391,20 @@ a.clickable {
 a.clickable:hover { 
     text-decoration:none; 
 }
+
+/* XS collapsible */
+@media screen and (max-width: 767px) {
+    .panel-heading {
+    padding: 10px 0px 10px 0px;
+    border-bottom: none;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    }    
+    .panel, .panel-primary {
+  margin-bottom: 12px;
+    }
+}
+
 /* 2-col images */
 .nopadding-left {
     padding-left: 0px;
@@ -398,11 +436,6 @@ a.clickable:hover {
   filter: alpha(opacity=50);
   opacity: .5;
 }
-.quote {
-    font-style: italic;
-    font-size: 1.19em;
-    line-height: 1.62em;
-}
 
 .videowrapper {
 	position: relative;
@@ -421,3 +454,4 @@ a.clickable:hover {
 .testrowheight {
     height: 80%;
 }
+
