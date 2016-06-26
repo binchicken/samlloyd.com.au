@@ -1,8 +1,8 @@
-/* Typefaces */
+/* typefaces */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300italic,300,400);	
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
-/* Page setup */
+/* page setup */
 * {
 		margin: 0;
 		padding: 0;
@@ -25,35 +25,29 @@ body {
     -webkit-box-sizing:border-box;
     font-size: 1.35em;
     }
-/* extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-}
-/* small devices (tablets, 768px and up) */
+
+/* default type size */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
     font-size: 1.2em;
     }
 }
-/* tablets/desktops and up */
 @media (min-width: 992px) and (max-width: 1199px) {
     body {
     font-size: 1.25em;
     }
 }
-/* large desktops and up */
-@media screen and (min-width: 1200px) {
-}
+
+/* header */
 
 .row-height {
     height: 6em;
 } 
-/* XS */
 @media only screen and (max-width: 760px) {
     .row-height {
     height: 7em;
 } 
 }
-/* LG+ */
 @media screen and (min-width: 1200px) {
     .row-height {
     height: 7.5em;
@@ -68,7 +62,6 @@ body {
     display: block;
     padding: 1.9em 0em 1.2em 0em;
 }
-/* XS */
 @media only screen and (max-width: 760px) {
     #header-container {   
     position: fixed;
@@ -80,7 +73,6 @@ body {
     padding: 1.9em 0em 4em 0em;
 }
 }
-/* LG+ */
 @media screen and (min-width: 1200px) {
     #header-container {   
     position: fixed;
@@ -92,7 +84,6 @@ body {
     padding: 2.5em 0em 2em 0em;
 }
 }
-
 #header-container > img {
     max-width: 100%;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
@@ -125,13 +116,13 @@ body {
 .col-sm-8 img {
     width: 100%;
     z-index: 10;
-    -webkit-transform: translate3d(0,0,0);
+
 }
 
 iframe {
     width: 100%;
     z-index: 10;
-    -webkit-transform: translate3d(0,0,0);
+
 }
 
 ol, table, p, a, table, td, tr {
