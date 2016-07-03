@@ -138,40 +138,6 @@ ol, table, p, a, table, td, tr {
     padding:0;
 }
 
-#posts{
-    display:inline-block;
-    width:100%;
-    position:absolute;
-    height:100%;
-    left: 0;
-    top: 0;
-}
-
-.post{
-    background-attachment:fixed;
-    width:100%;
-    height:100%;
-
-    background-repeat:no-repeat;
-    background-position:center;
-	}
-
-.post{
-		background-size:auto 80%;
-	}
-	
-.post td{
-    width:34%;
-}
-	
-.caption{
-		font-size:11px;
-		margin:auto;
-		text-align:left;
-		padding-left:20px;
-		max-width:80px;
-	}
-
 /* remove 1px between rows */
 .rowfix { 
     margin-bottom:-1px; 

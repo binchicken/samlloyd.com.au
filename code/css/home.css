@@ -12,8 +12,41 @@
   text-decoration: none;
 }
 table {
+    height: 50em !important;
+    width: 70em !important;
     display: table !important;
     background-color: #fff;
     border-spacing: 2px;
     border-collapse: separate;
 }
+#header-container {
+    z-index: 20;
+}
+#posts{
+    display:inline-block;
+    width:100%;
+    position:absolute;
+    height:100%;
+    left: 0;
+    top: 0;
+}
+.post{
+    background-attachment:fixed;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto 72%;
+	}
+	
+.post td{
+    width:34%;
+}
+	
+.caption{
+		font-size:11px;
+		margin:auto;
+		text-align:left;
+		padding-left:20px;
+		max-width:80px;
+	}
