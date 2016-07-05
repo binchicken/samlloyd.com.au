@@ -10,14 +10,16 @@
 .footer-home a {
   color: #000;
   text-decoration: none;
+
 }
 table {
-    height: 50em !important;
-    width: 70em !important;
-    display: table !important;
+    height: 75em !important;
+    width: 75em !important;
+    display: table;
     background-color: #fff;
     border-spacing: 2px;
     border-collapse: separate;
+    padding: 0px !important;
 }
 #header-container {
     z-index: 20;
@@ -28,6 +30,7 @@ table {
     position:absolute;
     height:100%;
     left: 0;
+    right: 0;
     top: 0;
 }
 .post{
@@ -36,7 +39,7 @@ table {
     height:100%;
     background-repeat:no-repeat;
     background-position:center;
-    background-size:auto 72%;
+    background-size:auto 60%;
 	}	
 .caption{
 		font-size:11px;
@@ -45,3 +48,9 @@ table {
 		padding-left:20px;
 		max-width:80px;
 	}
+body {
+    background-color: #fff
+}
+.row-height {
+    height: 10em;
+} 
