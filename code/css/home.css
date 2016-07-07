@@ -13,10 +13,10 @@
 
 }
 table {
-    height: 75em !important;
-    width: 75em !important;
+    height: 85em !important;
+    width: 90em !important;
     display: table;
-    background-color: #fff;
+    background-color:burlywood;
     border-spacing: 2px;
     border-collapse: separate;
     padding: 0px !important;
@@ -49,8 +49,11 @@ table {
 		max-width:80px;
 	}
 body {
-    background-color: #fff
+    background-color: bisque
 }
 .row-height {
     height: 10em;
 } 
+.col-sm-10 {
+    background-color: aquamarine
+}
