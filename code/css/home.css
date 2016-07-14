@@ -55,5 +55,22 @@ body {
     height: 10em;
 } 
 .col-sm-10 {
-    background-color: aquamarine
+    background-color: aquamarine;
+}
+
+
+
+
+body {
+    min-height: 3000px;
+}
+
+.posts_3 {
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 4em 0em;
 }
