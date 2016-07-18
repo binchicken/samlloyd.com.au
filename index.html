@@ -94,28 +94,7 @@
 	$(function(){
 		$(document).on("click", ".post", function(){
 			$("body,html").animate({ scrollTop: $(this).next(".post").offset().top }, 500)
-		})
-		
-		var lastpost = $(".post").last().offset().top
-		var page = 1
-		var loading = false
-		$(window).scroll(function(){
-			if (loading) return;
-			if ($(window).scrollTop() > lastpost - window.innerHeight*1.5) {
-				loading = true
-				var $div = $("<div>")
-				$div.load("/page/" + (++page) + " .post", function(){
-					$("#posts").append($div.find(".post"))
-					lastpost = $(".post").last().offset().top
-					loading = false
-				})
-
-			}
-		})
-		$(window).resize(function(){
-			lastpost = $(".post").last().offset().top
-		})
-		
+		})	
 	})
 	</script>
 	
