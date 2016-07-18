@@ -16,7 +16,7 @@ table {
     height: 85em !important;
     width: 90em !important;
     display: table;
-    background-color:burlywood;
+    background-color:azure;
     border-spacing: 2px;
     border-collapse: separate;
     padding: 0px !important;
@@ -24,11 +24,11 @@ table {
 #header-container {
     z-index: 20;
 }
-#posts{
+#postcontainer {
     display:inline-block;
     width:100%;
-    position:absolute;
     height:100%;
+    position:absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -39,7 +39,7 @@ table {
     height:100%;
     background-repeat:no-repeat;
     background-position:center;
-    background-size:auto 60%;
+    background-size:90em auto;
 	}	
 .caption{
 		font-size:11px;
@@ -49,7 +49,7 @@ table {
 		max-width:80px;
 	}
 body {
-    background-color: bisque
+    background-color: white
 }
 .row-height {
     height: 10em;
