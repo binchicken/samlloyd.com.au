@@ -1,5 +1,30 @@
+.row {
+    margin: 0 !important;
+    width: 100% !important;
+}
+p {
+    font-family: 'Inconsolata', Courier, monospace;
+    color: #000;
+    font-size: 0.9em;
+    letter-spacing: 0.02em;
+} 
+
+a {
+    color: #000;
+    text-decoration: none;   
+}
+
+a:hover {
+    color: #000;
+    background-color: #d8e7f9;
+    text-decoration: none;   
+        padding: 2px 0px;
+}
+
 .footer-home {
     position: fixed;
+    left:50%;
+    transform: translate(-50%,0%);
     bottom: 1em;
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.8em;
@@ -7,22 +32,31 @@
     padding-top:1.8em;
     padding-bottom: 1.8em;
 }
-.footer-home a {
-  color: #000;
-  text-decoration: none;
 
-}
 table {
-    height: 85em !important;
+    height: 65em !important;
     width: 90em !important;
     display: table;
-    background-color:azure;
+    background-color:white;
     border-spacing: 2px;
     border-collapse: separate;
     padding: 0px !important;
 }
 #header-container {
     z-index: 20;
+}
+#header-container {
+    padding: 1.9em 0em 1.2em 0em;
+}
+@media only screen and (max-width: 760px) {
+    #header-container {   
+    padding: 1.9em 0em 4em 0em;
+}
+}
+@media screen and (min-width: 1200px) {
+    #header-container {   
+    padding: 5.5em 0em 0em 0em;
+}
 }
 #postcontainer {
     display:inline-block;
@@ -32,6 +66,7 @@ table {
     left: 0;
     right: 0;
     top: 0;
+    background-color: darkturquoise;
 }
 .post{
     background-attachment:fixed;
@@ -39,15 +74,9 @@ table {
     height:100%;
     background-repeat:no-repeat;
     background-position:center;
-    background-size:90em auto;
+    background-size:auto 65%;
 	}	
-.caption{
-		font-size:11px;
-		margin:auto;
-		text-align:left;
-		padding-left:20px;
-		max-width:80px;
-	}
+
 body {
     background-color: white
 }
@@ -55,7 +84,15 @@ body {
     height: 10em;
 } 
 .col-sm-10 {
-    background-color: aquamarine;
+    background-color: white;
+}
+.caption {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.post td {
+    width: 34%;
 }
 
 
