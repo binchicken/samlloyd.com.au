@@ -102,7 +102,7 @@ body {
     min-height: 3000px;
 }
 
-.posts_3 {
+.posts_3A {
     position: fixed;
     z-index: 0;
     left: 0;
@@ -110,4 +110,8 @@ body {
     text-align: center;
     display: block;
     padding: 4em 0em;
+}
+
+.posts_3B {
+    background-image: url(../../links/paintfull.png);
 }

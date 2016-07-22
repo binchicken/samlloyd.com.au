@@ -40,7 +40,7 @@ body {
     font-size: 1.2em;
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1499px) {
     body {
     font-size: 1.25em;
     }
@@ -61,12 +61,12 @@ body {
     height: 7em;
 } 
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1499px) {
     .row-height {
     height: 7.5em;
 } 
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
     .row-height {
     height: 10em;
 } 
@@ -86,12 +86,12 @@ body {
     padding: 1.9em 0em 4em 0em;
 }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1499px) {
     #header-container {   
-    padding: 2.5em 0em 2em 0em;
+    padding: 2.5em 0em 2.5em 0em;
 }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
     #header-container {   
     padding: 4.5em 0em 1em 0em;
 }
