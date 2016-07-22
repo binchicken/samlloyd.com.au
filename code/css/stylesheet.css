@@ -1,5 +1,5 @@
 /* typefaces */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:300italic,300,400);	
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300italic,300,400);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
 /* page setup */
@@ -45,6 +45,11 @@ body {
     font-size: 1.25em;
     }
 }
+@media (min-width: 1200px) {
+    body {
+    font-size: 1.4em;
+    }
+}
 
 /* header */
 
@@ -56,11 +61,17 @@ body {
     height: 7em;
 } 
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .row-height {
     height: 7.5em;
 } 
 }
+@media (min-width: 1200px) {
+    .row-height {
+    height: 10em;
+} 
+}
+
 #header-container {
     position: fixed;
     z-index: 0;
@@ -72,24 +83,17 @@ body {
 }
 @media only screen and (max-width: 760px) {
     #header-container {   
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: block;
     padding: 1.9em 0em 4em 0em;
 }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #header-container {   
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: block;
     padding: 2.5em 0em 2em 0em;
+}
+}
+@media (min-width: 1200px) {
+    #header-container {   
+    padding: 4.5em 0em 1em 0em;
 }
 }
 #header-container > img {
@@ -121,6 +125,12 @@ body {
     background-color: #fff;
     padding: 2px 0px;
 }
+.col-sm-8 {
+    width: 80%;
+  }
+.col-sm-2 {
+    width: 10%;
+  }
 .col-sm-8 img {
     width: 100%;
     z-index: 10;
@@ -158,8 +168,9 @@ p, h3, li {
     font-family: 'Merriweather', serif;  
     letter-spacing: 0.01em;
     min-width: 10em;
-    max-width: 24em;
+    max-width: 25em;
     padding-right: 2em;
+    padding-left: 0.75em
     } 
 .projectinfo-xs {
     font-family: 'Merriweather', serif;  
