@@ -28,7 +28,11 @@
     <link href="code/css/bootstrap.min.css" rel="stylesheet">
       
     <!-- Stylesheet -->
-    <link href="code/css/stylesheet.css" rel="stylesheet" type="text/css">  
+    <link href="code/css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="code/css/home.css" rel="stylesheet" type="text/css">  
+      
+    <!-- Load jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="../links/favicon/favicon 2/favicon-16x16.png" type="image/x-icon" />    
@@ -45,8 +49,8 @@
     
     
 <body>
-<div class="container">
 
+<div class="container-fluid">
 <!-- Header --> 
 <div class="row">   
 <div class="col-xs-12">
@@ -60,88 +64,52 @@
 
     
 <!-- Main Content -->
-<div class="row testrowheight" >
-<div class="col-sm-2"></div>
+<div class="row">
 
                 
 <!-- Project Images -->
-<div class="col-sm-8">
- 
-<div>
-	<div id="posts">
+<div class="col-sm-12">
+	<div id="postcontainer">
 		
-		<table class="post photo" style="background-image:url(../links/paintfull.png)" alt=""></table>
+		<table class="post" style="background-image:url(../links/paintfull.png)" alt=""></table>
       
-        <table class="post photo" style="background-image:url(../links/test5.png)" alt=""></table>
-       		
-        <table class="post photo" style="background-image:url(../links/red25_1_LR.png)" alt=""></table>
+        <table class="post" style="background-image:url(../links/Green_megazoom_2x.png)" alt="">
+            <td class="caption"><p><a href="pingpong.html">Sydney Opera House</a></p></td>
+        </table>
+
                
-        <table class="post photo" style="background-image:url(../links/test4.png)" alt="Australian Red Cross Blood Service">
+        <table class="post" style="background-image:url(../links/jcdecaux_green_lr.jpg)" alt="Australian Red Cross Blood Service">
 		<td class="caption"><p><a href="pingpong.html">Australian Red Cross Blood Service</a></p></td></table>
         
-        <table class="post photo" style="background-image:url(../links/test3.png)" alt="">
+        <table class="post" style="background-image:url(../links/test3.png)" alt="">
 		<td class="caption"><p><a href="code/pingpong.html">Ping Pong</a></p></td></table>
         
-        <table class="post photo" style="background-image:url(../links/test7.png)" alt="">
-		<td class="caption"><p><a href="code/pingpong.html">Ping Pong</a></p><br><a href='#TOP'>Back to top &#8593;</a></td>
+        <table class="post" style="background-image:url(../links/test7.png)" alt="">
+		<td class="caption"><p><a href="pingpong.html">Ping Pong</a></p><br><p><a href='#TOP'>back to top &#8593;</a></p></td>
 		</table>
         
 		</div>
         
 <!-- Script -->  
-<script src="code/js/jquery-1.12.4.min.js"></script>     
 <script type="text/javascript">
 	$(function(){
 		$(document).on("click", ".post", function(){
 			$("body,html").animate({ scrollTop: $(this).next(".post").offset().top }, 500)
-		})
-		
-		var lastpost = $(".post").last().offset().top
-		var page = 1
-		var loading = false
-		$(window).scroll(function(){
-			if (loading) return;
-			if ($(window).scrollTop() > lastpost - window.innerHeight*1.5) {
-				loading = true
-				var $div = $("<div>")
-				$div.load("/page/" + (++page) + " .post", function(){
-					$("#posts").append($div.find(".post"))
-					lastpost = $(".post").last().offset().top
-					loading = false
-				})
-
-			}
-		})
-		$(window).resize(function(){
-			lastpost = $(".post").last().offset().top
-		})
-		
+		})	
 	})
 	</script>
 	
-</div>    
-
-
 </div>
-    
-
-
-<!-- Project Info [SM+] -->    
-<div class="col-sm-2 hidden-xs">
-    
-</div>
+  
 </div>
     
 <!-- Footer -->
-<div class="row">    
-<div class="col-xs-4 footer">  
-<p class="text-left"><a href=#>&#x2190;&#x2003;back</a></p></div>
-
-<div class="col-xs-4 footer">  
+<div class="row">  
+<div class="col-xs-4"></div>    
+<div class="col-xs-8 footer-home">  
 <p class="text-center"><a href=#>&#x2591; more &#x2591;</a></p></div>
+<div class="col-xs-4"></div>     
 
-<div class="col-xs-4 footer">
-<p class="text-right"><a href=#>next&#x2003;&#x2192;</a></p></div>
 </div>      
     
 </div>
@@ -157,6 +125,10 @@
 
 <!-- To-do list
 
-
+/* CHANGES curate final content */
+/* TODO ↳ final images */
+/* TODO ↳ rename images */
+/* CHANGES XS version */
+/* CHANGES class for XXL screens - RHS type + header bigger */
 
 -->
