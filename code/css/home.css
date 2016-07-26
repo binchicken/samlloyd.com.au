@@ -8,10 +8,7 @@ table {
     width: 100% !important;
     display: table !important;
     background-color:white;
-    border-spacing: 2px;
     border-collapse: separate;
-    padding: 0px !important;
-    left:0;
 }
 .post{
     background-attachment:fixed;
