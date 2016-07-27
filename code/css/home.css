@@ -1,20 +1,55 @@
 /* page setup */
 
 body {
-    background-color: white
+    background-color:darkseagreen
+}
+
+.gradAnimate {
+    display:block;
+    min-height: 100%;
+    min-width: 100%;
+    background: linear-gradient(270deg, #40d3ff, #d67eff, #ff89cc);
+    background-size: 300% 300%;
+    -webkit-animation: Test 7s ease infinite;
+    -moz-animation: Test 7s ease infinite;
+    -o-animation: Test 7s ease infinite;
+    animation: Test 7s ease infinite;
+    @-webkit-keyframes Test {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes Test {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-o-keyframes Test {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Test {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
 }
 table {
     height: 85em !important;
-    width: 100% !important;
+    /*width: 68em !important;*/
+    width: 110em !important;
     display: table !important;
-    background-color:white;
     border-collapse: separate;
+    margin-left:auto;
+    margin-right:auto;
+
 }
 .post{
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:center;
-    background-size:auto 65%;
+    background-size:auto 45em;
 }
 #postcontainer {
     display:inline-block;
@@ -30,24 +65,30 @@ table {
     text-align: left;
     font-size: 0.85em;
     letter-spacing: 0.02em;
+
 } 
 .caption p {
-    padding: 1em;
+    padding-left: 6em;
 }
 
 .post td {
-    width: 24%;
-    padding-top: 50em;
-    padding-bottom: 49em;
-    margin-left: 1.5em;
-    border-left: 1px solid #e2e2e2;
+    width: 24em;
+    height: 45em;
+    margin-top:15%;
+    padding-top: 20em;
+    padding-bottom: 20em;
 
 }
-.line {
-    position: absolute;
-    border-right: 1px solid black;
-    top: 0;
-    bottom: 0;
+.testwhite {
+    position: fixed;
+    height: 45em;
+    width: 30em;
+    top: 50%;
+    left: 50%;
+    margin-top: -22.5em; /* Negative half of height. */
+    margin-left: -55em; /* Negative half of width. */
+    background: white;
+    z-index: -1;
 }
 
 
