@@ -1,18 +1,18 @@
 /* page setup */
 
-.homegradient {
+body {
     z-index: -5;
     display:block;
     height: 100%;
     width: 100%;
     
     
-    background: linear-gradient(45deg, #e8f1fd, #e8f1fd, #fff4f2, #ffe4f2, #e8f1fd);
-    background-size: 400% 400%;
-    -webkit-animation: HomeGradient 20s ease infinite;
-    -moz-animation: HomeGradient 20s ease infinite;
-    -o-animation: HomeGradient 20s ease infinite;
-    animation: HomeGradient 20s ease infinite;
+    background: linear-gradient(45deg, #f2e8de, #e8f1fd, #CCE3DE, #ffe4f2, #fff9ba, #ffc0c0, #e8f1fd);
+    background-size: 700% 1000%; /* X Y -- Y must be longer than height of page */
+    -webkit-animation: HomeGradient 25s ease infinite;
+    -moz-animation: HomeGradient 25s ease infinite;
+    -o-animation: HomeGradient 25s ease infinite;
+    animation: HomeGradient 25s ease infinite;
     }
     @-webkit-keyframes HomeGradient {
         0%{background-position:0% 50%}
