@@ -1,34 +1,35 @@
 /* page setup */
 
-body {
+.homegradient {
+    z-index: -5;
     display:block;
-    min-height: 100%;
-    min-width: 100%;
+    height: 100%;
+    width: 100%;
     
-    background: linear-gradient(270deg, #ffd6eb, #d8e8ff, #ecd8ff);
-    background-size: 600% 600%;
-    -webkit-animation: Test 25s ease infinite;
-    -moz-animation: Test 25s ease infinite;
-    -o-animation: Test 25s ease infinite;
-    animation: Test 25s ease infinite;
-}
     
-    @-webkit-keyframes Test {
+    background: linear-gradient(45deg, #e8f1fd, #e8f1fd, #fff4f2, #ffe4f2, #e8f1fd);
+    background-size: 400% 400%;
+    -webkit-animation: HomeGradient 20s ease infinite;
+    -moz-animation: HomeGradient 20s ease infinite;
+    -o-animation: HomeGradient 20s ease infinite;
+    animation: HomeGradient 20s ease infinite;
+    }
+    @-webkit-keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
-    @-moz-keyframes Test {
+    @-moz-keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
-    @-o-keyframes Test {
+    @-o-keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
-    @keyframes Test {
+    @keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
@@ -62,7 +63,7 @@ table {
 }
  .caption {
     position: absolute;
-    text-align: left;
+    text-align: center;
     font-size: 0.85em;
     letter-spacing: 0.02em;
 
@@ -141,6 +142,7 @@ a:hover {
 }
 }
 
+
 /* footer */
 
 .footer-home {
@@ -156,4 +158,38 @@ a:hover {
 }
 
 
+/* experimental */
 
+#header-ccontainer {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    padding: 1.9em 0em 1.2em 0em;
+}
+
+@media only screen and (max-width: 760px) {
+    #header-ccontainer {   
+    padding: 1.9em 0em 4em 0em;
+}
+}
+@media screen and (min-width: 1200px) {
+    #header-ccontainer {   
+    padding: 22.5em 70em 0em 0em;
+}
+}
+
+
+
+#header-ccontainer > img {
+    max-width: 100%;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
