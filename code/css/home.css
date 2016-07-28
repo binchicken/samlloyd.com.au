@@ -1,19 +1,18 @@
 /* page setup */
 
 body {
-    background-color:darkseagreen
-}
-
-.gradAnimate {
     display:block;
     min-height: 100%;
     min-width: 100%;
+    
     background: linear-gradient(270deg, #40d3ff, #d67eff, #ff89cc);
     background-size: 300% 300%;
-    -webkit-animation: Test 7s ease infinite;
-    -moz-animation: Test 7s ease infinite;
-    -o-animation: Test 7s ease infinite;
-    animation: Test 7s ease infinite;
+    -webkit-animation: Test 17s ease infinite;
+    -moz-animation: Test 17s ease infinite;
+    -o-animation: Test 17s ease infinite;
+    animation: Test 17s ease infinite;
+}
+    
     @-webkit-keyframes Test {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
@@ -34,7 +33,7 @@ body {
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
-}
+
 table {
     height: 85em !important;
     /*width: 68em !important;*/

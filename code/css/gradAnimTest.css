@@ -1,0 +1,34 @@
+#container {
+    display: block;
+    min-height: 3000px;
+    min-width: 1000px;
+    
+    background: linear-gradient(270deg, #72d2ff, #a172ff, #ff72e1);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    
