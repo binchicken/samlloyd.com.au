@@ -5,12 +5,12 @@ body {
     min-height: 100%;
     min-width: 100%;
     
-    background: linear-gradient(270deg, #40d3ff, #d67eff, #ff89cc);
-    background-size: 300% 300%;
-    -webkit-animation: Test 17s ease infinite;
-    -moz-animation: Test 17s ease infinite;
-    -o-animation: Test 17s ease infinite;
-    animation: Test 17s ease infinite;
+    background: linear-gradient(270deg, #ffd6eb, #d8e8ff, #ecd8ff);
+    background-size: 600% 600%;
+    -webkit-animation: Test 25s ease infinite;
+    -moz-animation: Test 25s ease infinite;
+    -o-animation: Test 25s ease infinite;
+    animation: Test 25s ease infinite;
 }
     
     @-webkit-keyframes Test {
@@ -40,14 +40,14 @@ table {
     width: 110em !important;
     display: table !important;
     border-collapse: separate;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .post{
     background-attachment:fixed;
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:60% 50%;
     background-size:auto 45em;
 }
 #postcontainer {
@@ -58,6 +58,7 @@ table {
     left: 0;
     right: 0;
     top: 0;
+
 }
  .caption {
     position: absolute;
@@ -67,25 +68,36 @@ table {
 
 } 
 .caption p {
-    padding-left: 6em;
+    padding-left: 16em;
 }
 
 .post td {
-    width: 24em;
+    width: 34em;
     height: 45em;
     margin-top:15%;
     padding-top: 20em;
     padding-bottom: 20em;
 
 }
-.testwhite {
+/* .testwhite {
     position: fixed;
     height: 45em;
     width: 30em;
     top: 50%;
     left: 50%;
+    margin-top: -22.5em; 
+    margin-left: -55em; 
+    background: white;
+    z-index: -1;
+} */
+.testwhite {
+    position: fixed;
+    height: 45em;
+    width: 45em;
+    top: 50%;
+    left: 50%;
     margin-top: -22.5em; /* Negative half of height. */
-    margin-left: -55em; /* Negative half of width. */
+    margin-left: -45em; /* Negative half of width. */
     background: white;
     z-index: -1;
 }
