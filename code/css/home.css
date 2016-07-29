@@ -39,7 +39,7 @@ table {
     display: table !important;
     border-collapse: separate;
 }
-.post{
+.post, .arrow {
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:center;
@@ -56,7 +56,7 @@ table {
 }
  .caption {
     position: absolute;
-    text-align: left;
+    text-align: center;
     font-size: 0.85em;
     letter-spacing: 0.02em;
 } 
@@ -65,29 +65,25 @@ table {
 }
 
 .post td {
-    width: 24%;
-    padding-top: 50em;
-    padding-bottom: 49em;
-    margin-left: 1.5em;
+    width: 22%;
+    padding-top: 40em;
+    padding-bottom: 40em;
+    margin-left: 0.5em;
 }
-/* .homebg {
-    background-color: #fff;
-    position: fixed;
-    height: 96%;
-    width: 97.5%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+.arrow td {
+    font-size: 2em;
+    padding: 11.75em 0.5em 0em 0em;
+    }
 .homebg {
     background-color: #fff;
     position: fixed;
-    height: 96vh;
-    width: 97vw;
+    height: 96%;
+    width: 97.8%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} 
+
 
 
 /* typography */
