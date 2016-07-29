@@ -7,8 +7,8 @@ body {
     width: 100%;
     
     
-    background: linear-gradient(45deg, #f2e8de, #e8f1fd, #CCE3DE, #ffe4f2, #fff9ba, #ffc0c0, #e8f1fd);
-    background-size: 700% 1000%; /* X Y -- Y must be longer than height of page */
+    background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2);
+    background-size: 700% 1100%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 25s ease infinite;
     -moz-animation: HomeGradient 25s ease infinite;
     -o-animation: HomeGradient 25s ease infinite;
