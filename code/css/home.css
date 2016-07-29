@@ -67,6 +67,12 @@ table {
 }
 
 .post td {
+     /*   
+    width: 22vw;
+    padding-top: 45vw;
+    padding-bottom: 40vh;
+    margin-left: 1em; */
+    
     width: 22%;
     padding-top: 45em;
     padding-bottom: 40em;
@@ -135,4 +141,47 @@ a:active {
 }
 
 
+/* media queries */
 
+
+/* XS ----------- */
+@media only screen and (max-width: 760px) {
+    #header-container {   
+        padding: 1.9em 0em 4em 0em;
+}
+}
+/* S ----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    #header-container {   
+        padding: 7.75em 0em 0em 0em;
+        background-color:antiquewhite;
+}
+}
+/* M ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #header-container {   
+        padding: 7.75em 0em 0em 0em;
+        background-color:beige;
+    }
+
+}
+/* L ----------- */
+@media (min-width: 1200px) and (max-width: 1499px) {
+    #header-container {   
+        padding: 7em 0em 0em 0em;
+        background-color:darkseagreen;
+    }
+    .footer-home {
+        bottom: 4.5em;
+    }
+}
+/* XL ----------- */
+@media (min-width: 1500px) {
+    #header-container {   
+        padding: 7.75em 0em 0em 0em;
+        background-color: aliceblue;
+    }
+    .footer-home {
+        bottom: 5em;
+    }
+}
