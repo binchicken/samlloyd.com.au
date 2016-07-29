@@ -8,10 +8,7 @@ table {
     width: 100% !important;
     display: table !important;
     background-color:white;
-    border-spacing: 2px;
     border-collapse: separate;
-    padding: 0px !important;
-    left:0;
 }
 .post{
     background-attachment:fixed;
@@ -43,27 +40,6 @@ table {
     padding-top: 50em;
     padding-bottom: 49em;
     margin-left: 1.5em;
-    border-left: 1px solid #e2e2e2;
-
-}
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-table {
-    background-color: white
-}
-.line {
-    position: absolute;
-    border-right: 1px solid black;
-    top: 0;
-    bottom: 0;
 }
 
 
@@ -85,6 +61,7 @@ a:hover {
     text-decoration: none;   
     padding: 2px 0px;
 }
+
 
 /* header */
 
