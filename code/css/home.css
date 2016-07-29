@@ -38,11 +38,14 @@ table {
     width: 100% !important;
     display: table !important;
     border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .post, .arrow {
     background-attachment:fixed;
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:50% 55%;
     background-size:auto 65%;
 }
 #postcontainer {
@@ -66,13 +69,13 @@ table {
 
 .post td {
     width: 22%;
-    padding-top: 40em;
+    padding-top: 45em;
     padding-bottom: 40em;
-    margin-left: 0.5em;
+    margin-left: 1em;
 }
 .arrow td {
     font-size: 2em;
-    padding: 11.75em 0.5em 0em 0em;
+    padding: 12.75em 0em 0em 0em;
     }
 .homebg {
     background-color: #fff;
@@ -93,16 +96,19 @@ p {
     color: #000;
 } 
 
-a {
+a, a:link, a:visited {
     color: #000;
     text-decoration: none;   
 }
-
 a:hover {
     color: #000;
-    background-color: #d8e7f9;
+    background-color: #e8f1fd;
     text-decoration: none;   
     padding: 2px 0px;
+}
+a:active {
+    color: #000;
+    text-decoration: none;  
 }
 
 
@@ -121,7 +127,7 @@ a:hover {
 }
 @media screen and (min-width: 1200px) {
     #header-container {   
-    padding: 5.5em 0em 0em 0em;
+    padding: 7.75em 0em 0em 0em;
 }
 }
 
@@ -131,7 +137,7 @@ a:hover {
     position: fixed;
     left:50%;
     transform: translate(-50%,0%);
-    bottom: 1em;
+    bottom: 5em;
     font-family: 'Inconsolata', Courier, monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
