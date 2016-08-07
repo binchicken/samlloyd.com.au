@@ -168,12 +168,29 @@ a:active {
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 7em 0em 0em 0em;
-        background-color:darkseagreen;
+        padding: 5.75em 0em 1em 0em;
+        /* background-color:darkseagreen; */
     }
+    table {
+    height: 50em !important;
+}
+    .post, .arrow {
+    background-position:50% 58%;
+}
+    .post td {
+    padding-top: 33rem;
+    padding-bottom: 40em;
+}
+    .arrow td {
+    font-size: 1em;
+    padding: 20em 1em 0em 0em;
+}
+    .arrow td p {
+    font-family: "Lucida Grande";   
+}
     .footer-home {
-        bottom: 4.5em;
-    }
+        bottom: 2em;
+}
 }
 /* XL ----------- */
 @media (min-width: 1500px) {
