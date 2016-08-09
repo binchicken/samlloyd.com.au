@@ -67,12 +67,6 @@ table {
 }
 
 .post td {
-     /*   
-    width: 22vw;
-    padding-top: 45vw;
-    padding-bottom: 40vh;
-    margin-left: 1em; */
-    
     width: 22%;
     padding-top: 45em;
     padding-bottom: 40em;
@@ -153,6 +147,7 @@ a:active {
         padding: 1.9em 0em 4em 0em;
 }
 }
+
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {
     #header-container {   
@@ -160,17 +155,26 @@ a:active {
         background-color:antiquewhite;
 }
 }
+
 /* M ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     #header-container {   
-        padding: 7.75em 0em 0em 0em;
+        padding: 4.75em 0em 1em 1em;
         background-color:beige;
-    }
-table {
-    height: 50em !important;
+}
+    table {
+    height: 55em !important;
 }
     .post, .arrow {
     background-position:50% 58%;
+}
+     .caption {
+    font-size: 0.9em;
+}
+    .post td {
+    width: 18%;
+    padding-top: 45em;
+    padding-bottom: 40em;
 }
     .post td {
     padding-top: 33rem;
@@ -181,17 +185,19 @@ table {
     padding: 20em 1em 0em 0em;
 }
     .footer-home {
-        bottom: 2em;
+    bottom: 2em;
+    font-size: 0.8em;
 }
 }
+
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 5.75em 0em 1em 0em;
+        padding: 5.75em 0em 1em 1em;
         background-color:darkseagreen;
     }
     table {
-    height: 50em !important;
+    height: 55em !important;
 }
     .post, .arrow {
     background-position:50% 58%;
@@ -208,6 +214,7 @@ table {
         bottom: 2em;
 }
 }
+
 /* XL ----------- */
 @media (min-width: 1500px) {
     #header-container {   
