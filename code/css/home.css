@@ -163,25 +163,25 @@ a:active {
     width: 96.7%;
 } 
     #header-container {   
-        padding: 6.8em 0em 0.5em 0.5em;
-        /* background-color:antiquewhite; */
+    padding: 6.8em 0em 0.5em 0.5em;
+    /* background-color:antiquewhite; */
 }
     table {
     height: 55em !important;
 }
     .last {
-        height: 63em !important;
+    height: 63em !important;
 }
     .post, .arrow {
     background-position:50% 60%;
-    background-size:auto 64%;
+    background-size:72% auto;
 }
     .caption {
     font-size: 0.8em;
 }
     .post td {
     width: 10%;
-    padding-top: 35.5rem;
+    padding-top: 36rem;
     padding-bottom: 40em;
     margin-left: 4em;
 }
@@ -238,7 +238,7 @@ a:active {
 }
     .post, .arrow {
     background-position:50% 62%;
-    background-size:auto 67%;
+    background-size:auto 66%;
 }
     .post td {
     padding-top: 36rem;
