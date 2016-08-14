@@ -33,6 +33,15 @@ body {
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
+.homebg {
+    background-color: #fff;
+    position: fixed;
+    height: 96%;
+    width: 97.8%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
 table {
     height: 85em !important;
     width: 100% !important;
@@ -79,15 +88,8 @@ table {
 .arrow td p {
     font-family: "Lucida Grande";   
 }
-.homebg {
-    background-color: #fff;
-    position: fixed;
-    height: 96%;
-    width: 97.8%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} 
+
+
 
 
 
@@ -199,26 +201,30 @@ a:active {
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 5.75em 0em 1em 1em;
-        background-color:darkseagreen;
+        padding: 6.1em 0em 0.5em 0.5em;
+        /* background-color:darkseagreen; */
     }
     table {
     height: 55em !important;
 }
     .post, .arrow {
-    background-position:50% 58%;
+    background-position:50% 60%;
+    background-size:auto 67%;
 }
     .post td {
-    padding-top: 33rem;
+    padding-top: 36rem;
     padding-bottom: 40em;
 }
     .arrow td {
     font-size: 1em;
-    padding: 20em 1em 0em 0em;
+    padding: 28em 0em 0em 0em;
 }
     .footer-home {
         bottom: 2em;
 }
+    .last {
+        height: 68em !important;
+    }
 }
 
 /* XL ----------- */
