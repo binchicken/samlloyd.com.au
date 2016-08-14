@@ -146,13 +146,53 @@ a:active {
 }
 
 
-/* media queries ===================================== */
+/* media queries ================================================ */
 
 
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
+    .container, .row, .col-xs-12 { 
+  padding: 0px !important;
+}
+    html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
     #header-container {   
-        padding: 1.9em 0em 4em 0em;
+        padding: 5.8em 0em 0.5em 0em;
+}
+    /* .xs-header {
+        background-color: #fff;
+        height: 10em;
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        margin-top:4%;
+    } */
+    .xs-post {
+        margin-top: 12em;
+        height: 19em;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .xs-post > img {
+        width: 100%;
+        z-index: 1;
+        padding: 0px;
+    }
+    .homebg {
+    height: 99%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+} 
+    .footer-home {
+    font-size: 1em;
+    bottom: 3em;
+    padding: 0em;
 }
 }
 
