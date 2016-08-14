@@ -104,15 +104,24 @@
 
 <!-- Project Images [XS] -->
 <div class="col-xs-12 visible-xs-block">
-    <div class="xs-header"></div>
+    <div class="button">button</div>
         <div class="xs-post">
-        <img src="links/paintfull.png" alt=""/>
-        <img src="links/Green_megazoom_2x.png" alt=""/>
-        <img src="links/jcdecaux_green_lr.jpg" alt=""/>
+        <img class="xs-scroll" src="links/paintfull.png" alt=""/>
+        <img class="xs-scroll" src="links/Green_megazoom_2x.png" alt=""/>
+        <img class="xs-scroll" src="links/jcdecaux_green_lr.jpg" alt=""/>
         </div>
     </div>  
     
 </div>
+ 
+<!-- Experimental -->    
+<script type="text/javascript">
+	$(function(){
+		$(document).on("click", ".xs-scroll", function(){
+			$(".xs-post").animate({ scrollTop: $(this).next(".xs-scroll").offset().top }, 600)
+		})
+	})
+	</script>    
 
 <!-- Footer -->
 <div class="row">
