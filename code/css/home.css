@@ -116,6 +116,12 @@ a:active {
 
 /* header */
 
+.row-height {
+    height: 0em;
+} 
+.container-fluid {
+    padding: 0px;
+}
 #header-container {
     z-index: 20;
 }
