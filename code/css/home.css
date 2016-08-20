@@ -36,8 +36,9 @@ body {
 .homebg {
     background-color: #fff;
     position: fixed;
-    height: 96%;
+    height: 96.2%;
     width: 97.8%;
+    /* 96.2% W x 93.8% H */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -89,7 +90,9 @@ table {
     font-family: "Lucida Grande";   
 }
 
-
+.secondary {
+    font-size: 2em;
+}
 
 
 
@@ -309,9 +312,36 @@ a:active {
 @media (min-width: 1500px) {
     #header-container {   
         padding: 7.75em 0em 0em 0em;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
     }
+    table {
+    height: 75em !important;
+}
+    .post, .arrow {
+    background-position:50% 55%;
+    background-size:auto 66%;
+}
+    .post td {
+    width: 35rem;
+    padding-top: 57rem;
+    padding-bottom: 30em;
+    margin-left: 1.5em;
+}
+    .arrow td {
+    font-size: 1.5em;
+    padding: 26em 0em 0em 0em;
+}
+    .secondary {
+    font-size: 1.5em;
+}
+    .secondary > p > a:hover {
+        padding: 0px 5px !important;
+}
     .footer-home {
-        bottom: 5em;
-    }
+        bottom: 4em;
+}
+      .last td {
+    padding-top: 47rem;
+}
+
 }
