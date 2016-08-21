@@ -107,7 +107,7 @@ body {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 .footer {
-    font-family: 'Inconsolata', Courier, monospace;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
     padding-top:1.8em;
@@ -272,7 +272,7 @@ p, h3, li {
     padding-bottom: 1em;
 }
 li {
-    font-family: 'Inconsolata', Courier, monospace;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     font-size: 0.85em;
     letter-spacing: 0.02em;
     margin-bottom: 5px;
