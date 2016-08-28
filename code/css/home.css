@@ -316,7 +316,7 @@ a:active {
 }
     .arrow td {
         font-size: 1.3rem;
-        padding: 28.5em 0em 0em 0em;
+        padding: 27em 0em 0em 0em;
 }
     .secondary {
         font-size: 1em;
@@ -331,6 +331,10 @@ a:active {
     .last {
         height: 68em !important;
 }
+    .last td {
+        padding-top: 37rem;
+        padding-bottom: 20em;
+    }
 }
 
 /* XL ----------- */
