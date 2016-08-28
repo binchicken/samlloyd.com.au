@@ -6,8 +6,9 @@ body {
     height: 100%;
     width: 100%;
     
-    background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
-    background-size: 600% 1200%; /* X Y -- Y must be longer than height of page */
+    /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
+    background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    background-size: 600% 1300%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 25s ease infinite;
     -moz-animation: HomeGradient 25s ease infinite;
     -o-animation: HomeGradient 25s ease infinite;
@@ -295,32 +296,37 @@ a:active {
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 6em 0em 0.5em 0em;
+        padding: 5.75em 0em 0.5em 0em;
         /* background-color:darkseagreen; */
     }
+    .homebg {
+        height: 96.1%;
+        width: 97.8%;
+}
     table {
-    height: 55em !important;
+        height: 55em !important;
 }
     .post, .arrow {
-    background-position:50% 62%;
-    background-size:auto 66%;
+        background-position:50% 59%;
+        background-size:auto 67%;
 }
     .post td {
-    padding-top: 37rem;
-    padding-bottom: 40em;
+        padding-top: 37rem;
+        padding-bottom: 40em;
 }
     .arrow td {
-    font-size: 1em;
-    padding: 29.5em 0em 0em 0em;
+        font-size: 1.3rem;
+        padding: 28.5em 0em 0em 0em;
 }
     .secondary {
-    font-size: 1em;
+        font-size: 1em;
 }
     .secondary > p > a:hover {
         padding: 1px 5px 0px 5px !important;
 }
     .footer-home {
-        bottom: 1.6em;
+        bottom: 1.4em;
+        font-size: 0.9em;
 }
     .last {
         height: 68em !important;
@@ -362,5 +368,28 @@ a:active {
       .last td {
     padding-top: 47rem;
 }
+}
 
+/* about ================================================ */
+
+.aboutbg {
+    background-color: #fff;
+    position:absolute;
+    height: 90%;
+    width: 62%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+} 
+.footer-about {
+    position: fixed;
+    left:50%;
+    transform: translate(-50%,0%);
+    bottom: 0.5em;
+    font-family: 'Inconsolata', Courier, monospace;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-top:1.8em;
+    padding-bottom: 1.8em;
 }
