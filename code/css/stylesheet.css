@@ -34,43 +34,14 @@ body {
     font-size: 1.35em;
     }
 
-/* default type size */
-@media (min-width: 768px) and (max-width: 991px) {
-    body {
-    font-size: 1.2em;
-    }
-}
-@media (min-width: 992px) and (max-width: 1499px) {
-    body {
-    font-size: 1.25em;
-    }
-}
-@media (min-width: 1500px) {
-    body {
-    font-size: 1.4em;
-    }
-}
+
 
 /* header */
 
 .row-height {
     height: 6em;
 } 
-@media only screen and (max-width: 760px) {
-    .row-height {
-    height: 7em;
-} 
-}
-@media (min-width: 992px) and (max-width: 1499px) {
-    .row-height {
-    height: 7.5em;
-} 
-}
-@media (min-width: 1500px) {
-    .row-height {
-    height: 10em;
-} 
-}
+
 
 #header-container {
     position: fixed;
@@ -238,6 +209,8 @@ p, h3, li {
     background-color: #f5f5f5;
     z-index: 4;
     -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);    
     }
 }
 
@@ -323,6 +296,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background-color: #fff;
     z-index: 2;
     -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     height: 100%;
 }
 
@@ -435,4 +410,56 @@ a.clickable:hover {
 
 .testrowheight {
     height: 80%;
+}
+
+
+/* media queries ================================================ */
+
+
+/* XS ----------- */
+@media only screen and (max-width: 760px) {
+    .row-height {
+    height: 7em;
+} 
+}
+
+/* S ----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* background-color:antiquewhite; */
+    body {
+    font-size: 1.2em;
+    }
+}
+
+/* M ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+        /* background-color:beige; */
+    body {
+    font-size: 1.25em;
+    }
+    .row-height {
+    height: 7.5em;
+}
+}
+
+/* L ----------- */
+@media (min-width: 1200px) and (max-width: 1499px) {
+        /* background-color:darkseagreen; */
+    body {
+    font-size: 1.25em;
+    }
+    .row-height {
+    height: 7.5em;
+}
+}
+
+/* XL ----------- */
+@media (min-width: 1500px) {
+        /* background-color: aliceblue; */
+    body {
+    font-size: 1.4em;
+    }
+    .row-height {
+    height: 10em;
+}
 }

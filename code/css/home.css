@@ -42,6 +42,8 @@ body {
     /* 96.2% W x 93.8% H */
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 } 
 table {
@@ -141,6 +143,8 @@ a:active {
 .footer-home {
     position: fixed;
     left:50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 5em;
     font-family: 'Inconsolata', Courier, monospace;
@@ -176,7 +180,7 @@ a:active {
     overflow-y: scroll;
     }
     .xs-post > img {
-    width: 100%;
+    width: 96%;
     z-index: 1;
     padding: 0px;
     }
@@ -185,6 +189,8 @@ a:active {
     width: 100%;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -47%);
+    -ms-transform: translate(-50%, -47%);    
     transform: translate(-50%, -47%);
 } 
     .footer-home {
@@ -196,6 +202,8 @@ a:active {
     .button {
     position: fixed;
     left:50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);    
     transform: translate(-50%,0%);
     bottom: 5em;
     font-family: 'Inconsolata', Courier, monospace;
@@ -325,7 +333,7 @@ a:active {
         padding: 1px 5px 0px 5px !important;
 }
     .footer-home {
-        bottom: 1.4em;
+        bottom: 1.6em;
         font-size: 0.9em;
 }
     .last {
@@ -383,12 +391,16 @@ a:active {
     width: 62%;
     top: 65%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border: 1px solid #fff;
 } 
 .footer-about {
     position: fixed;
     left:50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 0.5em;
     font-family: 'Inconsolata', Courier, monospace;
