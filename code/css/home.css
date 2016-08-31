@@ -7,7 +7,14 @@ body {
     width: 100%;
     
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
+    background-color: #F07575;
+    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    background: -moz-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    background: -o-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    -o-background-size: 600% 1300%;
+    -moz-background-size: 600% 1300%;
+    -webkit-background-size: 600% 1300%;
     background-size: 600% 1300%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 25s ease infinite;
     -moz-animation: HomeGradient 25s ease infinite;
