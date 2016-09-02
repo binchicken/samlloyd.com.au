@@ -1,4 +1,4 @@
-/* page setup */
+/* page setup */ 
 
 body {
     z-index: -5;
@@ -9,29 +9,12 @@ body {
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
     background-color: #F07575;
     background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
-    background: -moz-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
-    background: -o-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
-    -o-background-size: 600% 1300%;
-    -moz-background-size: 600% 1300%;
-    -webkit-background-size: 600% 1300%;
     background-size: 600% 1300%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 25s ease infinite;
-    -moz-animation: HomeGradient 25s ease infinite;
-    -o-animation: HomeGradient 25s ease infinite;
     animation: HomeGradient 25s ease infinite;
     }
     @-webkit-keyframes HomeGradient {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes HomeGradient {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-o-keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
@@ -50,7 +33,6 @@ body {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 } 
 table {
@@ -151,7 +133,6 @@ a:active {
     position: fixed;
     left:50%;
     -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 5em;
     font-family: 'Inconsolata', Courier, monospace;
@@ -196,8 +177,7 @@ a:active {
     width: 100%;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -47%);
-    -ms-transform: translate(-50%, -47%);    
+    -webkit-transform: translate(-50%, -47%);    
     transform: translate(-50%, -47%);
 } 
     .footer-home {
@@ -209,8 +189,7 @@ a:active {
     .button {
     position: fixed;
     left:50%;
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);    
+    -webkit-transform: translate(-50%, 0%);    
     transform: translate(-50%,0%);
     bottom: 5em;
     font-family: 'Inconsolata', Courier, monospace;
@@ -399,7 +378,6 @@ a:active {
     top: 65%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border: 1px solid #fff;
 } 
@@ -407,7 +385,6 @@ a:active {
     position: fixed;
     left:50%;
     -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 0.5em;
     font-family: 'Inconsolata', Courier, monospace;
