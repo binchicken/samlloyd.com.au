@@ -338,6 +338,10 @@ a:active {
         padding: 7.75em 0em 0em 0em;
         /* background-color: aliceblue; */
     }
+    .homebg {
+    height: 97.2%;
+    width: 98.2%;
+}    
     table {
     height: 75em !important;
 }

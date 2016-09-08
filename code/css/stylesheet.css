@@ -455,11 +455,14 @@ a.clickable:hover {
 
 /* XL ----------- */
 @media (min-width: 1500px) {
-        /* background-color: aliceblue; */
-    body {
+            body {
     font-size: 1.4em;
+    min-height: 2000px;
     }
     .row-height {
-    height: 10em;
+    height: 12em;
 }
+    #header-container {   
+    padding: 6em 0em 0em 0em;
+    /* background-color: aliceblue; */    
 }
