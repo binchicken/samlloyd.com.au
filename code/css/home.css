@@ -343,21 +343,21 @@ a:active {
     width: 98.2%;
 }    
     table {
-    height: 75em !important;
+    height: 78em !important;
 }
     .post, .arrow {
     background-position:50% 55%;
     background-size:auto 66%;
 }
     .post td {
-    width: 35rem;
-    padding-top: 57rem;
+    width: 33rem;
+    padding-top: 62.5rem;
     padding-bottom: 30em;
     margin-left: 1.5em;
 }
     .arrow td {
     font-size: 1.5em;
-    padding: 26em 0em 0em 0em;
+    padding: 29em 0em 0em 0em;
 }
     .secondary {
     font-size: 1.5em;
@@ -401,4 +401,13 @@ a:active {
 
 .header-small {
     position: fixed;
+}
+
+.whitegradabout {
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    position: fixed;
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0));
 }
