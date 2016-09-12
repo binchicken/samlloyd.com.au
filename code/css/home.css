@@ -7,12 +7,13 @@ body {
     width: 100%;
     
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
+    /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
     background-color: #F07575;
-    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    background: -webkit-linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background-size: 600% 1300%; /* X Y -- Y must be longer than height of page */
-    -webkit-animation: HomeGradient 25s ease infinite;
-    animation: HomeGradient 25s ease infinite;
+    -webkit-animation: HomeGradient 30s ease infinite;
+    animation: HomeGradient 30s ease infinite;
     }
     @-webkit-keyframes HomeGradient {
         0%{background-position:0% 50%}
@@ -335,19 +336,25 @@ a:active {
 /* XL ----------- */
 @media (min-width: 1500px) {
     #header-container {   
-        padding: 7.75em 0em 0em 0em;
+        padding: 15.5em 0em 0em 0em;
         /* background-color: aliceblue; */
     }
+       /* .homebg {
+    height: 100%;
+    width: 62%;
+}  */
     .homebg {
-    height: 97.2%;
-    width: 98.2%;
+    height: 95%;
+    width: 100%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, -45%);
 }    
     table {
     height: 78em !important;
 }
     .post, .arrow {
     background-position:50% 55%;
-    background-size:auto 66%;
+    background-size:auto 55%;
 }
     .post td {
     width: 33rem;
