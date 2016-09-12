@@ -110,7 +110,7 @@ a:hover {
 .caption a:hover {
     background-color: #fff;  
     padding: 2px;
-    transition-duration: 0.2s;
+    transition-duration: 1s;
 }
 a:active {
     color: #000;
@@ -308,14 +308,14 @@ a:active {
         height: 55em !important;
 }
     .post, .arrow {
-        background-position:50% 59%;
-        background-size:auto 60%;
+        background-position:50% 60%;
+        background-size:auto 62%;
 }
     .post td {
         width: 18%;
         padding-top: 38rem;
         padding-bottom: 36em;
-        margin-left: 1.2em;
+        margin-left: 1.1em;
 }
     .arrow td {
         font-size: 1.3rem;
