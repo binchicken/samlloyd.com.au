@@ -64,9 +64,7 @@ table {
     text-align: center;
     font-size: 0.9em;
     letter-spacing: 0.02em;
-    padding-left: 2em;
-    line-height:2.5
-         
+    padding-left: 2em;     
 } 
 .caption p {
     padding: 1em;
@@ -362,7 +360,7 @@ a:active {
 }
     .post td {
     width: 33rem;
-    padding-top: 62.5rem;
+    padding-top: 64.5rem;
     padding-bottom: 30em;
     margin-left: 1.5em;
 }
@@ -437,6 +435,9 @@ content: '';
   display: inline-block;
   height: 1em;
   width: 100%;
-  border-bottom: 1px solid #d2d2d2;
-  margin-top: 18px;
+  border-bottom: 3px solid #e8f1fd;
+  margin-top: 10px;
 }
+/*.underline:hover::after {
+    border-bottom: 1px solid #fff;
+}*/
