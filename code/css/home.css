@@ -61,12 +61,15 @@ table {
 }
  .caption {
     position: absolute;
-    text-align: center;
+    text-align: left;
     font-size: 0.85em;
     letter-spacing: 0.02em;
+     padding-left: 2em
+         
 } 
 .caption p {
     padding: 1em;
+    transform: rotate(-90deg);
 }
 
 .post td {
@@ -343,18 +346,12 @@ a:active {
 /* XL ----------- */
 @media (min-width: 1500px) {
     #header-container {   
-        padding: 15.5em 0em 0em 0em;
+        padding: 15vh 0em 0em 0em;
         /* background-color: aliceblue; */
     }
-       /* .homebg {
-    height: 100%;
-    width: 62%;
-}  */
     .homebg {
-    height: 95%;
-    width: 100%;
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, -45%);
+    height: 97.2%;
+    width: 98.2%;
 }    
     table {
     height: 78em !important;
@@ -425,4 +422,23 @@ a:active {
     position: fixed;
     background: -webkit-linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));
     background: linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0));
+}
+
+/* experimental ================================================ */
+
+.underline {
+   display: inline-block;
+  position: relative; 
+    letter-spacing: 0.09em;
+    
+}
+.underline::after {
+content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 5px;
 }
