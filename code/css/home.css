@@ -66,15 +66,15 @@ table {
     letter-spacing: 0.02em;
     padding-left: 2em;     
 } 
-.caption p {
+/*.caption p {
     padding: 1em;
-}
+}*/
 
 .post td {
     width: 22%;
     padding-top: 45em;
     padding-bottom: 40em;
-    margin-left: 1em;
+    margin-left: 3vw;
 }
 .arrow td {
     font-size: 2em;
@@ -84,12 +84,6 @@ table {
     font-family: "Lucida Grande";   
 }
 
-.secondary {
-    font-size: 2em;
-    font-family: "Lucida Grande"; 
-}
-
-
 
 /* typography */
 
@@ -97,7 +91,20 @@ p {
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     color: #000;
 } 
-
+.caption {
+    
+}
+.primary {
+    font-family: 'Merriweather', serif; 
+    font-size:0.95em;
+    font-weight: 300; 
+    line-height:1; 
+    letter-spacing:0.01em
+}
+.secondary {
+    font-size: 2em;
+    font-family: "Lucida Grande"; 
+}
 a, a:link, a:visited {
     color: #000;
     text-decoration: none;   
@@ -108,11 +115,10 @@ a:hover {
     text-decoration: none;   
     padding: 2px 0px;
 }
-/*.caption a:hover {
-    background-color: #ffe4f2;  
-    padding: 2px 0px;
-    transition-duration: 0.5s;
-}*/
+.caption a:hover {
+    background-color: #e8f1fd;  
+    padding: 0px;
+}
 a:active {
     color: #000;
     text-decoration: none;  
@@ -215,11 +221,11 @@ a:active {
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {
     .homebg {
-    height: 96%;
-    width: 96.7%;
+    height: 96.4%;
+    width: 97.7%;
 } 
     #header-container {   
-    padding: 6.8em 0em 0.5em 0.5em;
+    padding: 14vh 0em 0.5em 0.5em;
     /* background-color:antiquewhite; */
 }
     table {
@@ -229,21 +235,21 @@ a:active {
     height: 63em !important;
 }
     .post, .arrow {
-    background-position:50% 60%;
-    background-size:72% auto;
+    background-position:50% 58%;
+    background-size:auto 55%;
 }
     .caption {
     font-size: 0.8em;
 }
     .post td {
-    width: 10%;
-    padding-top: 36rem;
+    width: 20%;
+    padding-top: 30.5rem;
     padding-bottom: 40em;
-    margin-left: 4em;
+    margin-left: 2em;
 }
     .arrow td {
     font-size: 1em;
-    padding: 28.5em 1em 0em 0em;
+    padding: 24.5em 1em 0em 0em;
 }
     .secondary {
     font-size: 1em;
@@ -260,15 +266,15 @@ a:active {
 /* M ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     #header-container {   
-        padding: 6.1em 0em 0.5em 0.5em;
+        padding: 12vh 0em 0.5em 0.5em;
         /* background-color:beige; */
 }
     table {
-    height: 55em !important;
+    height: 65em !important;
 }
     .post, .arrow {
     background-position:50% 62%;
-    background-size:auto 66%;
+    background-size:auto 60%;
 }
      .caption {
     font-size: 0.8em;
@@ -298,30 +304,32 @@ a:active {
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 7.2em 0em 0.5em 0em;
-         /*background-color:darkseagreen; */
+        padding: 13vh 0em 0.5em 0em;
+        /* background-color:darkseagreen; */
     }
     .homebg {
-    height: 100%;
-    width: 64%; 
+        height: 96.1%;
+        width: 97.8%;
 }
     table {
-        height: 55em !important;
+        height: 75em !important;
 }
     .post, .arrow {
-        background-position:50% 60%;
-        background-size:auto 62%;
+        background-position:50% 59%;
+        background-size:auto 58%;
 }
     .post td {
-        width: 18%;
-        padding-top: 38rem;
-        padding-bottom: 36em;
-        margin-left: 1.1em;
+        padding-top: 37rem;
+        padding-bottom: 40em;
 }
     .arrow td {
-        font-size: 1.3rem;
-        padding: 28em 1em 0em 0em;
+        font-size: 1.4rem;
+        padding: 27em 0em 0em 0em;
 }
+     .caption {
+    font-size: 1em;
+    padding-left: 2em;     
+} 
     .secondary {
         font-size: 1em;
 }
@@ -329,22 +337,23 @@ a:active {
         padding: 1px 5px 0px 5px !important;
 }
     .footer-home {
-        bottom: 1.1em;
+        bottom: 3vh;
         font-size: 0.9em;
 }
     .last {
         height: 68em !important;
 }
     .last td {
-        padding-top: 38rem;
+        padding-top: 37rem;
         padding-bottom: 20em;
     }
 }
 
+
 /* XL ----------- */
 @media (min-width: 1500px) {
     #header-container {   
-        padding: 15vh 0em 0em 0em;
+        padding: 14vh 0em 0em 0em;
         /* background-color: aliceblue; */
     }
     .homebg {
@@ -359,14 +368,14 @@ a:active {
     background-size:auto 55%;
 }
     .post td {
-    width: 33rem;
-    padding-top: 64.5rem;
-    padding-bottom: 30em;
-    margin-left: 1.5em;
+    width: 15vw;
+    padding-top: 51.5vh;
+    padding-bottom: 49.5vh;
+    margin-left: 3vw;
 }
     .arrow td {
     font-size: 1.5em;
-    padding:    29em 0em 0em 0em;
+    padding: 50vh 0em 50vh 2vw;
 }
     .secondary {
     font-size: 1.5em;
@@ -375,7 +384,7 @@ a:active {
         padding: 0px 5px !important;
 }
     .footer-home {
-        bottom: 4em;
+        bottom: 3vh;
 }
       .last td {
     padding-top: 47rem;
