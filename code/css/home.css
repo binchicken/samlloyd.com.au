@@ -61,15 +61,15 @@ table {
 }
  .caption {
     position: absolute;
-    text-align: left;
-    font-size: 0.85em;
+    text-align: center;
+    font-size: 0.9em;
     letter-spacing: 0.02em;
-     padding-left: 2em
+    padding-left: 2em;
+    line-height:2.5
          
 } 
 .caption p {
     padding: 1em;
-    transform: rotate(-90deg);
 }
 
 .post td {
@@ -110,11 +110,11 @@ a:hover {
     text-decoration: none;   
     padding: 2px 0px;
 }
-.caption a:hover {
-    background-color: #fff;  
-    padding: 2px;
-    transition-duration: 1s;
-}
+/*.caption a:hover {
+    background-color: #ffe4f2;  
+    padding: 2px 0px;
+    transition-duration: 0.5s;
+}*/
 a:active {
     color: #000;
     text-decoration: none;  
@@ -427,10 +427,8 @@ a:active {
 /* experimental ================================================ */
 
 .underline {
-   display: inline-block;
-  position: relative; 
-    letter-spacing: 0.09em;
-    
+display: inline-block;
+  position: relative;     
 }
 .underline::after {
 content: '';
@@ -439,6 +437,6 @@ content: '';
   display: inline-block;
   height: 1em;
   width: 100%;
-  border-bottom: 1px solid;
-  margin-top: 5px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-top: 18px;
 }
