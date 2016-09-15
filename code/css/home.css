@@ -92,10 +92,9 @@ p {
     color: #000;
 } 
 .caption {
-    
-}
+  }
 .primary {
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', "Lucida Grande", serif; 
     font-size:0.95em;
     font-weight: 300; 
     line-height:1; 
@@ -123,6 +122,20 @@ a:active {
     color: #000;
     text-decoration: none;  
 }
+.underline {
+display: inline-block;
+  position: relative;     
+}
+.underline::after {
+content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 3px solid #e8f1fd;
+  margin-top: 10px;
+}
 
 
 /* header */
@@ -148,7 +161,7 @@ a:active {
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 5em;
-    font-family: 'Inconsolata', Courier, monospace;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
     padding-top:1.8em;
@@ -357,8 +370,8 @@ a:active {
         /* background-color: aliceblue; */
     }
     .homebg {
-    height: 97.2%;
-    width: 98.2%;
+    height: 97.5%;
+    width: 98.5%;
 }    
     table {
     height: 78em !important;
@@ -411,7 +424,7 @@ a:active {
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 0.5em;
-    font-family: 'Inconsolata', Courier, monospace;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
     padding-top:1.8em;
@@ -433,20 +446,3 @@ a:active {
 
 /* experimental ================================================ */
 
-.underline {
-display: inline-block;
-  position: relative;     
-}
-.underline::after {
-content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 100%;
-  border-bottom: 3px solid #e8f1fd;
-  margin-top: 10px;
-}
-/*.underline:hover::after {
-    border-bottom: 1px solid #fff;
-}*/
