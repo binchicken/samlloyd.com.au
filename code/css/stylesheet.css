@@ -60,6 +60,8 @@ body {
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
+
+/* footer */
 .footer {
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     font-size: 0.8em;
@@ -454,7 +456,7 @@ a.clickable:hover {
 @media (min-width: 1500px) {
             body {
     font-size: 1.4em;
-    min-height: 2000px;
+    min-height: 3000px;
     }
     .row-height {
     height: 12em;
