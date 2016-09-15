@@ -11,7 +11,7 @@ body {
     background-color: #F07575;
     background: -webkit-linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
-    background-size: 1000% 1300%; /* X Y -- Y must be longer than height of page */
+    background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 45s ease infinite;
     animation: HomeGradient 45s ease infinite;
     }
