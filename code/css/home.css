@@ -91,8 +91,6 @@ p {
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     color: #000;
 } 
-.caption {
-  }
 .primary {
     font-family: 'Merriweather', "Lucida Grande", serif; 
     font-size:0.95em;
@@ -135,6 +133,10 @@ content: '';
   width: 100%;
   border-bottom: 3px solid #e8f1fd;
   margin-top: 10px;
+}
+.baselineshift {
+    position: relative; 
+    top: -.12em
 }
 
 
@@ -234,121 +236,174 @@ content: '';
 
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {
+    #header-container {   
+    padding: 13vh 0em 0.5em 0.5em;
+    /* background-color:antiquewhite; */
+}
+    body {
+    background-size: 1000% 1600%; /* X Y -- Y must be longer than height of page */
+        }
     .homebg {
     height: 96.4%;
     width: 97.7%;
-} 
-    #header-container {   
-    padding: 14vh 0em 0.5em 0.5em;
-    /* background-color:antiquewhite; */
 }
     table {
-    height: 55em !important;
-}
-    .last {
-    height: 63em !important;
+    height: 65em !important;
 }
     .post, .arrow {
-    background-position:50% 58%;
-    background-size:auto 55%;
+    background-position:50% 59%;
+    background-size:auto 58%;
 }
-    .caption {
-    font-size: 0.8em;
+     .caption {
+    font-size: 0.85em;
 }
     .post td {
-    width: 20%;
-    padding-top: 30.5rem;
-    padding-bottom: 40em;
-    margin-left: 2em;
+    width: 20vw;
+    padding-top: 53vh;
+    padding-bottom: 49.5vh;
+    margin-left: 1vw;
 }
     .arrow td {
-    font-size: 1em;
-    padding: 24.5em 1em 0em 0em;
+    font-size: 1.5em;
+    padding: 51vh 0vw 48vh 1vw;
 }
     .secondary {
-    font-size: 1em;
+    font-size: 1.5em;
+        padding: 0px 0px 0px 8px;
 }
     .secondary > p > a:hover {
-    padding: 1px 5px 0px 5px !important;
+        padding: 1px 5px 0px 5px !important;
 }
     .footer-home {
-    bottom: 1.6em;
+    bottom: 3vh;
     font-size: 0.8em;
+}
+    .last {
+    height: 68em !important;
+}
+    .last td {
+    padding-top: 53vh;
+    padding-bottom: 30vh;
+    }
+    .baselineshift {
+    top: -0.001em
+    }
+}
+@media (min-width: 992px), (max-width: 1199px) and (max-aspect-ratio: 1/1) {
+        .homebg {
+    height: 97.7%;
+    width: 96.7%;
+}
+    .post, .arrow {
+    background-size: 58% auto;
 }
 }
 
 /* M ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     #header-container {   
-        padding: 12vh 0em 0.5em 0.5em;
+        padding: 13vh 0em 0.5em 0.5em;
         /* background-color:beige; */
 }
+    body {
+    background-size: 900% 200%; /* X Y -- Y must be longer than height of page */
+        }
+    .homebg{
+    height: 97.2%;
+    width: 98.2%;
+    }
     table {
-    height: 65em !important;
+    height: 80em !important;
 }
     .post, .arrow {
-    background-position:50% 62%;
-    background-size:auto 60%;
+    background-position:50% 59%;
+    background-size:auto 58%;
 }
      .caption {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
     .post td {
-    width: 12%;
-    padding-top: 37rem;
-    padding-bottom: 40em;
-    margin-left: 4em;
+    width: 20vw;
+    padding-top: 53vh;
+    padding-bottom: 49.5vh;
+    margin-left: 1vw;
 }
     .arrow td {
-    font-size: 1em;
-    padding: 28.5em 1em 0em 0em;
+    font-size: 1.5em;
+    padding: 51vh 0vw 48vh 1vw;
 }
     .secondary {
-    font-size: 1em;
+    font-size: 1.75em;
 }
     .secondary > p > a:hover {
         padding: 1px 5px 0px 5px !important;
 }
     .footer-home {
-    bottom: 1.6em;
+    bottom: 4vh;
     font-size: 0.8em;
 }
+    .last {
+    height: 68em !important;
 }
+    .last td {
+    padding-top: 53vh;
+    padding-bottom: 30vh;
+    }
+    .baselineshift {
+    top: -0.1em
+    }
+}
+@media (min-width: 992px), (max-width: 1199px) and (max-aspect-ratio: 1/1) {
+    .homebg {
+    height: 98.2%;
+    width: 98.2%;
+    }
+    .post, .arrow {
+    background-size: 58% auto;
+}
+}
+
 
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 13vh 0em 0.5em 0em;
+        padding: 14vh 0em 0.5em 0em;
         /* background-color:darkseagreen; */
     }
+    body {
+    background-size: 900% 1900%; /* X Y -- Y must be longer than height of page */
+        }
     .homebg {
-        height: 96.1%;
-        width: 97.8%;
+    height: 97.5%;
+    width: 98.5%;
 }
     table {
-        height: 75em !important;
+        height: 85em !important;
 }
     .post, .arrow {
-        background-position:50% 59%;
-        background-size:auto 58%;
+        background-position:50% 55%;
+        background-size:auto 56%;
 }
     .post td {
-        padding-top: 37rem;
-        padding-bottom: 40em;
+    width: 20vw;
+    padding-top: 51vh;
+    padding-bottom: 49.5vh;
+    margin-left: 1.5vw;
 }
     .arrow td {
-        font-size: 1.4rem;
-        padding: 27em 0em 0em 0em;
+        font-size: 1.5em;
+        padding:  50vh 0vw 48vh 1vw;
 }
      .caption {
     font-size: 1em;
     padding-left: 2em;     
 } 
     .secondary {
-        font-size: 1em;
+        font-size: 1.75em;
+        padding: 0px 5px;
 }
-    .secondary > p > a:hover {
-        padding: 1px 5px 0px 5px !important;
+        .secondary > p > a:hover {
+        padding: 0px 5px !important;
 }
     .footer-home {
         bottom: 3vh;
@@ -361,8 +416,25 @@ content: '';
         padding-top: 37rem;
         padding-bottom: 20em;
     }
+    .baselineshift {
+    top: -0.06em
+    }
 }
-
+@media (min-width: 1200px), (max-width: 1499px) and (max-aspect-ratio: 1/1) {
+    #header-container {   
+        padding: 20vh 0em 0.5em 0em;
+    }
+    .homebg {
+    height: 98.5%;
+    width: 98.5%;
+}
+    .post, .arrow {
+    background-size: 56% auto;
+}
+    .footer-home {
+    bottom: 10vh;
+}
+}
 
 /* XL ----------- */
 @media (min-width: 1500px) {
@@ -383,19 +455,19 @@ content: '';
 }
     .post td {
     width: 15vw;
-    padding-top: 51.5vh;
+    padding-top: 52vh;
     padding-bottom: 49.5vh;
-    margin-left: 3vw;
+    margin-left: 3.5vw;
 }
     .arrow td {
     font-size: 1.5em;
-    padding: 50vh 0em 50vh 2vw;
+    padding: 50vh 0vw 50vh 1vw;
 }
     .secondary {
     font-size: 1.5em;
 }
     .secondary > p > a:hover {
-        padding: 0px 5px !important;
+        padding: 0px 8px !important;
 }
     .footer-home {
         bottom: 3vh;
@@ -405,6 +477,13 @@ content: '';
           padding-bottom: 0rem
 }
 }
+@media (min-width: 1500px) and (max-aspect-ratio: 1/1) {
+        .post, .arrow {
+    background-position:50% 55%;
+    background-size: 55% auto ;
+}
+}
+
 
 /* about ================================================ */
 
