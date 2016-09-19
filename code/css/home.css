@@ -289,13 +289,24 @@ content: '';
     top: -0.001em
     }
 }
-@media (min-width: 992px), (max-width: 1199px) and (max-aspect-ratio: 1/1) {
-        .homebg {
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+    #header-container {   
+    padding: 23vh 0em 0.5em 0.5em;
+}
+    .homebg {
     height: 97.7%;
     width: 96.7%;
 }
+    table {
+    height: 70em !important;
+}
     .post, .arrow {
+    background-position:50% 52%;
     background-size: 58% auto;
+}
+    .footer-home {
+    bottom: 10vh;
+    font-size: 0.8em;
 }
 }
 
@@ -353,13 +364,19 @@ content: '';
     top: -0.1em
     }
 }
-@media (min-width: 992px), (max-width: 1199px) and (max-aspect-ratio: 1/1) {
+@media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
+        #header-container {   
+        padding: 23vh 0em 0.5em 0.5em;
+}
     .homebg {
     height: 98.2%;
     width: 98.2%;
     }
     .post, .arrow {
-    background-size: 58% auto;
+    background-size: 68% auto;
+}
+    .footer-home {
+    bottom: 8vh;
 }
 }
 
@@ -382,7 +399,7 @@ content: '';
 }
     .post, .arrow {
         background-position:50% 55%;
-        background-size:auto 56%;
+        background-size:auto 52%;
 }
     .post td {
     width: 20vw;
@@ -395,7 +412,7 @@ content: '';
         padding:  50vh 0vw 48vh 1vw;
 }
      .caption {
-    font-size: 1em;
+    font-size: 0.9em;
     padding-left: 2em;     
 } 
     .secondary {
@@ -420,7 +437,7 @@ content: '';
     top: -0.06em
     }
 }
-@media (min-width: 1200px), (max-width: 1499px) and (max-aspect-ratio: 1/1) {
+@media (min-width: 1200px) and (max-width: 1499px) and (orientation: portrait) {
     #header-container {   
         padding: 20vh 0em 0.5em 0em;
     }
@@ -429,7 +446,7 @@ content: '';
     width: 98.5%;
 }
     .post, .arrow {
-    background-size: 56% auto;
+    background-size: 66% auto;
 }
     .footer-home {
     bottom: 10vh;
@@ -477,10 +494,10 @@ content: '';
           padding-bottom: 0rem
 }
 }
-@media (min-width: 1500px) and (max-aspect-ratio: 1/1) {
+@media (min-width: 1500px) and (orientation: portrait) {
         .post, .arrow {
     background-position:50% 55%;
-    background-size: 55% auto ;
+    background-size: 50% auto;
 }
 }
 
