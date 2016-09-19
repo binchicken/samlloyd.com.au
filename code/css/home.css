@@ -1,4 +1,4 @@
-/* page setup */
+/* page setup */ 
 
 body {
     z-index: -5;
@@ -6,24 +6,16 @@ body {
     height: 100%;
     width: 100%;
     
-    background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
-    background-size: 600% 1200%; /* X Y -- Y must be longer than height of page */
-    -webkit-animation: HomeGradient 25s ease infinite;
-    -moz-animation: HomeGradient 25s ease infinite;
-    -o-animation: HomeGradient 25s ease infinite;
-    animation: HomeGradient 25s ease infinite;
+    /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
+    /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
+    background-color: #F07575;
+    background: -webkit-linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
+    background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
+    -webkit-animation: HomeGradient 45s ease infinite;
+    animation: HomeGradient 45s ease infinite;
     }
     @-webkit-keyframes HomeGradient {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes HomeGradient {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-o-keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
@@ -33,6 +25,17 @@ body {
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
+.homebg {
+    background-color: #fff;
+    position: fixed;
+    height: 96.2%;
+    width: 97.8%;
+    /* 96.2% W x 93.8% H */
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} 
 table {
     height: 85em !important;
     width: 100% !important;
@@ -59,18 +62,19 @@ table {
  .caption {
     position: absolute;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 0.9em;
     letter-spacing: 0.02em;
+    padding-left: 2em;     
 } 
-.caption p {
+/*.caption p {
     padding: 1em;
-}
+}*/
 
 .post td {
     width: 22%;
     padding-top: 45em;
     padding-bottom: 40em;
-    margin-left: 1em;
+    margin-left: 3vw;
 }
 .arrow td {
     font-size: 2em;
@@ -79,25 +83,25 @@ table {
 .arrow td p {
     font-family: "Lucida Grande";   
 }
-.homebg {
-    background-color: #fff;
-    position: fixed;
-    height: 96%;
-    width: 97.8%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} 
-
 
 
 /* typography */
 
 p {
-    font-family: 'Inconsolata', Courier, monospace;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     color: #000;
 } 
-
+.primary {
+    font-family: 'Merriweather', "Lucida Grande", serif; 
+    font-size:0.95em;
+    font-weight: 300; 
+    line-height:1; 
+    letter-spacing:0.01em
+}
+.secondary {
+    font-size: 2em;
+    font-family: "Lucida Grande"; 
+}
 a, a:link, a:visited {
     color: #000;
     text-decoration: none;   
@@ -108,9 +112,31 @@ a:hover {
     text-decoration: none;   
     padding: 2px 0px;
 }
+.caption a:hover {
+    background-color: #e8f1fd;  
+    padding: 0px;
+}
 a:active {
     color: #000;
     text-decoration: none;  
+}
+.underline {
+display: inline-block;
+  position: relative;     
+}
+.underline::after {
+content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 3px solid #e8f1fd;
+  margin-top: 10px;
+}
+.baselineshift {
+    position: relative; 
+    top: -.12em
 }
 
 
@@ -134,9 +160,10 @@ a:active {
 .footer-home {
     position: fixed;
     left:50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%,0%);
     bottom: 5em;
-    font-family: 'Inconsolata', Courier, monospace;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     font-size: 0.8em;
     letter-spacing: 0.02em;
     padding-top:1.8em;
@@ -144,90 +171,377 @@ a:active {
 }
 
 
-/* media queries */
+
+/* media queries ================================================ */
 
 
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
+    .container, .row, .col-xs-12 { 
+    padding: 0px !important;
+}
+    html, body {
+    overflow-x: hidden;
+}
+    body {
+    position: relative
+}
     #header-container {   
-        padding: 1.9em 0em 4em 0em;
+        padding-left: 0.5em;
+        padding-top: 10vh;
+}
+    .xs-post {
+    margin-top: 22vh;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    }
+    .xs-post > img {
+    width: 96%;
+    z-index: 1;
+    padding: 0px;
+    }
+    .homebg {
+    height: 99%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -47%);    
+    transform: translate(-50%, -47%);
+} 
+    .footer-home {
+    font-size: 1em;
+    bottom: 1.25em;
+    padding: 0em;
+}
+    /* Experimental */
+    
+    .xs-scroll {
+    display: block;
+    }
+    .footer-home-xs {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    left:50%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%,50%);
+    bottom: 0em;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
 }
 }
 
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {
     #header-container {   
-        padding: 7.75em 0em 0em 0em;
-        background-color:antiquewhite;
+    padding: 13vh 0em 0.5em 0.5em;
+    /* background-color:antiquewhite; */
+}
+    body {
+    background-size: 1000% 1600%; /* X Y -- Y must be longer than height of page */
+        }
+    .homebg {
+    height: 96.4%;
+    width: 97.7%;
+}
+    table {
+    height: 65em !important;
+}
+    .post, .arrow {
+    background-position:50% 59%;
+    background-size:auto 58%;
+}
+     .caption {
+    font-size: 0.85em;
+}
+    .post td {
+    width: 20vw;
+    padding-top: 53vh;
+    padding-bottom: 49.5vh;
+    margin-left: 1vw;
+}
+    .arrow td {
+    font-size: 1.5em;
+    padding: 51vh 0vw 48vh 1vw;
+}
+    .secondary {
+    font-size: 1.5em;
+        padding: 0px 0px 0px 8px;
+}
+    .secondary > p > a:hover {
+        padding: 1px 5px 0px 5px !important;
+}
+    .footer-home {
+    bottom: 3vh;
+    font-size: 0.8em;
+}
+    .last {
+    height: 68em !important;
+}
+    .last td {
+    padding-top: 53vh;
+    padding-bottom: 30vh;
+    }
+    .baselineshift {
+    top: -0.001em
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+    #header-container {   
+    padding: 23vh 0em 0.5em 0.5em;
+}
+    .homebg {
+    height: 97.7%;
+    width: 96.7%;
+}
+    table {
+    height: 70em !important;
+}
+    .post, .arrow {
+    background-position:50% 52%;
+    background-size: 58% auto;
+}
+    .footer-home {
+    bottom: 10vh;
+    font-size: 0.8em;
 }
 }
 
 /* M ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
     #header-container {   
-        padding: 4.75em 0em 1em 1em;
-        background-color:beige;
+        padding: 13vh 0em 0.5em 0.5em;
+        /* background-color:beige; */
 }
+    body {
+    background-size: 900% 200%; /* X Y -- Y must be longer than height of page */
+        }
+    .homebg{
+    height: 97.2%;
+    width: 98.2%;
+    }
     table {
-    height: 55em !important;
+    height: 80em !important;
 }
     .post, .arrow {
-    background-position:50% 58%;
+    background-position:50% 59%;
+    background-size:auto 58%;
 }
      .caption {
     font-size: 0.9em;
 }
     .post td {
-    width: 18%;
-    padding-top: 45em;
-    padding-bottom: 40em;
-}
-    .post td {
-    padding-top: 33rem;
-    padding-bottom: 40em;
+    width: 20vw;
+    padding-top: 53vh;
+    padding-bottom: 49.5vh;
+    margin-left: 1vw;
 }
     .arrow td {
-    font-size: 1em;
-    padding: 20em 1em 0em 0em;
+    font-size: 1.5em;
+    padding: 51vh 0vw 48vh 1vw;
+}
+    .secondary {
+    font-size: 1.75em;
+}
+    .secondary > p > a:hover {
+        padding: 1px 5px 0px 5px !important;
 }
     .footer-home {
-    bottom: 2em;
+    bottom: 4vh;
     font-size: 0.8em;
 }
+    .last {
+    height: 68em !important;
 }
+    .last td {
+    padding-top: 53vh;
+    padding-bottom: 30vh;
+    }
+    .baselineshift {
+    top: -0.1em
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
+        #header-container {   
+        padding: 23vh 0em 0.5em 0.5em;
+}
+    .homebg {
+    height: 98.2%;
+    width: 98.2%;
+    }
+    .post, .arrow {
+    background-size: 68% auto;
+}
+    .footer-home {
+    bottom: 8vh;
+}
+}
+
 
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 5.75em 0em 1em 1em;
-        background-color:darkseagreen;
+        padding: 14vh 0em 0.5em 0em;
+        /* background-color:darkseagreen; */
     }
+    body {
+    background-size: 900% 1900%; /* X Y -- Y must be longer than height of page */
+        }
+    .homebg {
+    height: 97.5%;
+    width: 98.5%;
+}
     table {
-    height: 55em !important;
+        height: 85em !important;
 }
     .post, .arrow {
-    background-position:50% 58%;
+        background-position:50% 55%;
+        background-size:auto 52%;
 }
     .post td {
-    padding-top: 33rem;
-    padding-bottom: 40em;
+    width: 20vw;
+    padding-top: 51vh;
+    padding-bottom: 49.5vh;
+    margin-left: 1.5vw;
 }
     .arrow td {
-    font-size: 1em;
-    padding: 20em 1em 0em 0em;
+        font-size: 1.5em;
+        padding:  50vh 0vw 48vh 1vw;
+}
+     .caption {
+    font-size: 0.9em;
+    padding-left: 2em;     
+} 
+    .secondary {
+        font-size: 1.75em;
+        padding: 0px 5px;
+}
+        .secondary > p > a:hover {
+        padding: 0px 5px !important;
 }
     .footer-home {
-        bottom: 2em;
+        bottom: 3vh;
+        font-size: 0.9em;
+}
+    .last {
+        height: 68em !important;
+}
+    .last td {
+        padding-top: 37rem;
+        padding-bottom: 20em;
+    }
+    .baselineshift {
+    top: -0.06em
+    }
+}
+@media (min-width: 1200px) and (max-width: 1499px) and (orientation: portrait) {
+    #header-container {   
+        padding: 20vh 0em 0.5em 0em;
+    }
+    .homebg {
+    height: 98.5%;
+    width: 98.5%;
+}
+    .post, .arrow {
+    background-size: 66% auto;
+}
+    .footer-home {
+    bottom: 10vh;
 }
 }
 
 /* XL ----------- */
 @media (min-width: 1500px) {
     #header-container {   
-        padding: 7.75em 0em 0em 0em;
-        background-color: aliceblue;
+        padding: 14vh 0em 0em 0em;
+        /* background-color: aliceblue; */
     }
-    .footer-home {
-        bottom: 5em;
-    }
+    .homebg {
+    height: 97.5%;
+    width: 98.5%;
+}    
+    table {
+    height: 78em !important;
 }
+    .post, .arrow {
+    background-position:50% 55%;
+    background-size:auto 55%;
+}
+    .post td {
+    width: 15vw;
+    padding-top: 52vh;
+    padding-bottom: 49.5vh;
+    margin-left: 3.5vw;
+}
+    .arrow td {
+    font-size: 1.5em;
+    padding: 50vh 0vw 50vh 1vw;
+}
+    .secondary {
+    font-size: 1.5em;
+}
+    .secondary > p > a:hover {
+        padding: 0px 8px !important;
+}
+    .footer-home {
+        bottom: 3vh;
+}
+      .last td {
+    padding-top: 47rem;
+          padding-bottom: 0rem
+}
+}
+@media (min-width: 1500px) and (orientation: portrait) {
+        .post, .arrow {
+    background-position:50% 55%;
+    background-size: 50% auto;
+}
+}
+
+
+/* about ================================================ */
+
+.aboutbg {
+    background-color: #fff;
+    position:absolute;
+    height: 90%;
+    width: 62%;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+} 
+.footer-about {
+    position: fixed;
+    left:50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%,0%);
+    bottom: 0.5em;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-top:1.8em;
+    padding-bottom: 1.8em;
+}
+
+.header-small {
+    position: fixed;
+}
+
+.whitegradabout {
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    position: fixed;
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0));
+}
+
+/* experimental ================================================ */
+
+
+
