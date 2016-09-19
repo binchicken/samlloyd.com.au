@@ -8,7 +8,7 @@ body {
     
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
     /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
-    background-color: #F07575;
+    background-color: #fff;
     background: -webkit-linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
@@ -184,41 +184,62 @@ content: '';
     overflow-x: hidden;
 }
     body {
-    position: relative
-}
+    z-index: 1;
+    display:block;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    background: none;
+    background-size: 100%;
+    animation: none;
+    }
+    .homebg {
+    display:none;
+} 
     #header-container {   
+        z-index: 2;
+        background: #fff;
         padding-left: 0.5em;
-        padding-top: 10vh;
+        padding-top: 12.5vh;
+        display: block;
+        position: relative;
+}
+    #header-container img {
+        height: 50%;
+        width: 50%;
+    }
+    .xs-header {
+    position: relative;
+    z-index: 3;
+    height: 12.5vh
+    }
+    .xs-header img {
+    position: fixed;
+    z-index: 3;
+    left:50%;
+    top:10vh;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
 }
     .xs-post {
-    margin-top: 22vh;
+    z-index: 1;
+    position: relative;
+    display: block;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
     }
     .xs-post > img {
-    width: 96%;
+    width: 100%;
     z-index: 1;
     padding: 0px;
     }
-    .homebg {
-    height: 99%;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -47%);    
-    transform: translate(-50%, -47%);
-} 
     .footer-home {
-    font-size: 1em;
-    bottom: 1.25em;
-    padding: 0em;
+    display: none;
 }
+    
     /* Experimental */
     
-    .xs-scroll {
-    display: block;
-    }
     .footer-home-xs {
     background-color: #fff;
     width: 100%;
@@ -529,7 +550,7 @@ content: '';
 }
 
 .header-small {
-    position: fixed;
+    position: relative;
 }
 
 .whitegradabout {
