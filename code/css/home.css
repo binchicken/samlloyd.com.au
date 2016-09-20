@@ -9,7 +9,7 @@ body {
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
     /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
     background-color: #fff;
-    background: -webkit-linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
+    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 45s ease infinite;
@@ -191,6 +191,7 @@ content: '';
     background-color: #fff;
     background: none;
     background-size: 100%;
+    -webkit-animation: none;
     animation: none;
     }
     .homebg {
@@ -576,6 +577,7 @@ content: '';
     z-index: 30;
     position: fixed;
     background: -webkit-linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
     background: linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0));
 }
 
