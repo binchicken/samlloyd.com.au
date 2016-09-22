@@ -203,7 +203,7 @@ content: '';
         padding-left: 0.5em;
         padding-top: 12.5vh;
         display: block;
-        position: relative;
+        width: 100%;
 }
     #header-container img {
         height: 50%;
@@ -221,35 +221,16 @@ content: '';
     z-index: 3;
     height: 12.5vh
 }
-    .xs-header > img {
-           max-width: 100%;
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-} 
-    .xs-header img {
-    position: fixed;
-    z-index: 3;
-    left:50%;
-    top:10vh;
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-}
     .xs-post {
-    z-index: 1;
+    z-index: 3;
+    padding-top: 27vh;    
     position: relative;
     display: block;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
     }
     .xs-post > img {
     width: 100%;
-    z-index: 1;
     padding: 0px;
     }
     .footer-home {
