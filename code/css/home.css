@@ -215,7 +215,7 @@ content: '';
     text-decoration: none;  
 }
     .row-height {
-    height: 27vh;
+    height: 10em;
 }
     #header-container {   
     position: fixed;
@@ -224,7 +224,7 @@ content: '';
     right: 0;
     text-align: center;
     display: block;
-    padding: 12.5vh 0em 4em 0em;
+    padding: 5.5em 0em 4em 0em
 }
     #header-container img {
     max-width: 100%;
