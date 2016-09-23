@@ -55,16 +55,40 @@
 <div class="container-fluid">
 
 <!-- Header -->
-<div class="row-height">
-    <div id="header-container">
-        <a href="index.html"><img src="../links/images/samlloyd.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row-height">
+            <div id="header-container">
+                <a href="../index.html"><img src="../links/images/samlloyd.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
+            </div>
+        </div>
     </div>
 </div>
-
 
 <!-- Main Content -->
 <div class="row">
 
+<!-- Hide header -->
+<script>
+    $(document).ready(function(){ 
+    
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+    if (isMobile.matches) {
+        
+      $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y < 55) {
+                $('.headerimg').fadeIn();
+            } else {
+                $('.headerimg').fadeOut();
+            }
+        });
+      
+        
+    }
+});
+</script>    
+  
 
 <!-- Project Images [SM+] -->
 <div class="col-sm-12 hidden-xs">
@@ -105,6 +129,9 @@
 
 		</div>
 
+
+     
+    
 <!-- Script -->
 <script type="text/javascript">
 	
@@ -118,7 +145,7 @@ $(document).ready(function(){
                 $("body,html").animate({ scrollTop: $(this).next(".post").offset().top }, 600)
             })
         });
-    }
+    } else {};
 });
 	</script>
 
@@ -127,29 +154,32 @@ $(document).ready(function(){
 
     
 <!-- Project Images [XS] -->
-<div class="row">   
-    <div class="col-xs-12 visible-xs-block">
-        
-    </div>
-</div>    
 <div class="row">
     <div class="col-xs-12 visible-xs-block">
         
         
         <div class="xs-post">
-        <img class="xs-scroll" src="links/paintfull.png" alt="" href="pingpong.html" />
-        <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt="Sydney Opera House" href="code/sydneyoperahouse.html" />
+            
+
+            
+            <img class="xs-scroll" src="links/paintfull.png" alt="" href="pingpong.html" />
+        <a href="code/sydneyoperahouse.html">
+            <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt="Sydney Opera House" /></a>
         <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
         <img class="xs-scroll" src="../links/Green_megazoom_2x.png" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
         <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy18c.jpg" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
         <img class="xs-scroll" src="../links/pingpong001c.jpg" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>    
         <img class="xs-scroll" src="../links/test7.png" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
+        
+        
         </div>
+        
+ 
+        
         </div>
     </div>  
     
 
- 
 
 <!-- Footer -->
 <div class="row">
@@ -173,6 +203,8 @@ $(document).ready(function(){
     
 </div>
 </div>
+    
+    
 </div>
 
 <!-- Compiled plugins -->
@@ -192,7 +224,7 @@ $(document).ready(function(){
 /* TODO [x]↳ XS */
 
 /* CHANGES XS site home */
-/* TODO ↳ images in place */
+/* TODO ↳ [x] images in place */
 /* TODO ↳ menu button */
 /* TODO ↳ header behaviour */
 /* TODO ↳ [x] stop js loading on mobile */
