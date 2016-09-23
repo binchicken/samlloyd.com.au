@@ -217,6 +217,27 @@ content: '';
     .row-height {
     height: 10em;
 }
+    .xs-menu {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+    width: 3.5em;
+    height: 3.5em;
+}
+    .xs-menu p {
+    text-align: center;
+    vertical-align: middle; 
+    font-size: 1.65em;
+    letter-spacing: -0.15em;
+    position: relative; 
+    top: 0.11em;
+    left: -0.1em;    
+    padding: 0em;
+}
     #header-container {   
     position: fixed;
     z-index: 0;
@@ -224,7 +245,7 @@ content: '';
     right: 0;
     text-align: center;
     display: block;
-    padding: 5.5em 0em 4em 0em
+    padding: 5.75em 0em 4em 0em
 }
     #header-container img {
     max-width: 100%;
