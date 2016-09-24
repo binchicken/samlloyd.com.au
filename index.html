@@ -55,7 +55,7 @@
 <div class="container-fluid">
 
 <!-- Menu Button [XS] --> 
-<div class="visible-xs-fixed xs-menu text-center"><p>...</p></div>      
+<a href="code/about.html"><div class="visible-xs-fixed xs-menu text-center"><p>...</p></div></a>      
     
 <!-- Header -->
 <div class="row">
@@ -86,6 +86,15 @@
                 $('.headerimg').fadeOut();
             }
         });
+        
+     $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y < 55) {
+                $('.headerimg').fadeIn();
+            } else {
+                $('.headerimg').fadeOut();
+            }
+        });    
       
         
     }
@@ -165,6 +174,8 @@ $(document).ready(function(){
          <img class="xs-scroll" src="links/paintfull.png" alt="" href="pingpong.html" />
             <a href="code/sydneyoperahouse.html">
                 <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt="Sydney Opera House" /></a>
+            <a href="code/sydneyoperahouse.html">
+                <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy17.jpg" alt="Sydney Opera House" /></a>
             <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
             <img class="xs-scroll" src="../links/Green_megazoom_2x.png" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
             <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy18c.jpg" alt="Sydney Opera House" href="code/sydneyoperahouse.html"/>
@@ -173,7 +184,14 @@ $(document).ready(function(){
         
         
         </div>
-        
+        <div class="footer-home-xs text-center"></div>
+    <p>
+<span style="color:#d4e7ff">&#x2591;</span>
+<a href="code/about.html">&#x2002;more info&#x2002;</a>
+&#x2044;
+<a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2709;&#x2002;</a>
+<span style="color:#d4e7ff">&#x2591;</span>
+</p>   
  
         
         </div>
@@ -195,11 +213,7 @@ $(document).ready(function(){
 </p>  
 
 <!-- [XS] -->     
-<div class="visible-xs-block footer-home-xs">
-<p class="text-center">&#x2591;<a href="code/about.html">&#x2002;more&#x2002;</a>&#x2044;
-<a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2709;&#x2002;</a>&#x2591;
-</p>    
-</div> 
+   
     
 </div>
 </div>
@@ -225,10 +239,11 @@ $(document).ready(function(){
 
 /* CHANGES XS site home */
 /* TODO ↳ [x] images in place */
-/* TODO ↳ menu button */
+/* TODO ↳ [x] menu button */
 /* TODO ↳ [x]header behaviour */
 /* TODO ↳ [x] stop js loading on mobile */
 /* TODO ↳ footer */
+/* TODO ↳ project titles */
 
 /* CHANGES curate final content */
 /* TODO ↳ crop white edges from carousels */
