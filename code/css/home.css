@@ -279,17 +279,30 @@ content: '';
     position:relative;
 }
     .xs-caption {
-   position: absolute; 
-   top: 31vw;
-   left: -43vw;
-   text-align: center; 
-   width: 100%; 
-
+    position: absolute; 
+    top: 31vw;
+    left: -43vw;
+    text-align: center; 
+    width: 100%; 
 }
     .xs-caption p {
     color: #fff; 
     -webkit-transform: rotate(270deg); 
     transform: rotate(270deg)    
+}
+    .captionarrow {
+    position: absolute; 
+    top: 55vw;
+    left: -43vw;
+    text-align: center; 
+    width: 100%; 
+}
+    .captionarrow p {
+    color: #fff; 
+    position: relative;
+        left: 0.5vw;
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg)        
     }
 
     
