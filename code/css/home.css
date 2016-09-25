@@ -281,6 +281,38 @@ content: '';
     vertical-align: middle;
     line-height: 6em;   
 }
+    .zigzag-xs {
+        background-color: #000;
+  position: relative;
+  width: 100%;
+  height: 6em
+    }
+    .zigzag-xs:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;  
+    }
+.zigzag-wrap{
+  background: #fff;
+}
+.zigzag-wrap:before {
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    );
+    
+  background-size: 10px 20px;
+}    
     .baselineshift {
     top: -0.02em
 }
