@@ -8,8 +8,8 @@ body {
     
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
     /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
-    background-color: #F07575;
-    background: -webkit-linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed);
+    background-color: #fff;
+    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
     -webkit-animation: HomeGradient 45s ease infinite;
@@ -177,61 +177,183 @@ content: '';
 
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
-    .container, .row, .col-xs-12 { 
+    .container, .row, .col-xs-12 .container-fluid, .visible-xs-block { 
     padding: 0px !important;
+        margin: 0px;
 }
     html, body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
+    body > .container-fluid { overflow: hidden; } /* width fix */
+    body > .container-fluid > * { overflow: visible; } /* reset back to normal */
+    
     body {
-    position: relative
-}
-    #header-container {   
-        padding-left: 0.5em;
-        padding-top: 10vh;
-}
-    .xs-post {
-    margin-top: 22vh;
+    z-index: 1;
+    display:block;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    }
-    .xs-post > img {
-    width: 96%;
-    z-index: 1;
-    padding: 0px;
+    background-color: #fff;
+    background: none;
+    background-size: 100%;
+    -webkit-animation: none;
+    animation: none;
     }
     .homebg {
-    height: 99%;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -47%);    
-    transform: translate(-50%, -47%);
+    display:none;
 } 
-    .footer-home {
-    font-size: 1em;
-    bottom: 1.25em;
+    a, a:link, a:visited {
+    color: none;
+    text-decoration: none;   
+}
+    a:hover {
+    color: none;
+    background-color: #e8f1fd;
+    text-decoration: none;   
+    padding: 0px;
+}
+    a:active {
+    color: none;
+    text-decoration: none;  
+}
+    .row-height {
+    height: 10.5em;
+}
+    .xs-menu {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+    width: 3.5em;
+    height: 3.5em;
+}
+    .xs-menu p {
+    text-align: center;
+    vertical-align: middle; 
+    font-size: 1.65em;
+    letter-spacing: -0.15em;
+    position: relative; 
+    top: 0.11em;
+    left: -0.1em;    
     padding: 0em;
 }
-    /* Experimental */
-    
-    .xs-scroll {
+    #header-container {   
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
     display: block;
+    padding: 5.75em 0em 4em 0em
+}
+    #header-container img {
+    max-width: 100%;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+    .xs-post {
+    /* z-index: 3; */
+    /* padding-top: 27vh; */   
+    /* position: relative; */
+    display: block;
+    width: 100%;
     }
+    .xs-post img {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    }
+    
+    
+
+    /* Caption */
+    
+    .xs-captionwrap {
+    position:relative;
+}
+    .xs-caption {
+   position: absolute; 
+   top: 31vw;
+   left: -43vw;
+   text-align: center; 
+   width: 100%; 
+
+}
+    .xs-caption p {
+    color: #fff; 
+    -webkit-transform: rotate(270deg); 
+    transform: rotate(270deg)    
+    }
+
+    
+    /* Footer */
+    
+    .footer-home {
+    display: none;
+}
     .footer-home-xs {
     background-color: #fff;
     width: 100%;
-    position: fixed;
-    left:50%;
-    -webkit-transform: translate(-50%, 50%);
-    transform: translate(-50%,50%);
-    bottom: 0em;
-    font-size: 0.8em;
-    letter-spacing: 0.02em;
-    padding-top:0.5em;
-    padding-bottom: 0.5em;
+    height: 6em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6em;   
 }
+    .zigzag-xs {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 6em
+}
+    .zigzag-xs:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 10px;  
+}
+    .zigzag-wrap{
+    background: #fff;
+}
+    .zigzag-wrap:before {
+    background:
+    linear-gradient(
+    45deg, transparent 33.333%,
+    #fff 33.333%, #fff 66.667%,
+    transparent 66.667%
+    ),
+    linear-gradient(
+    -45deg, transparent 33.333%,
+    #fff 33.333%, #fff 66.667%,
+    transparent 66.667%
+    );
+    background-size: 10px 20px;
+}    
+    .baselineshift {
+    top: -0.02em
+}
+    .mail {
+    height: 1rem;
+    width: auto;
+    line-height: 6em;
+    vertical-align: middle;
+    position: absolute;
+    top: 0.25em;
+    }
+    
+    /* Experimental */
+    
+
+
+
 }
 
 /* S ----------- */
@@ -274,6 +396,9 @@ content: '';
     .secondary > p > a:hover {
         padding: 1px 5px 0px 5px !important;
 }
+    a:active {
+    padding: 0px;
+}
     .footer-home {
     bottom: 3vh;
     font-size: 0.8em;
@@ -288,6 +413,7 @@ content: '';
     .baselineshift {
     top: -0.001em
     }
+    
 }
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
     #header-container {   
@@ -317,7 +443,7 @@ content: '';
         /* background-color:beige; */
 }
     body {
-    background-size: 900% 200%; /* X Y -- Y must be longer than height of page */
+    background-size: 900% 1200%; /* X Y -- Y must be longer than height of page */
         }
     .homebg{
     height: 97.2%;
@@ -459,6 +585,9 @@ content: '';
         padding: 14vh 0em 0em 0em;
         /* background-color: aliceblue; */
     }
+    body {
+    background-size: 900% 1700%; /* X Y -- Y must be longer than height of page */
+        }
     .homebg {
     height: 97.5%;
     width: 98.5%;
@@ -529,7 +658,7 @@ content: '';
 }
 
 .header-small {
-    position: fixed;
+    position: relative;
 }
 
 .whitegradabout {
@@ -538,10 +667,12 @@ content: '';
     z-index: 30;
     position: fixed;
     background: -webkit-linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
     background: linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0));
 }
 
 /* experimental ================================================ */
+
 
 
 
