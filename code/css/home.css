@@ -301,8 +301,8 @@ content: '';
 }
     .xs-caption {
    position: absolute; 
-   top: 45%; 
-   left: -43%;
+   top: 31vw;
+   left: -43vw;
    text-align: center; 
    width: 100%; 
 
