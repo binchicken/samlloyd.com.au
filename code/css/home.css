@@ -411,8 +411,9 @@ content: '';
     padding-bottom: 30vh;
     }
     .baselineshift {
-    top: -0.001em
-    }
+    top: -0.05em;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+}
     
 }
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
@@ -487,8 +488,9 @@ content: '';
     padding-bottom: 30vh;
     }
     .baselineshift {
-    top: -0.1em
-    }
+    top: -0.05em;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
         #header-container {   
@@ -560,7 +562,8 @@ content: '';
         padding-bottom: 20em;
     }
     .baselineshift {
-    top: -0.06em
+    top: -0.06em;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     }
 }
 @media (min-width: 1200px) and (max-width: 1499px) and (orientation: portrait) {
@@ -609,6 +612,11 @@ content: '';
     font-size: 1.5em;
     padding: 50vh 0vw 50vh 1vw;
 }
+    .baselineshift {
+    top: -0.05em;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+        position: relative;
+    }
     .secondary {
     font-size: 1.5em;
 }
