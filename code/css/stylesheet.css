@@ -11,7 +11,7 @@
 /* XS page setup */
 @media screen and (max-width: 767px) {
     .container {
-      padding:0.75em;
+      padding:0em;
       margin:0;
     }
 }
@@ -284,6 +284,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     height: 100%;
+    padding: 0px 15px;
 }
 
 /* Collapsible container */   
@@ -295,7 +296,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     padding: 6px 6px;
 }
 .panel {
-    -webkit-box-shadow: none;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,1);
     box-shadow: 0 1px 0 rgba(0,0,0,1);
     border:none;
     border-radius: 0px;
@@ -360,6 +361,8 @@ a.clickable:hover {
 .nopadding-right > img {
     width: 100%;
 }
+
+
 /* Carousel */
 .carousel-control.left, .carousel-control.right {
     background-image: none
@@ -393,10 +396,6 @@ a.clickable:hover {
 	height: 100%;
 }
 
-.testrowheight {
-    height: 80%;
-}
-
 
 
 /* media queries ================================================ */
@@ -404,18 +403,67 @@ a.clickable:hover {
 
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
+    
+    
+    .container, .row, .col-xs-12 .container, .visible-xs-block { 
+    padding: 0px !important;
+    margin: 0px; 
+}            
+    
+    body .container { overflow: hidden; } /* width fix */
+    body .container > * { overflow: visible; } /* reset back to normal */ 
+    
     .row-height {
-    height: 7em;
+    height: 9em;
 } 
     #header-container {   
-    padding: 1.9em 0em 4em 0em;
+    padding: 3.75em 0em 4em 0em;
 }
+    .col-sm-8 {
+    padding: 0px    
+}
+    .xs-menu {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+    width: 3.5em;
+    height: 3.5em;
+}
+    /*.xs-menu p {
+    text-align: center;
+    vertical-align: middle; 
+    font-size: 2.8em;
+    letter-spacing: -0.15em;
+    position: relative; 
+    top: 0.11em;
+    left: -0.1em;    
+    padding: 0em;
+} */
+    
+    .xs-menu p {
+    text-align: center;
+    vertical-align: middle; 
+    font-size: 1.65em;
+    letter-spacing: -0.15em;
+    position: relative; 
+    top: 0.11em;
+    left: -0.1em;    
+    padding: 0em;
+}
+    
 }
 
 
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {
     /* background-color:antiquewhite; */
+    .container {
+        padding: 0px
+    }
     body {
     font-size: 1.2em;
     }
