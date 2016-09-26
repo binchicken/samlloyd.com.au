@@ -178,7 +178,7 @@ p, h3, li {
 /* XS --> SM - Small devices (tablets, 768px and up) */
 @media (max-width: 760px) {
     .left-col, .right-col {
-    margin: 1.5em 11%;
+    margin: 1.5em 3em; /* 3em to match menu width  - (0.5em less) */
     padding: 0em;  
     min-width: 10em;    
 }
