@@ -384,20 +384,39 @@ a.clickable:hover {
 }
 
 /* Video content */
-.videowrapper {
+.videosize {
 	position: relative;
 	padding-bottom: 54%;
 	padding-top: 25px;
 	height: 0;
 }
-.videowrapper iframe {
+.videosize iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
+.videowrapper {
+    position: relative;
+}
+.videothumbnail {
+    display: block;
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#thumbnail-SOH1 {
+    background-image: url("../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy44.jpg");
 
+}
 
 
 /* media queries ================================================ */
