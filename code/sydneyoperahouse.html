@@ -246,8 +246,18 @@ Sydney Opera House</h3>
 <div class="videowrapper">    
     <div class="videosize">
         <div class="videothumbnail" id="thumbnail-SOH1"></div>
-        <iframe src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <iframe src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video-SOH1"></iframe></div>
 </div>    
+    
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+<script>
+$(document).ready(function() {
+  $("#thumbnail-SOH1").click(function () {
+    $(".videothumbnail").fadeOut("slow");
+  });
+});
+</script>
     
     
 <!-- Video content 
@@ -261,8 +271,7 @@ Sydney Opera House</h3>
     
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy43.jpg" alt=""/> 
 
-<!-- Load jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+
 <!-- Hide header -->
 <script>
     $(document).scroll(function () {
