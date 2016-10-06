@@ -246,16 +246,24 @@ Sydney Opera House</h3>
 <div class="videowrapper">    
     <div class="videosize">
         <div class="videothumbnail" id="thumbnail-SOH1"></div>
-        <iframe src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video-SOH1"></iframe></div>
+        <iframe id="video-SOH1" src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
 </div>    
     
 <!-- Load jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
 <script>
 $(document).ready(function() {
+    
   $("#thumbnail-SOH1").click(function () {
     $(".videothumbnail").fadeOut("slow");
   });
+    
+    $('#thumbnail-SOH1').on('click', function(ev) {
+        $("#video-SOH1")[0].src += "?autoplay=1";
+        ev.preventDefault();
+ 
+  });
+    
 });
 </script>
     
