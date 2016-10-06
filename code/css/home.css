@@ -81,7 +81,7 @@ table {
     padding: 12.75em 0em 0em 0em;
     }
 .arrow td p {
-    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;   
+    font-family: 'Inconsolata', "Times New Roman", Times, serif;   
 }
 
 
@@ -136,7 +136,10 @@ content: '';
 }
 .baselineshift {
     position: relative; 
-    top: -.12em
+    top: -.12rem
+}
+.arrowsize {
+    font-size: 1.5rem;
 }
 
 
@@ -425,7 +428,7 @@ content: '';
     }
     .baselineshift {
     top: -0.05em;
-    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    font-family: 'Inconsolata', "Times New Roman", Times, serif;
 }
     
 }
@@ -502,7 +505,7 @@ content: '';
     }
     .baselineshift {
     top: -0.05em;
-    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    font-family: 'Inconsolata', "Times New Roman", Times, serif;
 }
 }
 @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
@@ -575,9 +578,12 @@ content: '';
         padding-bottom: 20em;
     }
     .baselineshift {
-    top: -0.06em;
-    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    top: 0.02rem;
+    font-family: 'Inconsolata', "Times New Roman", Times, serif;
     }
+    .arrowsize {
+    font-size: 1.5rem;
+}
 }
 @media (min-width: 1200px) and (max-width: 1499px) and (orientation: portrait) {
     #header-container {   
