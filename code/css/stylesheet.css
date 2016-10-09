@@ -7,6 +7,29 @@
 		margin: 0;
 		padding: 0;
 	} 
+/* preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../../links/images/samlloyd.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
 
 /* XS page setup */
 @media screen and (max-width: 767px) {
@@ -414,10 +437,30 @@ a.clickable:hover {
     background-repeat: no-repeat;
 }
 #thumbnail-SOH1 {
+    background-image: url("../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy12.jpg");
+}
+#thumbnail-SOH2 {
+    background-image: url("../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy11.jpg");
+}
+#thumbnail-SOH3 {
     background-image: url("../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy44.jpg");
-
 }
 
+/* Footer */
+    #mail-sm {
+    height: 0.8rem !important;
+    width: auto !important;
+    line-height: 6em;
+    vertical-align: middle;
+    position: absolute;
+    top: 0.1rem;
+    }
+.nopadding a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 0px;
+}
 
 /* media queries ================================================ */
 

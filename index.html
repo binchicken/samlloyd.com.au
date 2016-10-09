@@ -49,7 +49,11 @@
 
 
 <body>
-
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>  
+    
 <!-- Page setup -->
 <div class="homebg"></div>
 <div class="container-fluid">
@@ -191,10 +195,9 @@ $(document).ready(function(){
         <!-- Footer [XS] -->     
         <div class="zigzag-wrap zigzag-xs visible-xs-block"><div class="footer-home-xs text-center">
         <p>
-        <a href="code/about.html">&#x2002;more info&#x2002;</a>&#x2002;
+        <a href="code/about.html">&#x2002;more info&#x2002;</a>
         &#x2044;
-        <!-- <a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2002;&#x2709;&#x2002;</a> -->
-        <a href="mailto:mail@samlloyd.com.au" style="position:relative">&#x2002;&#x2002;<img class="mail" src="links/images/mail.svg" />&#x2002;&#x2002;&#x2002;&#x2002;</a> 
+        <a href="mailto:mail@samlloyd.com.au" style="position:relative">&#x2002;<img class="mail" src="links/images/mail.svg" />&#x2002;&#x2002;&#x2002;</a> 
         </p>  
         </div></div>
  
@@ -213,7 +216,7 @@ $(document).ready(function(){
 <span style="color:#d4e7ff">&#x2591;</span>
 <a href="code/about.html">&#x2002;more info&#x2002;</a>
 &#x2044;
-<a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2709;&#x2002;</a>
+<a href="mailto:mail@samlloyd.com.au" style="position:relative">&#x2002;<img src="links/images/mail.svg" height="8rem" width="auto" />&#x2002;</a>
 <span style="color:#d4e7ff">&#x2591;</span>
 </p>  
 
@@ -226,10 +229,24 @@ $(document).ready(function(){
 <!-- Compiled plugins -->
 <script src="code/js/bootstrap.min.js"></script>
 
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() {       // makes sure the whole site is loaded
+        $('#status').fadeOut();                 // will first fade out the animation   
+            
+    $('#preloader').delay(350).fadeOut('slow'); // fade out bg cover  
+    $('body').delay(350).css({'overflow':'visible'});        
+        })
+        //]]>
+</script>   
+    
     </body>
 </html>
 
 <!-- To-do list
+
+/* project image size: 1200x800 */
 
 /* CHANGES [x]preliminary tidy */
 /* CHANGES [x] adjust header height & footer for all classes */
@@ -243,7 +260,7 @@ $(document).ready(function(){
 /* [x] TODO ↳ images in place */
 /* [x] TODO ↳ menu button */
 /* [x] TODO ↳ header behaviour */
-/* [x] TODO ↳  top js loading on mobile */
+/* [x] TODO ↳ top js loading on mobile */
 /* [x] TODO ↳ footer */
 /* [x] TODO ↳ project titles */
 
@@ -264,6 +281,7 @@ $(document).ready(function(){
 /* TODO ↳ [x]crop white edges from carousels */
 /* TODO ↳ indd script gif */
 /* TODO ↳ SOH ticket */
+/* TODO ↳ SOH newer box office img */
 /* TODO ↳ [x]SOH other jc decaux */
 /* TODO ↳ SOH EDM more engaging angle (my design for interview) */
 /* CHANGES [x] change envelope to svg */

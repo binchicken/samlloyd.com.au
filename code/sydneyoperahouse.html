@@ -45,6 +45,11 @@
     
     
 <body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>   
+    
 <!-- Background -->     
 <div class="bg-SOH">  
 <div class="container">
@@ -122,8 +127,7 @@ Sydney Opera House</h3>
 <div class="col-sm-8">
     
     <!-- Carousel -->
-
-    <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+    <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" style="background-color:#000">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -151,20 +155,43 @@ Sydney Opera House</h3>
 
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy7c.jpg" alt=""/>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy8e.jpg" alt=""/>
-    <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy12.jpg" alt=""/>
 
+<!-- Video content -->
+<div class="videowrapper">    
+    <div class="videosize">
+        <div class="videothumbnail" id="thumbnail-SOH1"></div>
+        <iframe id="video-SOH1" src="https://player.vimeo.com/video/153332295" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+</div>    
+    
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+<script>
+$(document).ready(function() {
+    
+  $("#thumbnail-SOH1").click(function () {
+    $(".videothumbnail").fadeOut("slow");
+  });
+    
+    $('#thumbnail-SOH1').on('click', function(ev) {
+        $("#video-SOH1")[0].src += "?autoplay=1";
+        ev.preventDefault();
+ 
+  });
+    
+});
+</script>    
 
     
-    <!-- Info Block 1 -->
-    <div class="copy">
-    <div class="row">
-    <div class="col-sm-6">
-    <div class="projectcopy padding-lg left-col">
-    With its iconic sails and incredible performances, the Sydney Opera House has long been one of the world’s most loved buildings. But it had its problems. It was finding it hard to communicate with its audiences. There was no thread uniting its different experiences, departments and partners. And while more people were visiting than ever before, most simply snapped a selfie outside. They weren’t actually coming in. We needed to find the Sydney Opera House’s voice, and let people know that although things look great from the harbour, the real magic happens&nbsp;inside.</div></div>
-    <div class="col-sm-6">
-    <div class="projectcopy padding-lg right-col">
-    So we created Shifting Perspectives — a brand idea that inspires conversation around culture and art, and helps visitors understand there’s more to the Sydney Opera House than opera. Paired with Shifting Perspectives is a sculptural form language. Sails are used to draw attention and interact with photography, while the three-dimensional typeface reflects the contours of the building itself. Together, they complement the content of any show poster or message, before bringing the focus back to the&nbsp;masterbrand.
-    </div></div></div></div>
+<!-- Info Block 1 -->
+<div class="copy">
+<div class="row">
+<div class="col-sm-6">
+<div class="projectcopy padding-lg left-col">
+With its iconic sails and incredible performances, the Sydney Opera House has long been one of the world’s most loved buildings. But it had its problems. It was finding it hard to communicate with its audiences. There was no thread uniting its different experiences, departments and partners. And while more people were visiting than ever before, most simply snapped a selfie outside. They weren’t actually coming in. We needed to find the Sydney Opera House’s voice, and let people know that although things look great from the harbour, the real magic happens&nbsp;inside.</div></div>
+<div class="col-sm-6">
+<div class="projectcopy padding-lg right-col">
+So we created Shifting Perspectives — a brand idea that inspires conversation around culture and art, and helps visitors understand there’s more to the Sydney Opera House than opera. Paired with Shifting Perspectives is a sculptural form language. Sails are used to draw attention and interact with photography, while the three-dimensional typeface reflects the contours of the building itself. Together, they complement the content of any show poster or message, before bringing the focus back to the&nbsp;masterbrand.
+</div></div></div></div>
     
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt=""/>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg" alt=""/>
@@ -177,7 +204,30 @@ Sydney Opera House</h3>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy19.jpg" alt=""/>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy20.jpg" alt=""/>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy21.jpg" alt=""/>
-<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy11.jpg" alt=""/>
+    
+<!-- Video content -->
+<div class="videowrapper">    
+    <div class="videosize">
+        <div class="videothumbnail" id="thumbnail-SOH2"></div>
+        <iframe id="video-SOH2" src="https://player.vimeo.com/video/155732238" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+</div>    
+    
+<!-- Video thumbnail -->
+<script>
+$(document).ready(function() {
+    
+  $("#thumbnail-SOH2").click(function () {
+    $(".videothumbnail").fadeOut("slow");
+  });
+    
+    $('#thumbnail-SOH2').on('click', function(ev) {
+        $("#video-SOH2")[0].src += "?autoplay=1";
+        ev.preventDefault();
+ 
+  });
+    
+});
+</script>    
     
     <!-- Info Block 2 -->
     <div class="copy">
@@ -194,7 +244,7 @@ Sydney Opera House</h3>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy22.jpg" alt=""/>
 
     <!-- Carousel -->
-    <div id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="false" style="background-color:#000">
+    <div id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" style="background-color:#000">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -245,37 +295,27 @@ Sydney Opera House</h3>
 <!-- Video content -->
 <div class="videowrapper">    
     <div class="videosize">
-        <div class="videothumbnail" id="thumbnail-SOH1"></div>
-        <iframe id="video-SOH1" src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+        <div class="videothumbnail" id="thumbnail-SOH3"></div>
+        <iframe id="video-SOH3" src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
 </div>    
     
-<!-- Load jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+<!-- Video thumbnail -->
 <script>
 $(document).ready(function() {
     
-  $("#thumbnail-SOH1").click(function () {
+  $("#thumbnail-SOH3").click(function () {
     $(".videothumbnail").fadeOut("slow");
   });
     
-    $('#thumbnail-SOH1').on('click', function(ev) {
-        $("#video-SOH1")[0].src += "?autoplay=1";
+    $('#thumbnail-SOH3').on('click', function(ev) {
+        $("#video-SOH3")[0].src += "?autoplay=1";
         ev.preventDefault();
  
   });
     
 });
 </script>
-    
-    
-<!-- Video content 
-<div class="videowrapper" data-html="<iframe src="https://player.vimeo.com/video/155334547 width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-    <div class="videosize">
-        <div class="intrinsic-inner">
-            <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;" id="yui_3_17_2_1_1475196065687_146"><img data-src="https://static1.squarespace.com/static/560b9446e4b03478116a4715/t/56c4ec869f7266f3ee77d795/1455746185781/Interbrand-ADC-VideoThumbnail3.jpg" data-load="false" data-image-focal-point="0.5,0.5" class="loaded" data-image-dimensions="100x67" style="top: -2px; left: 0px; width: 1160px; height: 778px; position: relative;" src="https://static1.squarespace.com/static/560b9446e4b03478116a4715/t/56c4ec869f7266f3ee77d795/1455746185781/Interbrand-ADC-VideoThumbnail3.jpg?format=1500w" data-image-resolution="1500w"><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div>
-
-</div>  --> 
-    
+        
     
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy43.jpg" alt=""/> 
 
@@ -295,17 +335,17 @@ $(document).ready(function() {
 
 <!-- Footer [SM+] -->
 <div class="row hidden-xs">    
-<div class="col-sm-4 footer">  
+<div class="col-sm-3 footer">  
 <p class="text-left"><a href=#>&#x2190;&#x2003;back</a></p></div>
 
-<div class="col-sm-4 footer">  
+<div class="col-sm-6 footer">  
 <p class="text-center"><span style="color:#fff">&#x2591;</span>
 <a href="code/about.html">&#x2002;more info&#x2002;</a>
-&#x2044;
-<a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2709;&#x2002;</a>
+&#x2044;    
+<a href="mailto:mail@samlloyd.com.au" style="position:relative; padding:0px;">&#x2002;<img src="../links/images/mail.svg" id="mail-sm" />&#x2002;&#x2002;&#x2002;</a>
 <span style="color:#fff">&#x2591;</span></p></div>
 
-<div class="col-sm-4 footer">
+<div class="col-sm-3 footer">
 <p class="text-right"><a href=#>next&#x2003;&#x2192;</a></p></div>
 </div>  
     
@@ -361,7 +401,19 @@ $(document).ready(function() {
 
 <!-- Collapsible container --> 
 <script src="js/projectinfo.js" type="text/javascript"></script>
-  
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() {       // makes sure the whole site is loaded
+        $('#status').fadeOut();                 // will first fade out the animation   
+            
+    $('#preloader').delay(350).fadeOut('slow'); // fade out bg cover  
+    $('body').delay(350).css({'overflow':'visible'});        
+        })
+        //]]>
+</script>   
+    
     </body>
 </html>
 
