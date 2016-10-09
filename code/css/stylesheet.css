@@ -206,7 +206,7 @@ p, h3, li {
     line-height: 1.43;
     padding-bottom: 1.5em;
     min-width: 10em;
-    max-width: 24em;
+    max-width: 23em;
     }  
 .intro-xs {
     font-family: 'Merriweather', serif;
@@ -570,10 +570,10 @@ a:active {
     font-size: 1.25em;
     }
     .row-height {
-    height: 7.5em;
+    height: 10em;
 }
     #header-container {   
-    padding: 2.5em 0em 2.5em 0em;
+    padding: 4em 0em 2.5em 0em;
 }
 }
 
