@@ -169,10 +169,10 @@ Sydney Opera House</h3>
 $(document).ready(function() {
     
   $("#thumbnail-SOH1").click(function () {
-    $(".videothumbnail").fadeOut("slow");
+    $("#thumbnail-SOH1").fadeOut("slow");
   });
     
-    $('#thumbnail-SOH1').on('click', function(ev) {
+    $("#thumbnail-SOH1").on('click', function(ev) {
         $("#video-SOH1")[0].src += "?autoplay=1";
         ev.preventDefault();
  
@@ -217,10 +217,10 @@ So we created Shifting Perspectives — a brand idea that inspires conversation 
 $(document).ready(function() {
     
   $("#thumbnail-SOH2").click(function () {
-    $(".videothumbnail").fadeOut("slow");
+    $("#thumbnail-SOH2").fadeOut("slow");
   });
     
-    $('#thumbnail-SOH2').on('click', function(ev) {
+    $("#thumbnail-SOH2").on('click', function(ev) {
         $("#video-SOH2")[0].src += "?autoplay=1";
         ev.preventDefault();
  
@@ -304,7 +304,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     
   $("#thumbnail-SOH3").click(function () {
-    $(".videothumbnail").fadeOut("slow");
+    $('#thumbnail-SOH3').fadeOut("slow");
   });
     
     $('#thumbnail-SOH3').on('click', function(ev) {
