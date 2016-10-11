@@ -528,7 +528,7 @@ content: '';
 /* L ----------- */
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
-        padding: 14vh 0em 0.5em 0em;
+        padding: 13vh 0em 0.5em 0em;
         /* background-color:darkseagreen; */
     }
     body {
@@ -542,18 +542,18 @@ content: '';
         height: 85em !important;
 }
     .post, .arrow {
-        background-position:50% 55%;
-        background-size:auto 52%;
+        background-position:50% 58%;
+        background-size:auto 58%;
 }
     .post td {
     width: 20vw;
-    padding-top: 51vh;
+    padding-top: 52vh;
     padding-bottom: 49.5vh;
     margin-left: 1.5vw;
 }
     .arrow td {
         font-size: 1.5em;
-        padding:  50vh 0vw 48vh 1vw;
+        padding:  51vh 0vw 48vh 1vw;
 }
      .caption {
     font-size: 0.9em;
