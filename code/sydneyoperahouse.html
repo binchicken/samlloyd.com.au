@@ -258,8 +258,32 @@ $(document).ready(function() {
     <!-- Controls -->
     <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next"></a>
     </div>
+
+<!-- Video content -->
+<div class="videowrapper">    
+    <div class="videosize">
+        <div class="videothumbnail" id="thumbnail-SOH3"></div>
+        <iframe id="video-SOH3" src="https://player.vimeo.com/video/154697016" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+</div>    
     
-<img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy29.jpg" alt=""/>
+<!-- Video thumbnail -->
+<script>
+$(document).ready(function() {
+    
+  $("#thumbnail-SOH3").click(function () {
+    $('#thumbnail-SOH3').fadeOut("slow");
+  });
+    
+    $('#thumbnail-SOH3').on('click', function(ev) {
+        $("#video-SOH3")[0].src += "?autoplay=1";
+        ev.preventDefault();
+ 
+  });
+    
+});
+</script>    
+    
+
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy30.jpg" alt=""/>
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy31.gif" alt=""/>   
 <img src="../../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy32.jpg" alt=""/>    
@@ -295,20 +319,20 @@ $(document).ready(function() {
 <!-- Video content -->
 <div class="videowrapper">    
     <div class="videosize">
-        <div class="videothumbnail" id="thumbnail-SOH3"></div>
-        <iframe id="video-SOH3" src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+        <div class="videothumbnail" id="thumbnail-SOH4"></div>
+        <iframe id="video-SOH4" src="https://player.vimeo.com/video/154664057" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
 </div>    
     
 <!-- Video thumbnail -->
 <script>
 $(document).ready(function() {
     
-  $("#thumbnail-SOH3").click(function () {
-    $('#thumbnail-SOH3').fadeOut("slow");
+  $("#thumbnail-SOH4").click(function () {
+    $('#thumbnail-SOH4').fadeOut("slow");
   });
     
-    $('#thumbnail-SOH3').on('click', function(ev) {
-        $("#video-SOH3")[0].src += "?autoplay=1";
+    $('#thumbnail-SOH4').on('click', function(ev) {
+        $("#video-SOH4")[0].src += "?autoplay=1";
         ev.preventDefault();
  
   });
