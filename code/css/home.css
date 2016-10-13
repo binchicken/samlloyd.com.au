@@ -634,8 +634,11 @@ content: '';
     .baselineshift {
     top: -0.05em;
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
-        position: relative;
-    }
+    position: relative;
+}
+    .arrowsize {
+    font-size: 1.8rem;
+}    
     .secondary {
     font-size: 1.5em;
 }
