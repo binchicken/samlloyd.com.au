@@ -65,8 +65,8 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="row-height">
-            <div id="header-container">
-                <a href="../index.html"><img src="../links/images/samlloyd.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
+            <div class="scrollme" id="header-container">
+                <a href="../index.html" style="pointer-events: auto"><img src="../links/images/samlloyd.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
             </div>
         </div>
     </div>
@@ -168,7 +168,9 @@ $(document).ready(function(){
                 $("body,html").animate({ scrollTop: $(this).next(".post").offset().top }, 600)
             })
         });
-    } else {};
+        
+        
+    } 
 });
 	</script>
 
@@ -239,7 +241,7 @@ $(document).ready(function(){
 
 <!-- Footer -->
 <div class="row">
-<div class="col-sm-3 hidden-xs footer-home">
+<div class="hidden-xs footer-home">
     
 <!-- [SM+] -->    
 <p class="text-center">
