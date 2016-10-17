@@ -636,8 +636,8 @@ content: '';
         bottom: 3vh;
 }
       .last td {
-    padding-top: 47rem;
-          padding-bottom: 0rem
+    padding-top: 50vh;
+      padding-bottom: 0rem
 }
 }
 @media (min-width: 1500px) and (orientation: portrait) {
