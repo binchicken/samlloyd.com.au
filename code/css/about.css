@@ -6,8 +6,6 @@ body {
     height: 100%;
     width: 100%;
     
-    /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
-    /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
     background-color: #fff;
     background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
@@ -44,7 +42,7 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
     top: 65%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -28%);
+    transform: translate(-50%, -27%);
     border: 1px solid #fff;
 } 
 .header-small {
@@ -131,23 +129,39 @@ content: '';
 /* intro */
 
 .intro-about {
-    padding-top: 25vh;
-   /*padding-left: 10vh;
-    padding-right: 8vh;*/
+    position: fixed;
+    left:50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%,0%);
+    padding-top: 24vh;
     font-size: 1.45rem;
-    line-height: 1.35;
+    line-height: 1.55;
     /*min-width: 42em; */
-    max-width: 30em;
+    max-width: 28em;
 }
-.intro-size {
-    
-}
-
-.intro-about > p {
+    .intro-about > p {
     display: inline; 
     background: #fff;
+    padding: 2px 0px 2px 0px;
+    color: #414141
+}
+.intro-height {
+    height: 50vh
 }
 
+
+
+/* footer */
+
+.footer-about {
+    
+}
+.footer-about > p {
+    display: inline; 
+    background: #fff;
+    padding: 2px 0px 2px 0px;
+    color: #414141
+}
 
 
 /* media queries ================================================ */
@@ -170,11 +184,11 @@ content: '';
     display:block;
     height: 100%;
     width: 100%;
-    background-color: #fff;
+   /* background-color: #fff;
     background: none;
     background-size: 100%;
     -webkit-animation: none;
-    animation: none;
+    animation: none;*/
     }
     .homebg {
     display:none;

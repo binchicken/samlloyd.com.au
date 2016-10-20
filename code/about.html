@@ -48,6 +48,10 @@
 
 
 <body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>       
 
 <!-- Page setup -->
 <div class="container-fluid">
@@ -65,12 +69,14 @@
 </div>
 
 <!-- Intro -->
-<div class="row">
-    <div class="col-sm-4" style="height:10em; display:block; background-color: rgba(235,235,235,0.5)"></div>
-    <div class="col-sm-4" style="display:block; background-color: rgba(235,235,235,0.5)">
-        <div class="intro-about"><p>I’m a designer most of the time and a tinkerer all of the time. I love science, technology, video games and making beautiful things. Branding drew me in because it’s fun solving problems while you’re there.</p></div>
+<div class="row intro-height">
+    <div class="col-xs-12">
+        <div class="intro-about">
+        <p>I’m a designer most of the time and a tinkerer all of&nbsp;
+        the time. I love science, technology, video games and&nbsp; 
+        making beautiful things. Branding drew me in because&nbsp; 
+        it’s fun solving problems while you’re there.&nbsp;</p></div>
     </div>
-        <div class="clearfix col-sm-4" style="height:10em; display:block; background-color: rgba(235,235,235,0.5)"></div>
 </div>    
 
 <!-- Main Content -->
@@ -99,7 +105,7 @@
 <!-- Secret footer -->
 <div class="row">
     <div class="col-xs-12">
-        <div>secret footer</div>
+        <div class="footer-about"><p>∠( :3 」∠)＿</p></div>
     </div>
 </div>        
     
@@ -115,7 +121,7 @@
     if (y < 400) {
         $('.headerimg').fadeIn(600);
     } else {
-        $('.headerimg').fadeOut(1500);
+        $('.headerimg').fadeOut(600);
     }
 
 });
@@ -123,7 +129,18 @@
 
 <!-- Compiled plugins -->
 <script src="code/js/bootstrap.min.js"></script>
-
+    
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() {       // makes sure the whole site is loaded
+        $('#status').fadeOut();                 // will first fade out the animation   
+            
+    $('#preloader').delay(350).fadeOut('slow'); // fade out bg cover  
+    $('body').delay(350).css({'overflow':'visible'});        
+        })
+        //]]>
+</script>   
     </body>
 </html>
 
