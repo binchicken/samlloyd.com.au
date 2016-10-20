@@ -29,10 +29,9 @@
 
     <!-- Stylesheet -->
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/about.css" rel="stylesheet" type="text/css">  
 
-    <!-- Load jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../links/favicon/favicon 2/favicon-16x16.png" type="image/x-icon" />
@@ -51,58 +50,76 @@
 <body>
 
 <!-- Page setup -->
-<div class="aboutbg"></div>
-    
-    <div class="whitegradabout"></div>
-    
 <div class="container-fluid">
     
 
 <!-- Header -->
-<div class="row-height">
-    <div id="header-container">
-        <img src="../links/images/samlloyd-ws.gif" alt="Sam Lloyd" height="42" width="173" />
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row-height">
+            <div id="header-container">
+                <a href="../index.html"><img src="../links/images/samlloyd-ws.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
+            </div>
+        </div>
     </div>
 </div>
 
+<!-- Intro -->
+<div class="row">
+    <div class="col-sm-4" style="height:10em; display:block; background-color: rgba(235,235,235,0.5)"></div>
+    <div class="col-sm-4" style="display:block; background-color: rgba(235,235,235,0.5)">
+        <div class="intro-about"><p>I’m a designer most of the time and a tinkerer all of the time. I love science, technology, video games and making beautiful things. Branding drew me in because it’s fun solving problems while you’re there.</p></div>
+    </div>
+        <div class="clearfix col-sm-4" style="height:10em; display:block; background-color: rgba(235,235,235,0.5)"></div>
+</div>    
 
 <!-- Main Content -->
-<div class="row" style="padding-top:20em;">
-
+<div class="row" style="height:80em; padding-top:36vh; background-color: rgba(255,255,255,0)">
+<div class="about-page"></div>
 
 <!-- Content [SM+] -->
 <div class="col-sm-3">
 </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
     <p>column 1</p>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-2">
     <p>column 2</p>
 </div>    
-<div class="col-sm-3">
+<div class="col-sm-2">
+    <p>column 3</p>
+</div>       
+<div class="clearfix col-sm-3">
 </div>   
+    
 
     
 </div>
- 
-
-<!-- Footer -->
+    
+<!-- Secret footer -->
 <div class="row">
-<div class="col-xs-12 footer-about">
-
-<!-- <p class="text-center"><a href=#>&#x2591; more &#x2591;</a><a>&#x2002;&#x2709;&#x2002;</a></p>-->
-
-<p class="text-center">
-&#x2591;
-<a href=#>&#x2002;back&#x2002;</a>
-&#x2044;
-<a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2709;&#x2002;</a>
-&#x2591;
-</p>
+    <div class="col-xs-12">
+        <div>secret footer</div>
+    </div>
+</div>        
+    
 </div>
+    
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    
+<!-- Hide header -->
+<script>
+    $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y < 400) {
+        $('.headerimg').fadeIn(600);
+    } else {
+        $('.headerimg').fadeOut(1500);
+    }
 
-</div>
-</div>
+});
+</script>     
 
 <!-- Compiled plugins -->
 <script src="code/js/bootstrap.min.js"></script>

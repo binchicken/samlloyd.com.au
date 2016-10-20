@@ -647,24 +647,3 @@ content: '';
 }
 }
 
-
-/* about ================================================ */
-
-.aboutbg {
-    background-color: #fff;
-    position:absolute;
-    height: 90%;
-    width: 62%;
-    top: 65%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border: 1px solid #fff;
-} 
-.header-small {
-    position: relative;
-}
-.row-height-about {
-    height: 10em;
-} 
-
