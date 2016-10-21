@@ -1,3 +1,6 @@
+/* typefaces */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700');
+
 /* page setup */ 
 
 body {
@@ -27,12 +30,9 @@ body {
 body > .container-fluid { overflow: hidden; }        /* width fix */
 body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
 
- .caption {
-    position: absolute;
-    text-align: center;
-    font-size: 0.9em;
-    letter-spacing: 0.02em;
-    padding-left: 2em;     
+.col-sm-2 {
+  padding-right: 2em;
+  padding-left: 2em;
 } 
 .about-page {
     background-color: #fff;
@@ -59,6 +59,34 @@ p {
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     color: #000;
 } 
+h2 {
+    margin: 0em 0em 3em 0em;
+    font-family: 'Merriweather', "Lucida Grande", serif; 
+    font-size:0.9em;
+    font-weight: 400; 
+    line-height:1; 
+    letter-spacing:0.01em 
+}
+.currently {
+    font-size: 0.9em
+}
+.useful {
+    font-size: 0.75em;
+    line-height: 1.25;
+    display: inline;
+    padding: 1px 0px;
+     
+}
+#li1:hover {
+    background-color: aliceblue;
+
+}
+#li1:hover {
+    background-color: aliceblue;
+
+}
+
+
 .primary {
     font-family: 'Merriweather', "Lucida Grande", serif; 
     font-size:0.95em;
@@ -100,7 +128,7 @@ content: '';
   height: 1em;
   width: 100%;
   border-bottom: 3px solid #e8f1fd;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .baselineshift {
     position: relative; 
@@ -109,6 +137,8 @@ content: '';
 .arrowsize {
     font-size: 1.5rem;
 }
+
+
 
 
 /* header */
@@ -496,7 +526,7 @@ content: '';
     padding: 50vh 0vw 50vh 1vw;
 }
     .baselineshift {
-    top: -0.05em;
+    top: -0.08em;
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     position: relative;
 }
@@ -526,6 +556,8 @@ content: '';
 
 
 /* about ================================================ */
+
+
 
 
 

@@ -113,12 +113,7 @@ body {
     padding: 2px 0px;
 }
 @media (min-width: 1500px) {
-.col-sm-8 {
-    width: 80%;
-  }
-.col-sm-2 {
-    width: 10%;
-  } 
+
 .projectinfo {
 padding-left: 0.75em
 }
