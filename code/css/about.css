@@ -244,6 +244,7 @@ content: '';
     
     body {
     z-index: 1;
+    font-size: 1.5em;  
     display:block;
     height: 100%;
     width: 100%;
@@ -263,53 +264,36 @@ content: '';
     .row-height {
     height: 10.5em;
 }
-    .xs-menu {
-    z-index: 5;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: table-cell;
-    vertical-align: middle;
-    background-color: #fff;
-    width: 3.5em;
-    height: 3.5em;
-}
-    .xs-menu p {
-    text-align: center;
-    vertical-align: middle; 
-    font-size: 1.65em;
-    letter-spacing: -0.15em;
-    position: relative; 
-    top: 0.11em;
-    left: -0.1em;    
-    padding: 0em;
-}
     #header-container {   
     position: fixed;
-    z-index: 0;
     left: 0;
     right: 0;
     text-align: center;
     display: block;
     padding: 5.75em 0em 4em 0em
 }
-    #header-container img {
-    max-width: 100%;
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
     .about-page {
     height: 90em;    
-    width: 94%;
-    top: 75vh;
+    width: 96%;
+    top: 90vh;
     left: 50%;
 } 
-    
+.col-sm-3 {
+    width: 11%;
+}
+.col-sm-2 {
+    width: 100%;
+    padding: 0em 0em 4em 4.1em;
+}   
+.intro-height {
+    height: 45vh
+} 
+.intro-about {
+    padding-top: 5vh;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    width: 80%
+}      
     
 
 
