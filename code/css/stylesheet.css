@@ -119,10 +119,15 @@ padding-left: 0.75em
 }
 }
 
+/*.col-sm-8 {
+    width: 69%;
+}
+.col-sm {
+    width: 25%
+}*/
 .col-sm-8 img {
     width: 100%;
     z-index: 10;
-
 }
 
 iframe {
@@ -536,7 +541,8 @@ a.clickable:hover {
     padding: 3.75em 0em 4em 0em;
 }
     .col-sm-8 {
-    padding: 0px    
+    padding: 0px;
+   
 }
     .xs-menu {
     z-index: 15;
@@ -677,10 +683,17 @@ a:active {
             body {
     font-size: 1.4em;
     }
+    .container {
+    width: 1300px;
+}
     .row-height {
     height: 12em;
 }
     #header-container {   
     padding: 6em 0em 0em 0em;
     /* background-color: aliceblue; */    
+}
+    .projectinfo {
+        margin-left: 0.2em;
+    }
 }
