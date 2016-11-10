@@ -285,9 +285,9 @@ content: '';
     width: 96%;
     /*top: 52em;
     left: 50%;*/
-        -webkit-transform: translate(-50%, 0%);
-        transform: translate(-50%, 0%)
 
+    -webkit-transform: translate3d(-50%, 0em, 0);
+transform: translate3d(-50%, 0em, 0)        
 
 } 
 .col-sm-3 {
@@ -304,7 +304,7 @@ content: '';
     padding-top: 3em;
     font-size: 1.15rem;
     line-height: 1.7;
-    width: 80%
+    width: 80%;
 } 
         .row-3 {
     height:5em; 
