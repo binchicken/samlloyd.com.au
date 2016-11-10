@@ -283,12 +283,8 @@ content: '';
     .about-page {
     height: 110em;    
     width: 96%;
-    /*top: 52em;
-    left: 50%;*/
-
-    -webkit-transform: translate3d(-50%, 0em, 0);
-transform: translate3d(-50%, 0em, 0)        
-
+    top: 52em;
+    left: 50%;
 } 
 .col-sm-3 {
     width: 11%;
@@ -385,6 +381,20 @@ transform: translate3d(-50%, 0em, 0)
 
 
 
+}
+
+/**
+ * iPhone 5
+ * To combat vh bug
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+    .about-page {
+    height: 110em;    
+    width: 96%;
+    -webkit-transform: translate3d(-50%, -25%, 0);
+    transform: translate3d(-50%, -25%, 0)        
+
+} 
 }
 
 /* S ----------- */
