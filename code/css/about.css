@@ -3,16 +3,18 @@
 
 /* page setup */ 
 
-body {
-    z-index: -5;
-    display:block;
-    height: 100%;
-    width: 100%;
+.bg-home {
+min-height: 100%; 
+    height: auto !important; 
+    margin: 0 auto;
+
     
     background-color: #fff;
-    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
-    background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
+    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb) fixed;
+    background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb) fixed;
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
+        background-repeat: no-repeat;
+
     -webkit-animation: HomeGradient 45s ease infinite;
     animation: HomeGradient 45s ease infinite;
     }
@@ -24,8 +26,10 @@ body {
     @keyframes HomeGradient {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
+        100%{background-position:0% 50%} 
+}
+
+
 
 body > .container-fluid { overflow: hidden; }        /* width fix */
 body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
@@ -236,6 +240,10 @@ content: '';
     padding: 0px !important;
         margin: 0px;
 }
+    .bg-home {
+    -webkit-animation: HomeGradient 35s ease infinite;
+    animation: HomeGradient 35s ease infinite;
+    }
     html, body {
     /* overflow-x: hidden; */
 }
@@ -273,10 +281,14 @@ content: '';
     padding: 5.75em 0em 4em 0em
 }
     .about-page {
-    height: 90em;    
+    height: 110em;    
     width: 96%;
-    top: 90vh;
-    left: 50%;
+    /*top: 52em;
+    left: 50%;*/
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%)
+
+
 } 
 .col-sm-3 {
     width: 11%;
@@ -286,14 +298,18 @@ content: '';
     padding: 0em 0em 4em 4.1em;
 }   
 .intro-height {
-    height: 45vh
+    height: 25em
 } 
 .intro-about {
-    padding-top: 5vh;
+    padding-top: 3em;
     font-size: 1.15rem;
     line-height: 1.7;
     width: 80%
-}      
+} 
+        .row-3 {
+    height:5em; 
+    padding-top:3em
+}  
     
 
 
@@ -329,6 +345,17 @@ content: '';
     background: #fff;
 }
     .zigzag-wrap:before {
+    background:
+    -webkit-linear-gradient(
+    45deg, transparent 33.333%,
+    #fff 33.333%, #fff 66.667%,
+    transparent 66.667%
+    ),
+    -webkit-linear-gradient(
+    135deg, transparent 33.333%,
+    #fff 33.333%, #fff 66.667%,
+    transparent 66.667%
+    );
     background:
     linear-gradient(
     45deg, transparent 33.333%,
