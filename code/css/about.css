@@ -322,10 +322,10 @@ content: '';
  */
 @media screen and (device-aspect-ratio: 40/71) {
     .about-page {
-    height: 110em;    
+    height: 103em;    
     width: 96%;
-    -webkit-transform: translate3d(-50%, -25%, 0);
-    transform: translate3d(-50%, -25%, 0)        
+    -webkit-transform: translate3d(-50%, -28%, 0);
+    transform: translate3d(-50%, -28%, 0)        
 
 } 
 }
