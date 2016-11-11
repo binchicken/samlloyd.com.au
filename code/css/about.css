@@ -56,7 +56,7 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
     border: 1px solid #fff;
 } 
 .row-1 {
-    height:30em; 
+    height:28em; 
     padding-top:12vh
 }
 .row-3 {
@@ -291,7 +291,7 @@ content: '';
 }
 .col-sm-2 {
     width: 100%;
-    padding: 0em 0em 4em 4.1em;
+    padding: 0em 0em 4em 2.8em;
 }   
 .intro-height {
     height: 25em
@@ -302,86 +302,19 @@ content: '';
     line-height: 1.7;
     width: 80%;
 } 
+.currently {
+    font-size: 0.82em;
+    line-height: 1.4;
+    max-width: 20em
+}   
+    .last {
+        margin-bottom: 0px;
+    }
         .row-3 {
     height:5em; 
     padding-top:3em
 }  
     
-
-
-    
-    /* Footer */
-    
-    .footer-home {
-    display: none;
-}
-    .footer-home-xs {
-    background-color: #fff;
-    width: 100%;
-    height: 6em;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 6em;   
-}
-    .zigzag-xs {
-    background-color: #000;
-    position: relative;
-    width: 100%;
-    height: 6em
-}
-    .zigzag-xs:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -10px;
-    width: 100%;
-    height: 10px;  
-}
-    .zigzag-wrap{
-    background: #fff;
-}
-    .zigzag-wrap:before {
-    background:
-    -webkit-linear-gradient(
-    45deg, transparent 33.333%,
-    #fff 33.333%, #fff 66.667%,
-    transparent 66.667%
-    ),
-    -webkit-linear-gradient(
-    135deg, transparent 33.333%,
-    #fff 33.333%, #fff 66.667%,
-    transparent 66.667%
-    );
-    background:
-    linear-gradient(
-    45deg, transparent 33.333%,
-    #fff 33.333%, #fff 66.667%,
-    transparent 66.667%
-    ),
-    linear-gradient(
-    -45deg, transparent 33.333%,
-    #fff 33.333%, #fff 66.667%,
-    transparent 66.667%
-    );
-    background-size: 10px 20px;
-}    
-    .baselineshift {
-    top: -0.02em
-}
-    .mail {
-    height: 1rem;
-    width: auto;
-    line-height: 6em;
-    vertical-align: middle;
-    position: absolute;
-    top: 0.25em;
-    }
-    
-    
-
-
-
-}
 
 /**
  * iPhone 5
