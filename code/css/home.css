@@ -8,6 +8,7 @@ body {
     
     /* background: linear-gradient(45deg, #e8f1fd, #ffe4f2, #e8f1fd, #ffe4f2, #d6ffff, #feffed); */
     /* background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb); */
+    /* background: linear-gradient(45deg, #d4e7ff, #f7eae2, #d4e7ff, #f7eae2, #d9f2f2, #fdffdb);  */
     background-color: #fff;
     background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
     background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb);
@@ -621,7 +622,7 @@ content: '';
 }
     .post td {
     width: 15vw;
-    padding-top: 52vh;
+    padding-top: 51vh;
     padding-bottom: 49.5vh;
     margin-left: 3.5vw;
 }
@@ -630,18 +631,19 @@ content: '';
     padding: 50vh 0vw 50vh 1vw;
 }
     .baselineshift {
-    top: 0.01em;
+    top: 0.09em;
     font-family: 'Inconsolata', "Times New Roman", Times, serif;    
     position: relative;
 }
     .arrowsize {
-    font-size: 2.4rem;
+    font-size: 2rem;
+
 }    
     .secondary {
     font-size: 1.5em;
 }
     .firstarrow {
-    font-size: 1.2em
+    font-size: 1.4em
 }
     .secondary > p > a:hover {
         padding: 0px 8px !important;
