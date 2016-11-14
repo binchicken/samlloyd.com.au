@@ -82,9 +82,12 @@
     </div>
 </div>    
 
+    
+
+    
 <!-- Main Content -->
-<div class="row row-1">
-<div class="about-page"></div>
+<div class="row row-1" id="row-1">
+<div class="about-page" id="about-page"></div>
 
 <!-- Row 1 ================================================================== -->
 <div class="col-sm-3 hidden-xs"></div>
@@ -190,7 +193,13 @@ High School, Sydney</p>
         });    
 
 </script>       
-    
+
+    <script type="text/javascript">
+
+var offsetHeight = document.getElementById('row-1').offsetHeight;
+document.getElementById('about-page').style.height = offsetHeight+'px';
+
+</script>    
 
 <!-- Compiled plugins -->
 <script src="code/js/bootstrap.min.js"></script>
