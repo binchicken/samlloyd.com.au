@@ -444,12 +444,13 @@ content: '';
     font-size: 1.35em;    
 }
     .about-page {
-    height: 95%;
+    height: 105vh;
     width: 74%;
     top: 63%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -27%);
+    transform: translate(-50%, -21%);
+        
 }
     .intro-height {
     height: 46vh

@@ -548,7 +548,7 @@ content: '';
     width: 18vw;
     padding-top: 52vh;
     padding-bottom: 49.5vh;
-    margin-left: 1vw;
+    margin-left: 4vw;
 }
     .arrow td {
         font-size: 1.5em;
@@ -573,7 +573,7 @@ content: '';
         height: 68em !important;
 }
     .last td {
-        padding-top: 37rem;
+        padding-top: 52vh;
         padding-bottom: 20em;
     }
     .baselineshift {
@@ -584,7 +584,7 @@ content: '';
     font-size: 1.5rem;
 }
         .firstarrow {
-    font-size: 1.2em
+    font-size: 1.75rem
 }
 }
 @media (min-width: 1200px) and (max-width: 1499px) and (orientation: portrait) {
