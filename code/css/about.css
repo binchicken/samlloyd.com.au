@@ -54,14 +54,21 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -26%);
     border: 1px solid #fff;
-} 
+}
+.row {
+        margin-left: 0px;
+    margin-right: 0px
+}
 .row-1 {
     height:28em; 
-    padding-top:12vh
+    padding-top:12vh;
+}
+.row-2 {
+    padding-bottom: 12em;
 }
 .row-3 {
-    height:25em; 
-    padding-top:20em
+    height:15em; 
+    padding-top:10em
     }
 .header-small {
     position: relative;
@@ -444,7 +451,6 @@ content: '';
     font-size: 1.25em;    
 }
     .about-page {
-    height: 105vh;
     width: 74%;
     top: 63%;
     left: 50%;
@@ -462,8 +468,8 @@ content: '';
     width: 23%;
 }
 .row-3 {
-    height:25em; 
-    padding-top:20em
+    height:5em; 
+    padding-top:0em
 }     
     .useful {
     font-size: 0.77em;
