@@ -60,12 +60,12 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
     margin-right: 0px
 }
 .row-1 {
-    height:28em; 
-    padding-top:26vh;
-    margin-bottom: 15vh;
+    height:31em; 
+    padding-top:30vh;
+    margin-bottom: 10vh;
 }
 .row-2 {
-    padding-bottom: 12em;
+    padding-bottom: 10em;
 }
 .row-3 {
     height:15em; 
@@ -143,7 +143,9 @@ h5 {
     letter-spacing:0.01em 
 }
 
-
+.sidebar {
+    font-size: 1.1rem
+}
 .sidebar a:hover {
     text-decoration: none;
 }
@@ -192,7 +194,7 @@ h5 {
 }
 
 .spacer {
-    margin-bottom: 3.7em
+    margin-bottom: 4.4em
 }
 .kern-tighter {
     letter-spacing: -0.05em
@@ -452,12 +454,17 @@ content: '';
     font-size: 1.25em;    
 }
     .about-page {
-    width: 70%;
+    width: 68%;
     top: 63%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -11%);
         
+}
+    .intro-about {
+    padding-top: 27vh;
+    font-size: 1.3rem;
+    line-height: 1.65;
 }
     .intro-height {
     height: 46vh
@@ -466,8 +473,8 @@ content: '';
     width: 20%;
 }
 .centre-col {
-    padding-left: 3em;
-    width: 23%;
+    padding-left: 3.5em;
+    width: 24%;
 }
 .row-3 {
     height:5em; 
