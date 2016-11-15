@@ -36,7 +36,7 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
 
 .col-sm-2 {
     padding-right: 2em;
-    padding-left: 2em;
+    padding-left: 1em;
 } 
 .col-sm-3 {
     width: 23%;
@@ -61,7 +61,8 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
 }
 .row-1 {
     height:28em; 
-    padding-top:12vh;
+    padding-top:26vh;
+    margin-bottom: 15vh;
 }
 .row-2 {
     padding-bottom: 12em;
@@ -451,11 +452,11 @@ content: '';
     font-size: 1.25em;    
 }
     .about-page {
-    width: 74%;
+    width: 70%;
     top: 63%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -21%);
+    transform: translate(-50%, -10%);
         
 }
     .intro-height {
@@ -465,6 +466,7 @@ content: '';
     width: 20%;
 }
 .centre-col {
+    padding-left: 3em;
     width: 23%;
 }
 .row-3 {
