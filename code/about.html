@@ -125,7 +125,7 @@
     
     
 <!-- Row 2 ================================================================== -->
-<div class="row">
+<div class="row" id="row-2">
     <div class="col-sm-3"></div>
     
 <div class="col-sm-2"></div>
@@ -197,7 +197,11 @@ High School, Sydney</p>
     <script type="text/javascript">
 
 var offsetHeight = document.getElementById('row-1').offsetHeight;
-document.getElementById('about-page').style.height = offsetHeight+'px';
+var offsetHeight2 = document.getElementById('row-2').offsetHeight;
+var result = offsetHeight + offsetHeight2 + 200       
+        
+        
+document.getElementById('about-page').style.height = result+'px';
 
 </script>    
 
