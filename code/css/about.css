@@ -441,7 +441,7 @@ content: '';
 }
     body {
     background-size: 900% 1900%; /* X Y -- Y must be longer than height of page */
-    font-size: 1.35em;    
+    font-size: 1.25em;    
 }
     .about-page {
     height: 105vh;
