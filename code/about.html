@@ -187,10 +187,12 @@ High School, Sydney</p>
      $(document).scroll(function () {
             var y = $(this).scrollTop();
             if (y < 350) {
-                $('.headerimg').fadeIn();
+                $('.headerimg, .intro-about').fadeIn();
             } else {
-                $('.headerimg').fadeOut();
+                $('.headerimg, .intro-about').fadeOut();
             }
+         
+
         });    
 
 </script>       
@@ -205,7 +207,13 @@ window.onload = function() {
     document.getElementById('about-page').style.height = result+'px';
 };        
         
+window.resize = function() {
+    var offsetHeight = document.getElementById('row-1').offsetHeight;
+    var offsetHeight2 = document.getElementById('row-2').offsetHeight;
+    var result = offsetHeight + offsetHeight2      
 
+    document.getElementById('about-page').style.height = result+'px';
+};   
 
 </script>    
 
