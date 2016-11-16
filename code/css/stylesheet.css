@@ -527,7 +527,7 @@ a.clickable:hover {
     
     
     .container, .row, .col-xs-12 .container, .visible-xs-block { 
-    padding: 0px !important;
+    padding: 0px;
     margin: 0px; 
 }            
     

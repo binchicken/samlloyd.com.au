@@ -246,8 +246,8 @@ content: '';
 
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
-    .container, .row, .col-xs-12 .container-fluid, .visible-xs-block { 
-    padding: 0px !important;
+    .container, .col-xs-12 .container-fluid, .visible-xs-block { 
+    padding: 0px ;
         margin: 0px;
 }
     .bg-home {
@@ -291,9 +291,24 @@ content: '';
     .about-page {
     height: 110em;    
     width: 96%;
-    top: 52em;
+    /* top: 52em; */
     left: 50%;
 } 
+.row-1 {
+    /* height:29em; */
+    height:48em; 
+    padding-top:0em;
+    /* margin-bottom: 20em; */
+    margin-bottom: 0em;
+} 
+.row-2 {
+    height: 62em;
+    padding-bottom: 0em;
+}
+.row-3 {
+    height:3em; 
+    padding-top:0em
+    }    
 .col-sm-3 {
     width: 11%;
 }
@@ -301,9 +316,15 @@ content: '';
     width: 100%;
     padding: 0em 0em 4em 3em;
 }  
-  
+    .lastblock {
+        padding-bottom: 0em;
+    }    
+.xs-spacer {
+    display: block;
+    height: 5em;
+}  
 .intro-height {
-    height: 25em
+    height: 17em
 } 
 .intro-about {
     padding-top: 3em;
@@ -312,8 +333,11 @@ content: '';
     width: 80%;
 }
 h2 {
-    font-size:0.8em;
+    font-size:0.85em;
 }
+.underline::after {
+  margin-top: 7px;
+}    
 .sidebar {
     font-size: 0.78em
 }
@@ -328,22 +352,25 @@ h2 {
     border-bottom: 3px solid #f3f8fe;
     width: 19.5em;
     padding-bottom: 0.25em;
-    margin: 0.75em 0em;
+    margin: 0em 0em 1.25em 0em;
 }
 #sidebar2 {
     background-color: #fff;
     border-bottom: 3px solid #f7f7f7;
     width: 19.5em;
     padding-bottom: 0.25em;
-    margin: 0.75em 0em;
+    margin: 1.25em 0em;
 }
 #sidebar3 {
     background-color: #fff;
     border-bottom: 3px solid #f7f7f7;
     width: 19.5em;
     padding-bottom: 0.25em;
-    margin: 0.75em 0em;
+    margin: 1.25em 0em 0em 0em;
 }
+#sidebar1:hover, #sidebar2:hover, #sidebar3:hover, #sidebar4:hover {
+    background-color: #fff;
+}    
 .sidebar-arrow {
     float: right
 }    
@@ -351,17 +378,19 @@ h2 {
     margin-bottom: 0em
 }    
 .currently {
-    font-size: 0.82em;
+    font-size: 0.86em;
     line-height: 1.4;
-    max-width: 20em
+    max-width: 18em
 }   
+.useful {
+    font-size: 0.86em;
+    line-height: 1.1;
+    display: block;
+    padding: 1px 0px;    
+}    
     .last {
         margin-bottom: 0px;
-    }
-        .row-3 {
-    height:5em; 
-    padding-top:3em
-}  
+    } 
 }
 
 /**
@@ -369,11 +398,10 @@ h2 {
  * To combat vh bug
  */
 @media screen and (device-aspect-ratio: 40/71) {
-    .about-page {
-    height: 103em;    
+    .about-page {    
     width: 96%;
-    -webkit-transform: translate3d(-50%, -28%, 0);
-    transform: translate3d(-50%, -28%, 0)        
+    -webkit-transform: translate3d(-50%, 0%, 0);
+    transform: translate3d(-50%, 0%, 0)        
 
 } 
 }
