@@ -296,7 +296,7 @@ content: '';
 } 
 .row-1 {
     /* height:29em; */
-    height:48em; 
+    height:56em; 
     padding-top:0em;
     /* margin-bottom: 20em; */
     margin-bottom: 0em;
@@ -321,7 +321,7 @@ content: '';
     }    
 .xs-spacer {
     display: block;
-    height: 5em;
+    height: 8em;
 }  
 .intro-height {
     height: 17em
@@ -400,8 +400,8 @@ h2 {
 @media screen and (device-aspect-ratio: 40/71) {
     .about-page {    
     width: 96%;
-    -webkit-transform: translate3d(-50%, 0%, 0);
-    transform: translate3d(-50%, 0%, 0)        
+    -webkit-transform: translate3d(-50%, 3%, 0);
+    transform: translate3d(-50%, 3%, 0)        
 
 } 
 }
