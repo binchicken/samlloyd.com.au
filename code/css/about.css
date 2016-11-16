@@ -310,7 +310,46 @@ content: '';
     font-size: 1.15rem;
     line-height: 1.7;
     width: 80%;
-} 
+}
+h2 {
+    font-size:0.8em;
+}
+.sidebar {
+    font-size: 0.78em
+}
+.sidebar a:hover {
+    text-decoration: none;
+}
+.sidebar p {
+    display: inline;
+}
+#sidebar1 {
+    background-color: #fff;
+    border-bottom: 3px solid #f3f8fe;
+    width: 19.5em;
+    padding-bottom: 0.25em;
+    margin: 0.75em 0em;
+}
+#sidebar2 {
+    background-color: #fff;
+    border-bottom: 3px solid #f7f7f7;
+    width: 19.5em;
+    padding-bottom: 0.25em;
+    margin: 0.75em 0em;
+}
+#sidebar3 {
+    background-color: #fff;
+    border-bottom: 3px solid #f7f7f7;
+    width: 19.5em;
+    padding-bottom: 0.25em;
+    margin: 0.75em 0em;
+}
+.sidebar-arrow {
+    float: right
+}    
+.spacer {
+    margin-bottom: 0em
+}    
 .currently {
     font-size: 0.82em;
     line-height: 1.4;
