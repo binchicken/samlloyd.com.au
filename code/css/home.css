@@ -622,7 +622,7 @@ content: '';
 }
     .post td {
     width: 15vw;
-    padding-top: 51vh;
+    padding-top: 51.5vh;
     padding-bottom: 49.5vh;
     margin-left: 3.5vw;
 }
@@ -643,7 +643,7 @@ content: '';
     font-size: 1.5em;
 }
     .firstarrow {
-    font-size: 1.4em
+    font-size: 1em
 }
     .secondary > p > a:hover {
         padding: 0px 8px !important;
