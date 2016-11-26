@@ -541,12 +541,12 @@ content: '';
 }
 
     .post, .arrow {
-        background-position:50% 59%;
+        background-position:50% 62%;
         background-size:auto 67%;
 }
     .post td {
     width: 18vw;
-    padding-top: 52vh;
+    padding-top: 53vh;
     padding-bottom: 49.5vh;
     margin-left: 2vw;
 }
@@ -566,7 +566,7 @@ content: '';
         padding: 0px 5px !important;
 }
     .footer-home {
-        bottom: 3vh;
+        bottom: 2.5vh;
         font-size: 0.9em;
 }
     .last {
