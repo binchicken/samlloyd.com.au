@@ -552,8 +552,8 @@ h5 {
     width: 68%;
     top: 63%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -11%);        
+    -webkit-transform: translate(-50%, -11%);
+    transform: translate(-50%, -28%);        
 }
     .intro-about {
     padding-top: 27vh;
@@ -572,14 +572,18 @@ h5 {
 }
 .col-sm-pull-2 {
     right: 24%; /* centre-col value */
-}      
-.row-2 {
-    padding-bottom: 11em;
+}
+    .row-1 {
+    height:25em; 
+    padding-top:12vh
+    }    
+    .row-2 {
+    padding-bottom: 25em;
 }     
 .row-3 {
-    height:5em; 
-    padding-top:0em
-}     
+    height:15em; 
+    padding-top:10em
+}      
     .useful {
     font-size: 0.77em;
     line-height: 0.95;
@@ -604,7 +608,13 @@ h5 {
     body {
     background-size: 900% 1700%; /* X Y -- Y must be longer than height of page */
         }
-    
+    .about-page {
+    width: 62%;
+    top: 63%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -11%);
+    transform: translate(-50%, -23%);        
+}
     .baselineshift {
     top: -0.08em;
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
@@ -615,7 +625,7 @@ h5 {
     padding-top:12vh
     }
     .row-2 {
-    padding-bottom: 11em;
+    padding-bottom: 15em;
 }     
 .row-3 {
     height:5em; 
