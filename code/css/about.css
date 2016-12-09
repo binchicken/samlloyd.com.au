@@ -549,11 +549,12 @@ h5 {
     font-size: 1.25em;    
 }
     .about-page {
+    margin-top: 56vh;
     width: 68%;
     top: 63%;
     left: 50%;
     -webkit-transform: translate(-50%, -11%);
-    transform: translate(-50%, -28%);        
+    transform: translate(-50%, -50%);        
 }
     .intro-about {
     padding-top: 27vh;
@@ -574,15 +575,15 @@ h5 {
     right: 24%; /* centre-col value */
 }
     .row-1 {
-    height:25em; 
-    padding-top:12vh
+    height:32em; 
+    padding-top:25vh
     }    
     .row-2 {
-    padding-bottom: 25em;
+    padding-bottom: 12em;
 }     
 .row-3 {
-    height:15em; 
-    padding-top:10em
+    height:10em; 
+    padding-top:5em
 }      
     .useful {
     font-size: 0.77em;
@@ -595,6 +596,9 @@ h5 {
     .baselineshift {
     top: 0.02rem;
     font-family: 'Inconsolata', "Times New Roman", Times, serif;
+}
+    .page-spacer {
+    height: 20em;       
 }
 }
 
