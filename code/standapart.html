@@ -117,9 +117,34 @@ With a new name, Adapt aims to be more evocative of what the business offers to 
 <div class="col-sm-8">
 <span style=""></span>  
 
-<img src="../links/images/standapart/SamLloyd_StandApart_1c.jpg" alt="Stand Apart"/>
+<img src="../links/images/standapart/SamLloyd_StandApart_1.jpg" alt="Stand Apart"/>
+    <!-- Video content -->
+<div class="videowrapper" style="overflow:hidden">    
+    <div class="videosize">
+        <div class="videothumbnail" id="thumbnail-StandApart1"></div>
+        <iframe id="video-StandApart1" src="https://player.vimeo.com/video/152106444" width="750" height="421" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+</div>    
+ 
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+<!-- Video thumbnail -->
+<script>
+$(document).ready(function() {
+    
+  $("#thumbnail-StandApart1").click(function () {
+    $("#thumbnail-StandApart1").fadeOut("slow");
+  });
+    
+    $("#thumbnail-StandApart1").on('click', function(ev) {
+        $("#video-StandApart1")[0].src += "?autoplay=1";
+        ev.preventDefault();
+ 
+  });
+    
+});
+</script>      
 <img src="../links/images/standapart/SamLloyd_StandApart_6b.jpg" alt="Stand Apart"/>
-<img src="../links/images/standapart/SamLloyd_StandApart_2d.jpg" alt="Stand Apart"/>
 <img src="../links/images/standapart/SamLloyd_StandApart_5b.jpg" alt="Stand Apart"/>
 <img src="../links/images/standapart/SamLloyd_StandApart_3b.jpg" alt="Stand Apart"/>
 <img src="../links/images/standapart/SamLloyd_StandApart_4b.jpg" alt="Stand Apart"/>
@@ -166,7 +191,9 @@ With a new name, Adapt aims to be more evocative of what the business offers to 
 <p class="subhead tag"><u>Website</u></p>
 <h3>Stand Apart</h3>
 <p class="intro">
-text
+There was a change in the air during the past year at Interbrand Aus; a new team and a reboot in the way we work brought with it a renewed excitement to create stand apart work. This meant our little corner of the internet was also deserving of an overhaul, where ideas take centre-stage and the diverse story of each project could shine.
+    
+
 
    
                     
@@ -175,6 +202,7 @@ text
 
 <li>Front-end development</li>
 <li>Design</li>
+<li>Showreel animation</li>
 <br>
                         
             </div>           
@@ -184,8 +212,7 @@ text
         </div>
 
 
-<!-- Load jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    
     
 <!-- Hide header -->
 <script>
@@ -202,6 +229,8 @@ text
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script> 
+
+    
 
 <!-- Collapsible container --> 
 <script src="js/projectinfo.js" type="text/javascript"></script>
