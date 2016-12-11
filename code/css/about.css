@@ -549,12 +549,11 @@ h5 {
     font-size: 1.25em;    
 }
     .about-page {
-    margin-top: 56vh;
+    margin-top: 42vh;
     width: 68%;
-    top: 63%;
+    top: 0%;
     left: 50%;
-    -webkit-transform: translate(-50%, -11%);
-    transform: translate(-50%, -50%);        
+    transform: translate(-50%, 0%);        
 }
     .intro-about {
     padding-top: 27vh;
@@ -576,7 +575,7 @@ h5 {
 }
     .row-1 {
     height:32em; 
-    padding-top:25vh
+    padding-top:20vh
     }    
     .row-2 {
     padding-bottom: 12em;
