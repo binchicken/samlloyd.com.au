@@ -15,8 +15,8 @@ min-height: 100%;
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
         background-repeat: no-repeat;
 
-    -webkit-animation: HomeGradient 45s ease infinite;
-    animation: HomeGradient 45s ease infinite;
+    -webkit-animation: HomeGradient 40s ease infinite;
+    animation: HomeGradient 40s ease infinite;
     }
     @-webkit-keyframes HomeGradient {
         0%{background-position:0% 50%}
@@ -60,9 +60,9 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
     margin-right: 0px
 }
 .row-1 {
-    height:31em; 
-    padding-top:30vh;
-    margin-bottom: 10vh;
+    height:35em; 
+    padding-top:20vh;
+    padding-bottom: 20vh;
 }
 .row-2 {
     padding-bottom: 10em;
@@ -194,7 +194,7 @@ h5 {
 }
 
 .spacer {
-    margin-bottom: 5.1em
+    margin-bottom: 3.7em
 }
 .kern-tighter {
     letter-spacing: -0.05em
@@ -492,11 +492,11 @@ h5 {
     font-size: 1.25em;        
 }
     .about-page {
+    margin-top: 40vh;
     width: 75%;
-    top: 63%;
+    top: 0%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -11%);        
+    transform: translate(-50%, 0%);        
 }
     .intro-about {
     padding-top: 27vh;
@@ -617,7 +617,7 @@ h5 {
     .about-page {
     margin-top: 42vh;
     width: 62%;
-        max-width: 80em;
+    max-width: 80em;
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0%);        
@@ -640,6 +640,9 @@ h5 {
     height:5em; 
     padding-top:0em
 }     
-    
+    .centre-col {
+        padding-right: 3em;
+        margin-right: 3em;
+    }
 }
 
