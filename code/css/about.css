@@ -606,13 +606,13 @@ h5 {
 @media (min-width: 1500px) {
     #header-container {   
         padding: 14vh 0em 0em 0em;
-         /*background-color: aliceblue; */
+        /* background-color: aliceblue; */
     }
     body {
     background-size: 900% 1700%; /* X Y -- Y must be longer than height of page */
         }
     .container-fluid {
-        width: 1800px
+        max-width: 1900px
     }
     .about-page {
     margin-top: 42vh;
@@ -628,8 +628,10 @@ h5 {
     position: relative;
 }
     .row-1 {
-    height:30em; 
-    padding-top:10vh
+    height:34em; 
+    padding-top:18vh;
+    padding-bottom: 22vh;
+    margin-bottom: 0vh
     }
     .row-2 {
     padding-bottom: 15em;
