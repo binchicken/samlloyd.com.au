@@ -611,12 +611,16 @@ h5 {
     body {
     background-size: 900% 1700%; /* X Y -- Y must be longer than height of page */
         }
+    .container-fluid {
+        width: 1800px
+    }
     .about-page {
+    margin-top: 42vh;
     width: 62%;
-    top: 63%;
+        max-width: 80em;
+    top: 0%;
     left: 50%;
-    -webkit-transform: translate(-50%, -11%);
-    transform: translate(-50%, -23%);        
+    transform: translate(-50%, 0%);        
 }
     .baselineshift {
     top: -0.08em;
@@ -625,7 +629,7 @@ h5 {
 }
     .row-1 {
     height:30em; 
-    padding-top:12vh
+    padding-top:10vh
     }
     .row-2 {
     padding-bottom: 15em;
