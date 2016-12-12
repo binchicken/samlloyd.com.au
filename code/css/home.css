@@ -610,7 +610,7 @@ content: '';
         /* background-color: aliceblue; */
     }
     body {
-    background-size: 900% 1700%; /* X Y -- Y must be longer than height of page */
+    background-size: 900% 4100%; /* X Y -- Y must be longer than height of page */
         }
     .homebg {
     height: 97.5%;
