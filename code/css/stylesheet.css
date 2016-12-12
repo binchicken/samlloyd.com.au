@@ -515,8 +515,8 @@ a.clickable:hover {
     width: auto !important;
     line-height: 6em;
     vertical-align: middle;
-    position: absolute;
-    top: 0.1rem;
+    position: relative;
+    top: -0.12rem
     }
 .nopadding a:hover {
     text-decoration: none;

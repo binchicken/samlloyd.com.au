@@ -464,7 +464,7 @@ h5 {
     padding-top:0em
 }     
     .baselineshift {
-    top: -0.05em;
+    top: 0.05em;
     font-family: 'Inconsolata', "Times New Roman", Times, serif;
 }
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
@@ -528,7 +528,7 @@ h5 {
     padding-top:0em
 }     
     .baselineshift {
-    top: -0.05em;
+    top: 0.05em;
     font-family: 'Inconsolata', "Times New Roman", Times, serif;
 }
 }
@@ -617,7 +617,7 @@ h5 {
     transform: translate(-50%, 0%);        
 }
     .baselineshift {
-    top: -0.08em;
+    top: -0.12em;
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     position: relative;
 }
