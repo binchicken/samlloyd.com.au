@@ -344,6 +344,17 @@ content: '';
 }
     .zigzag-wrap:before {
     background:
+    -webkit-linear-gradient(
+    45deg, transparent 33.333%,
+    #fff 33.333%, #fff 66.667%,
+    transparent 66.667%
+    ),
+    -webkit-linear-gradient(
+    135deg, transparent 33.333%,
+    #fff 33.333%, #fff 66.667%,
+    transparent 66.667%
+    );
+    background:
     linear-gradient(
     45deg, transparent 33.333%,
     #fff 33.333%, #fff 66.667%,
@@ -382,7 +393,7 @@ content: '';
     /* background-color:antiquewhite; */
 }
     body {
-    background-size: 1000% 1600%; /* X Y -- Y must be longer than height of page */
+    background-size: 1000% 4200%; /* X Y -- Y must be longer than height of page */
         }
     .homebg {
     height: 96.4%;
@@ -423,7 +434,7 @@ content: '';
     font-size: 0.8em;
 }
     .last {
-    height: 68em !important;
+    height: 100vh !important;
 }
     .last td {
     padding-top: 53vh;
@@ -458,10 +469,10 @@ content: '';
 @media (min-width: 992px) and (max-width: 1199px) {
     #header-container {   
         padding: 13vh 0em 0.5em 0.5em;
-        /* background-color:beige; */
+         /*background-color:beige; */
 }
     body {
-    background-size: 900% 1200%; /* X Y -- Y must be longer than height of page */
+    background-size: 900% 4200%; /* X Y -- Y must be longer than height of page */
         }
     .homebg{
     height: 97.2%;
@@ -498,7 +509,7 @@ content: '';
     font-size: 0.8em;
 }
     .last {
-    height: 68em !important;
+    height: 100vh !important;
 }
     .last td {
     padding-top: 53vh;
@@ -530,10 +541,10 @@ content: '';
 @media (min-width: 1200px) and (max-width: 1499px) {
     #header-container {   
         padding: 11vh 0em 0.5em 0em;
-        /* background-color:darkseagreen; */
+      /*background-color:darkseagreen; */
     }
     body {
-    background-size: 900% 1900%; /* X Y -- Y must be longer than height of page */
+    background-size: 900% 4200%; /* X Y -- Y must be longer than height of page */
         }
     .homebg {
     height: 97.5%;
@@ -542,7 +553,7 @@ content: '';
 
     .post, .arrow {
         background-position:50% 62%;
-        background-size:auto 67%;
+        background-size:auto 61%;
 }
     .post td {
     width: 18vw;
@@ -570,7 +581,7 @@ content: '';
         font-size: 0.9em;
 }
     .last {
-        height: 68em !important;
+        height: 100vh !important;
 }
     .last td {
         padding-top: 52vh;
@@ -596,12 +607,14 @@ content: '';
     width: 98.5%;
 }
     .post, .arrow {
-    background-size: 66% auto;
+    background-size: 662% auto;
 }
     .footer-home {
     bottom: 10vh;
 }
 }
+
+
 
 /* XL ----------- */
 @media (min-width: 1500px) {
@@ -610,7 +623,7 @@ content: '';
         /* background-color: aliceblue; */
     }
     body {
-    background-size: 900% 4100%; /* X Y -- Y must be longer than height of page */
+    background-size: 900% 4200%; /* X Y -- Y must be longer than height of page */
         }
     .homebg {
     height: 97.5%;
