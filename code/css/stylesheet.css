@@ -651,8 +651,11 @@ a:active {
     body {
     font-size: 1.2em;
     }
+        .row-height {
+    height: 8.5em;
+}
     #header-container {   
-    padding: 2.5em 0em 2.5em 0em;
+    padding: 3.5em 0em 2.5em 0em;
 }
 }
 
@@ -663,10 +666,10 @@ a:active {
     font-size: 1.25em;
     }
     .row-height {
-    height: 7.5em;
+    height: 8.5em;
 }
     #header-container {   
-    padding: 2.5em 0em 2.5em 0em;
+    padding: 3.5em 0em 2.5em 0em;
 }
 }
 
