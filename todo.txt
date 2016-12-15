@@ -1,0 +1,60 @@
+
+<!-- To-do list
+
+/* project image size: 1200x800 */
+
+/* necessary =============================================================== */
+
+/* CHANGES content */
+/* [x]TODO ↳ BN staff book */
+/* [x]TODO ↳ additional copy block from awards */
+/* [x]TODO ↳ decide how to treat stand apart */
+/* [x]TODO ↳ stand apart project info */
+/* [x]TODO ↳ remove ping pong for now */
+/* [x]TODO ↳ telstra tv project info */
+/* [x]TODO ↳ correct media queries on about on larger screens */
+/* [x]TODO ↳ ensure SM & XS descriptions match */
+
+/* CHANGES structure */
+/* [x]TODO ↳ complete back/next links */
+/* [x]TODO ↳ home page gradient once content final */
+/* [x]TODO ↳ project numbers */
+
+/* CHANGES organisation */
+/* [x]TODO ↳ .htaccess file + remove .html from links */
+/* [x]TODO ↳ move to root domain */
+/* [x]TODO ↳ seo/meta tags */
+
+/* CHANGES tidy up */
+/* [x]TODO ↳ delete unnecessary content from local & subdomain */
+/* [x]TODO ↳ compare final XS & SM+ */
+/* TODO ↳ test on other devices */
+
+/* CHANGES update portfolio */
+/* CHANGES write CV */
+
+/* CHANGES public post */
+/* TODO ↳ create image for twitter (add to meta twitter cards) - will be cropped to a square on twitter */
+/* TODO     ↳ <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" /> */
+
+
+/* ideal =================================================================== */
+
+/* CHANGES content */
+/* [x]TODO ↳ second index img for stand apart */
+/* TODO ↳ ping pong (update back/next links) */
+/* TODO ↳ red25 (update back/next links) */
+/* TODO ↳ rainmeter (update back/next links) */
+/* TODO ↳ SOH ticket */
+/* TODO ↳ SOH add browser frame to stand apart single pages */
+
+/* CHANGES structure */
+/* TODO ↳ back/next links at XS */
+/* TODO ↳ 2-up images on SOH 1 pixel too small */
+/* TODO ↳ add meta tags to all pages */
+
+/* CHANGES splash page through certain url (samlloyd.com.au/hello-google) */
+/* TODO ↳ set up as html page, click anywhere & redirects home (no preloader on this page, clicking through will prompt) */
+
+
+/* ========================================================================= */
