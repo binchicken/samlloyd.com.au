@@ -1,0 +1,13 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Redirect /code/some-page.html to /some-page
+RewriteCond %{THE_REQUEST} \s/code/([^/]+)\.html\s [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Rewrite /some-page to /code/some-page.html if it exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/code/$1\.html -f
+RewriteRule ^([^/]+)$ code/$1.html [L]
