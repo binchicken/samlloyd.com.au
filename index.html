@@ -24,6 +24,39 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>sam lloyd    ʕ•ᴥ•ʔ</title>
 
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89040801-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+      
+    <!-- Meta -->
+    <link rel="canonical" href="http://samlloyd.com.au/">  
+    <meta property="og:site_name" content="sam lloyd    ʕ•ᴥ•ʔ"/>
+    <meta property="og:title" content="Sam Lloyd | Designer & Tinkerer"/>
+    <meta property="og:url" content="http://samlloyd.com.au/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Sydney-based designer most of the time and tinkerer all of
+        the time. I love science, technology, video games and making beautiful things."/>
+    <meta itemprop="name" content="Sam Lloyd | Designer & Tinkerer"/>
+    <meta itemprop="url" content="http://samlloyd.com.au/"/>
+    <meta itemprop="description" content="Sydney-based designer most of the time and tinkerer all of
+        the time. I love science, technology, video games and making beautiful things."/>
+    <meta name="twitter:card" content="summary"/>  
+    <meta name="twitter:site" content="@brothello" />
+    <meta name="twitter:title" content="Sam Lloyd | Designer & Tinkerer"/>
+    <meta name="twitter:url" content="http://samlloyd.com.au/"/>
+    <meta name="twitter:description" content="Sydney-based designer most of the time and tinkerer all of
+        the time. I love science, technology, video games and making beautiful things." />
+
     <!-- Bootstrap -->
     <link href="code/css/bootstrap.min.css" rel="stylesheet">
 
@@ -34,8 +67,6 @@
     <!-- Load jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../links/favicon/favicon 2/favicon-16x16.png" type="image/x-icon" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,20 +80,24 @@
 
 
 <body>
-
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>  
+    
 <!-- Page setup -->
 <div class="homebg"></div>
 <div class="container-fluid">
 
 <!-- Menu Button [XS] --> 
-<a href="code/about.html"><div class="visible-xs-fixed xs-menu text-center"><p>...</p></div></a>      
+<a href="code/about.html"><div class="visible-xs-block xs-menu text-center"><p>...</p></div></a>      
     
 <!-- Header -->
 <div class="row">
     <div class="col-xs-12">
         <div class="row-height">
-            <div id="header-container">
-                <a href="../index.html"><img src="../links/images/samlloyd.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
+            <div class="scrollme" id="header-container">
+                <a href="../index.html" style="pointer-events: auto"><img src="../links/images/samlloyd-ws.gif" alt="Sam Lloyd" class="headerimg" height="41" width="172" /></a>
             </div>
         </div>
     </div>
@@ -99,42 +134,113 @@
 	<div id="postcontainer">
         
         <!-- Intro Post -->
-		<table class="post arrow" style="background-image:url(../links/paintfull.png)" alt="">
-            <td class="caption"><p>↓</p></td></table>
+		<table class="post arrow" style="background-image:url(../links/images/agnostic/SamLloyd_1.jpg)" alt="">
+            <td class="caption"><p class="firstarrow arrowsize baselineshift">&#x2193;</p></td></table>
 
-        <!-- SOH -->
-        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg)" alt="Sydney Opera House">
+        <!-- SOH ===================================================================== -->
+        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_9.jpg)" alt="Sydney Opera House">
             <td class="caption"><p>
                     <a class="underline" href="code/sydneyoperahouse.html">
                         <span>01&#x2002;&#x2002;&#x2002;&#x2002;</span>
                         <span class="primary">Sydney Opera House</span></a></p></td></table>
         
-        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg)" alt="Sydney Opera House">
-            <td class="secondary caption"><p><a href="code/sydneyoperahouse.html"><span class="baselineshift">&#x2192;</span></a></p></td></table>
+        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_10.jpg)" alt="Sydney Opera House">
+            <td class="secondary caption"><p><a href="code/sydneyoperahouse.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
         
-        <table class="post" style="background-image:url(../links/Green_megazoom_2x.png)" alt="Sydney Opera House">
-        <td class="secondary caption"><p><a href="code/sydneyoperahouse.html"><span class="baselineshift">&#x2192;</span></a></p></td></table>
+        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_15.jpg)" alt="Sydney Opera House">
+        <td class="secondary caption"><p><a href="code/sydneyoperahouse.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
 
-        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy18c.jpg)" alt="Sydney Opera House">
+        <table class="post" style="background-image:url(../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_16.jpg)" alt="Sydney Opera House">
             <td class="caption"><p class="primary"><a href="code/sydneyoperahouse.html">
-                See more&#x2002;&#x2002;<span class="baselineshift">&#x2192;</span></a></p></td></table>
+                See more&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
         
-        <!-- Ping Pong -->
-        <table class="post" style="background-image:url(../links/pingpong001c.jpg)" alt="">
-		<td class="caption"><p>
-                    <a class="underline" href="code/pingpong.html">
+        
+        <!-- Adapt =================================================================== -->
+        <table class="post" style="background-image:url(../links/images/adaptventures/SamLloyd_AdaptVentures_1.jpg)" alt="Sam Lloyd">
+            <td class="caption"><p>
+                    <a class="underline" href="code/adaptventures.html">
                         <span>02&#x2002;&#x2002;&#x2002;&#x2002;</span>
-                        <span class="primary">Ping Pong</span></a></p></td></table>
+                        <span class="primary">Adapt Ventures</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(../links/images/adaptventures/SamLloyd_AdaptVentures_3.jpg)" alt="Adapt Ventures">
+        <td class="secondary caption"><p><a href="code/adaptventures.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(../links/images/adaptventures/SamLloyd_AdaptVentures_6.jpg)" alt="Adapt Ventures">
+        <td class="secondary caption"><p><a href="code/adaptventures.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
 
-        <table class="last post" style="background-image:url(../links/test7.png)" alt="">
-		<td class="caption" style="text-align: left; margin-left: 7vw;"><p><a href="pingpong.html"><span class="primary">
-            See more&#x2002;&#x2002;<span class="baselineshift">&#x2192;</span></span></a></p><br><p style="font-size:0.9em; margin-top:2em" class="underline"><br><a href='#TOP'>back to top</a></p></td>
+        <table class="post" style="background-image:url(../links/images/adaptventures/SamLloyd_AdaptVentures_17.jpg)" alt="Adapt Ventures">
+            <td class="caption"><p class="primary"><a href="code/adaptventures.html">
+                See more&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+        
+        <!-- ADC =================================================================== -->
+        <table class="post" style="background-image:url(links/images/adc/SamLloyd_ADC_2.jpg)" alt="Australian Design Centre">
+            <td class="caption"><p>
+                    <a class="underline" href="code/adc.html">
+                        <span>03&#x2002;&#x2002;&#x2002;&#x2002;</span>
+                        <span class="primary">Australian Design Centre</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(links/images/adc/SamLloyd_ADC_7b.jpg)" alt="Australian Design Centre">
+        <td class="secondary caption"><p><a href="code/adc.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(links/images/adc/SamLloyd_ADC_5.jpg)" alt="Australian Design Centre">
+        <td class="secondary caption"><p><a href="code/adc.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+
+        <table class="post" style="background-image:url(links/images/adc/SamLloyd_ADC_23b.jpg)" alt="Australian Design Centre">
+            <td class="caption"><p class="primary"><a href="code/adc.html">
+                See more&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+
+        
+        <!-- Bailey Nelson =================================================================== -->
+        <table class="post" style="background-image:url(links/images/baileynelson/SamLloyd_BaileyNelson_1.jpg)" alt="Bailey Nelson">
+            <td class="caption"><p>
+                    <a class="underline" href="code/baileynelson.html">
+                        <span>04&#x2002;&#x2002;&#x2002;&#x2002;</span>
+                        <span class="primary">Bailey Nelson</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(links/images/baileynelson/SamLloyd_BaileyNelson_24.jpg)" alt="Bailey Nelson">
+        <td class="secondary caption"><p><a href="code/baileynelson.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(links/images/baileynelson/SamLloyd_BaileyNelson_26b.jpg)" alt="Bailey Nelson">
+        <td class="secondary caption"><p><a href="code/baileynelson.html"><span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>        
+        
+        <table class="post" style="background-image:url(links/images/baileynelson/SamLloyd_BaileyNelson_32b.jpg)" alt="Bailey Nelson">
+            <td class="caption"><p class="primary"><a href="code/baileynelson.html">
+                See more&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>        
+        
+
+        <!-- Telstra TV =================================================================== -->
+        <table class="post" style="background-image:url(../links/images/telstratv/SamLloyd_TelstraTV_1.jpg)" alt="Telstra TV">
+            <td class="caption"><p>
+                    <a class="underline" href="code/telstratv.html">
+                        <span>05&#x2002;&#x2002;&#x2002;&#x2002;</span>
+                        <span class="primary">Telstra TV</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(../links/images/telstratv/SamLloyd_TelstraTV_3b.jpg)" alt="Telstra TV">
+            <td class="caption"><p class="primary"><a href="code/telstratv.html">
+                See more&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+        
+        
+        <!-- Stand Apart =================================================================== -->
+        <table class="post" style="background-image:url(../links/images/standapart/SamLloyd_StandApart_1.jpg)" alt="Stand Apart">
+            <td class="caption"><p>
+                    <a class="underline" href="code/standapart.html">
+                        <span>06&#x2002;&#x2002;&#x2002;&#x2002;</span>
+                        <span class="primary">Stand Apart</span></a></p></td></table>
+        
+        <table class="post" style="background-image:url(../links/images/standapart/SamLloyd_StandApart_8.jpg)" alt="Stand Apart">
+            <td class="caption"><p class="primary"><a href="code/standapart.html">
+                See more&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></a></p></td></table>
+        
+        
+        <!-- Last post ================================================================ -->
+        <table class="last post" style="background-image:url(../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_19.jpg); background-color:#d7dff4;" alt="">
+		<td class="caption" style="text-align: left; margin-left: 7vw;"><p><a href="code/about.html"><span class="primary">
+            Say g'day&#x2002;&#x2002;<span class="baselineshift arrowsize">&#x2192;</span></span></a></p><br><p style="font-size:0.9em; margin-top:2em"><br><a href='#TOP'>back to top</a></p></td>
 		</table>
 
 		</div>
 
 
-     
     
 <!-- Script -->
 <script type="text/javascript">
@@ -149,7 +255,9 @@ $(document).ready(function(){
                 $("body,html").animate({ scrollTop: $(this).next(".post").offset().top }, 600)
             })
         });
-    } else {};
+        
+        
+    } 
 });
 	</script>
 
@@ -163,36 +271,103 @@ $(document).ready(function(){
     <div class="col-xs-12 visible-xs-block">
 
         <div class="xs-post">
-         <img class="xs-scroll" src="links/paintfull.png" alt="" href="pingpong.html" />
+         <img class="xs-scroll" src="links/images/agnostic/SamLloyd_1.jpg" alt="Sam Lloyd" />
             <!-- SOH -->
             <div class="xs-captionwrap"><a href="code/sydneyoperahouse.html">
-                <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy9.jpg" alt="Sydney Opera House" />
+                <img class="xs-scroll" src="links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_9.jpg" alt="Sydney Opera House" />
                 <div class="xs-caption"><p>Sydney Opera House</p></div>
                 </a></div>
             <a href="code/sydneyoperahouse.html">
-                <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy10.jpg" alt="Sydney Opera House" /></a>
+                <img class="xs-scroll" src="links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_10.jpg" alt="Sydney Opera House" /></a>
             <a href="code/sydneyoperahouse.html">
-                <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy17.jpg" alt="Sydney Opera House" /></a>
-            <a href="code/sydneyoperahouse.html">
-                <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy18c.jpg" alt="Sydney Opera House" /></a>
-            <!-- Ping Pong -->
-            <div class="xs-captionwrap"><a href="code/pingpong.html">
-                <img class="xs-scroll" src="../links/pingpong001c.jpg" alt="Ping Pong" />
-                <div class="xs-caption"><p style="color: #3549e0">Ping Pong Comp</p></div>
-            </a></div>
-            <a href="code/pingpong.html">
-                <img class="xs-scroll" src="../links/images/sydneyoperahouse/InterbrandAustralia_SydneyOperaHouse_CaseStudy21.jpg" alt="Ping Pong" /></a>  
+                <img class="xs-scroll" src="links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_15.jpg" alt="Sydney Opera House" /></a>
+            <div class="xs-captionwrap"><a href="code/sydneyoperahouse.html">
+                <img class="xs-scroll" src="links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_16.jpg" alt="Sydney Opera House" />
+                <div class="xs-caption"><p>See more</p></div>
+                <div class="xs-caption captionarrow"><p>&#x2192;</p></div>
+                </a></div>
+            
+            <!-- Adapt -->
+            <div class="xs-captionwrap"><a href="code/adaptventures.html">
+                <img class="xs-scroll" src="links/images/adaptventures/SamLloyd_AdaptVentures_1.jpg" alt="Adapt Ventures" />
+                <div class="xs-caption"><p>Adapt Ventures</p></div>
+                </a></div>
+            <a href="code/adaptventures.html">
+                <img class="xs-scroll" src="links/images/adaptventures/SamLloyd_AdaptVentures_3.jpg" alt="Adapt Ventures" /></a>
+            <a href="code/adaptventures.html">
+                <img class="xs-scroll" src="links/images/adaptventures/SamLloyd_AdaptVentures_6.jpg" alt="Adapt Ventures" /></a>
+            <div class="xs-captionwrap"><a href="code/adaptventures.html">
+                <img class="xs-scroll" src="links/images/adaptventures/SamLloyd_AdaptVentures_17.jpg" alt="Adapt Ventures" />
+                <div class="xs-caption"><p>See more</p></div>
+                <div class="xs-caption captionarrow"><p>&#x2192;</p></div>
+                </a></div>
+            
+            <!-- ADC -->
+            <div class="xs-captionwrap"><a href="code/adc.html">
+                <img class="xs-scroll" src="links/images/adc/SamLloyd_ADC_7b.jpg" alt="Australian Design Centre" />
+                <div class="xs-caption"><p style="color: #535353">Australian Design Centre</p></div>
+                </a></div>
+            <a href="code/adc.html">
+                <img class="xs-scroll" src="links/images/adc/SamLloyd_ADC_2.jpg" alt="Australian Design Centre" /></a>
+            <a href="code/adc.html">
+                <img class="xs-scroll" src="links/images/adc/SamLloyd_ADC_5.jpg" alt="Australian Design Centre" /></a>
+            <div class="xs-captionwrap"><a href="code/adc.html">
+                <img class="xs-scroll" src="links/images/adc/SamLloyd_ADC_23b.jpg" alt="Australian Design Centre" />
+                <div class="xs-caption"><p>See more</p></div>
+                <div class="xs-caption captionarrow"><p>&#x2192;</p></div>
+                </a></div>            
+            
+            <!-- Bailey Nelson -->
+            <div class="xs-captionwrap"><a href="code/baileynelson.html">
+                <img class="xs-scroll" src="links/images/baileynelson/SamLloyd_BaileyNelson_1.jpg" alt="Bailey Nelson" />
+                <div class="xs-caption"><p style="color:#535353">Bailey Nelson</p></div>
+                </a></div>
+            <a href="code/baileynelson.html">
+                <img class="xs-scroll" src="links/images/baileynelson/SamLloyd_BaileyNelson_24.jpg" alt="Bailey Nelson" /></a>
+            <a href="code/baileynelson.html">
+                <img class="xs-scroll" src="links/images/baileynelson/SamLloyd_BaileyNelson_26b.jpg" alt="Bailey Nelson" /></a>
+            <div class="xs-captionwrap"><a href="code/baileynelson.html">
+                <img class="xs-scroll" src="links/images/baileynelson/SamLloyd_BaileyNelson_32.jpg" alt="Bailey Nelson" />
+                <div class="xs-caption"><p>See more</p></div>
+                <div class="xs-caption captionarrow"><p>&#x2192;</p></div>
+                </a></div>
+            
+            <!-- Telstra TV -->
+            <div class="xs-captionwrap"><a href="code/telstratv.html">
+                <img class="xs-scroll" src="links/images/telstratv/SamLloyd_TelstraTV_1.jpg" alt="Telstra TV" />
+                <div class="xs-caption"><p>Telstra TV</p></div>
+                </a></div>
+            <div class="xs-captionwrap"><a href="code/telstratv.html">
+                <img class="xs-scroll" src="links/images/telstratv/SamLloyd_TelstraTV_3b.jpg" alt="Telstra TV" />
+                <div class="xs-caption"><p>See more</p></div>
+                <div class="xs-caption captionarrow"><p>&#x2192;</p></div>
+                </a></div>
+            
+            <!-- Stand Apart -->
+            <div class="xs-captionwrap"><a href="code/standapart.html">
+                <img class="xs-scroll" src="links/images/standapart/SamLloyd_StandApart_1.jpg" alt="Stand Apart" />
+                <div class="xs-caption"><p style="color:#535353">Stand Apart</p></div>
+                </a></div>
+            <div class="xs-captionwrap"><a href="code/standapart.html">
+                <img class="xs-scroll" src="links/images/standapart/SamLloyd_StandApart_8.jpg" alt="Stand Apart" />
+                <div class="xs-caption"><p style="color:#535353">See more</p></div>
+                <div class="xs-caption captionarrow"><p style="color:#717171">&#x2192;</p></div>
+                </a></div>
+            
+            
+            <!-- Last post -->
+            <a href="code/about.html">
+                <img class="xs-scroll" src="../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_19.jpg" alt="Hello" /></a>  
         </div>
         
         <!-- Footer [XS] -->     
-        <div class="zigzag-wrap zigzag-xs"><div class="footer-home-xs text-center">
+        <div class="zigzag-wrap zigzag-xs visible-xs-block"><div class="footer-home-xs text-center">
         <p>
-        <a href="code/about.html">&#x2002;more info&#x2002;</a>&#x2002;
+        <a href="code/about.html">&#x2002;more info&#x2002;</a>
         &#x2044;
-        <!-- <a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2002;&#x2709;&#x2002;</a> -->
-        <a href="mailto:mail@samlloyd.com.au" style="position:relative">&#x2002;&#x2002;<img class="mail" src="links/images/mail.svg" />&#x2002;&#x2002;&#x2002;&#x2002;</a> 
+        <a href="mailto:mail@samlloyd.com.au" style="position:relative">&#x2002;<img class="mail" src="links/images/mail.svg" />&#x2002;&#x2002;&#x2002;</a> 
         </p>  
-        </div> </div>
+        </div></div>
  
         
         </div>
@@ -202,14 +377,14 @@ $(document).ready(function(){
 
 <!-- Footer -->
 <div class="row">
-<div class="col-sm-3 hidden-xs footer-home">
+<div class="hidden-xs footer-home">
     
 <!-- [SM+] -->    
 <p class="text-center">
 <span style="color:#d4e7ff">&#x2591;</span>
 <a href="code/about.html">&#x2002;more info&#x2002;</a>
 &#x2044;
-<a href="mailto:mail@samlloyd.com.au">&#x2002;&#x2709;&#x2002;</a>
+<a href="mailto:mail@samlloyd.com.au" style="position:relative">&#x2002;<img src="links/images/mail.svg" height="8rem" width="auto" style="position:relative; top:-0.12rem" />&#x2002;</a>
 <span style="color:#d4e7ff">&#x2591;</span>
 </p>  
 
@@ -222,10 +397,83 @@ $(document).ready(function(){
 <!-- Compiled plugins -->
 <script src="code/js/bootstrap.min.js"></script>
 
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() {       // makes sure the whole site is loaded
+        $('#status').fadeOut();                 // will first fade out the animation   
+            
+    $('#preloader').delay(350).fadeOut('slow'); // fade out bg cover  
+    $('body').delay(350).css({'overflow':'visible'});        
+        })
+        //]]>
+</script>   
+    
     </body>
 </html>
 
 <!-- To-do list
+
+/* project image size: 1200x800 */
+
+/* necessary =============================================================== */
+
+/* CHANGES content */
+/* [x]TODO ↳ BN staff book */
+/* [x]TODO ↳ additional copy block from awards */
+/* [x]TODO ↳ decide how to treat stand apart */
+/* [x]TODO ↳ stand apart project info */
+/* [x]TODO ↳ remove ping pong for now */
+/* [x]TODO ↳ telstra tv project info */
+/* [x]TODO ↳ correct media queries on about on larger screens */
+/* [x]TODO ↳ ensure SM & XS descriptions match */
+
+/* CHANGES structure */
+/* [x]TODO ↳ complete back/next links */
+/* [x]TODO ↳ home page gradient once content final */
+/* [x]TODO ↳ project numbers */
+
+/* CHANGES organisation */
+/* TODO ↳ .htaccess file + remove .html from links */
+/* [x]TODO ↳ move to root domain */
+/* TODO ↳ seo/meta tags */
+
+/* CHANGES tidy up */
+/* [x]TODO ↳ delete unnecessary content from local & subdomain */
+/* [x]TODO ↳ compare final XS & SM+ */
+/* TODO ↳ test on other devices */
+
+/* CHANGES update portfolio */
+/* CHANGES write CV */
+
+/* CHANGES public post */
+/* TODO ↳ create image for twitter (add to meta twitter cards) - will be cropped to a square on twitter */
+/* TODO     ↳ <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" /> */
+
+
+/* ideal =================================================================== */
+
+/* CHANGES content */
+/* [x]TODO ↳ second index img for stand apart */
+/* TODO ↳ ping pong (update back/next links) */
+/* TODO ↳ red25 (update back/next links) */
+/* TODO ↳ rainmeter (update back/next links) */
+/* TODO ↳ SOH ticket */
+/* TODO ↳ SOH add browser frame to stand apart single pages */
+
+/* CHANGES structure */
+/* TODO ↳ back/next links at XS */
+/* TODO ↳ 2-up images on SOH 1 pixel too small */
+/* TODO ↳ add meta tags to all pages */
+
+/* CHANGES splash page through certain url (samlloyd.com.au/hello-google) */
+/* TODO ↳ set up as html page, click anywhere & redirects home (no preloader on this page, clicking through will prompt) */
+
+
+/* ========================================================================= */
+
+
+
 
 /* CHANGES [x]preliminary tidy */
 /* CHANGES [x] adjust header height & footer for all classes */
@@ -239,25 +487,40 @@ $(document).ready(function(){
 /* [x] TODO ↳ images in place */
 /* [x] TODO ↳ menu button */
 /* [x] TODO ↳ header behaviour */
-/* [x] TODO ↳  top js loading on mobile */
+/* [x] TODO ↳ top js loading on mobile */
 /* [x] TODO ↳ footer */
 /* [x] TODO ↳ project titles */
+/*     TODO ↳ back/next? */
 
 /* CHANGES SOH */
-/* TODO ↳ XS - add menu button */
-/* TODO ↳ XS - experiment with padding */
-/* TODO ↳ XS - look at drop-down type matching SM+ */
-/* TODO ↳ quote next to old mate */
+/* TODO ↳ [x] XS - add menu button */
+/* TODO ↳ [x] XS - experiment with padding */
+/* TODO ↳ [x] XS - look at drop-down type matching SM+ */
+/* TODO ↳ [x] quote next to old mate */
+/* TODO ↳ [x] XS - update footer */
+/* TODO ↳ [x] H E L L O gif/transition */
+/* TODO ↳ [x] better solution for video thumbnails */
+/* TODO ↳ [x] preloader */
 
 /* CHANGES about page */
-/* TODO ↳ finalise design */
+/* TODO ↳ [x] finalise design */
 
 /* CHANGES curate final content */
-/* TODO ↳ crop white edges from carousels */
+/* TODO ↳ [x] crop white edges from carousels */
+/* TODO ↳ [x] indd script gif */
 /* TODO ↳ SOH ticket */
-/* TODO ↳ SOH other jc decaux */
-/* TODO ↳ SOH EDM more engaging angle (my design for interview) */
-/* CHANGES change envelope to svg */
-/* CHANGES rename images */
+/* TODO ↳ [x] SOH newer box office img */
+/* TODO ↳ [x] SOH other jc decaux */
+/* TODO ↳ [x] SOH EDM more engaging angle (my design for interview) */
+/* CHANGES [x] change envelope to svg */
+/* CHANGES [x] rename images */
+/* CHANGES delete unnecessary content from local & subdomain  */
+
+/* CHANGES misc */
+/* TODO ↳ [x] remove 'code/' from min.js path on all pages except index */
+/* TODO ↳ .htaccess file + remove .html from links */
+/* TODO ↳ move to root domain */
+/* TODO ↳ seo/meta tags */
+/* TODO ↳ [x] check all imgs have alt tags (SOH needs) */
 
 -->
