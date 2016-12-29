@@ -127,24 +127,28 @@ Australian Design Centre</h3>
     
 
 <img src="../links/images/adc/SamLloyd_ADC_3b.jpg" alt="The Australian Design Centre"/>
+ 
+    
+<!-- Load jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
     
 <!-- Video content -->
 <div class="videowrapper">    
     <div class="videosize">
-        <div class="videothumbnail" id="thumbnail-ADC2"></div>
-        <iframe id="video-ADC2" src="https://player.vimeo.com/video/133301895" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
+        <div class="videothumbnail" id="thumbnail-ADC1"></div>
+        <iframe id="video-ADC1" src="https://player.vimeo.com/video/133301895" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
 </div>    
     
 <!-- Video thumbnail -->
 <script>
 $(document).ready(function() {
     
-  $("#thumbnail-ADC2").click(function () {
-    $("#thumbnail-ADC2").fadeOut("slow");
+  $("#thumbnail-ADC1").click(function () {
+    $("#thumbnail-ADC1").fadeOut("slow");
   });
     
-    $("#thumbnail-ADC2").on('click', function(ev) {
-        $("#video-ADC2")[0].src += "?autoplay=1";
+    $("#thumbnail-ADC1").on('click', function(ev) {
+        $("#video-ADC1")[0].src += "?autoplay=1";
         ev.preventDefault();
  
   });
@@ -170,32 +174,8 @@ Having established kids as ADC’s new primary focus, we needed to find a way to
 
 <img src="../links/images/adc/SamLloyd_ADC_2.jpg" alt="The Australian Design Centre"/>
 
-<!-- Video content -->
-<div class="videowrapper">    
-    <div class="videosize">
-        <div class="videothumbnail" id="thumbnail-ADC1"></div>
-        <iframe id="video-ADC1" src="https://player.vimeo.com/video/155334547" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></div>
-</div>    
-    
-<!-- Load jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
-<script>
-$(document).ready(function() {
-    
-  $("#thumbnail-ADC1").click(function () {
-    $("#thumbnail-ADC1").fadeOut("slow");
-  });
-    
-    $("#thumbnail-ADC1").on('click', function(ev) {
-        $("#video-ADC1")[0].src += "?autoplay=1";
-        ev.preventDefault();
- 
-  });
-    
-});
-</script>    
-    
-<img src="../links/images/adc/SamLloyd_ADC_7b.jpg" alt="The Australian Design Centre"/>
+  
+
     
     <!-- Carousel -->
     <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" style="background-color:#ded6d2">
@@ -210,6 +190,7 @@ $(document).ready(function() {
     <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next"></a>
     </div>
 
+<img src="../links/images/adc/SamLloyd_ADC_7b.jpg" alt="The Australian Design Centre"/>    
 <img src="../links/images/adc/SamLloyd_ADC_23b.jpg" alt="The Australian Design Centre"/>       
 <img src="../links/images/adc/SamLloyd_ADC_9.jpg" alt="The Australian Design Centre"/>
 <img src="../links/images/adc/SamLloyd_ADC_10.jpg" alt="The Australian Design Centre"/>
@@ -335,37 +316,3 @@ $(document).ready(function() {
     
     </body>
 </html>
-
-<!-- To-do list
-
-/* CHANGES curate final content */
-/* CHANGES .col-xs-12 should have 0 padding on XS */
-/* TODO ↳ rename images */
-/* TODO add max-height to avoid seeing grad load in */
-/* CHANGES [x]class for XXL screens - RHS type + header bigger */
-/* FUTURE upload portfolio videos on youtube for nicer mobile preview? */
-/* FIXME [x]scroll performance - jittery on mobile. might be because fixed position */
-/* CHANGES [x]text boxes within projects */
-/* TODO [x]↳ ensure padding works at XS */
-/* TODO [x]↳ should go down to single col at SM */
-/* TODO [x]move collapsible container styling to css */ 
-/* TODO [x]project page navigation */  
-/* FIXME depreciated/errors in dev tools [w/in brackets] */
-/* FIXME [x]header 3% from top */
-/* NOTE [x]could use HoverOnTouch.js for XS header rollover */ 
-/* NOTE is favicon relevant to call in if browser auto picks it up? */
-/* FIXME [x]collapsible container smoothness; compare jsfiddle examples below */
-http://jsfiddle.net/adeneo/Gg4eP/10/
-http://jsfiddle.net/BpMam/
-/* CHANGES [x]typography header */
-/* TODO [x]↳ better logo size? esp. at XS — use em? or specific small size (use display:none) */
-/* TODO [x]↳ ensure logo is completely covered by images & container in XS */
-/* TODO [x]↳ less wide 'd'; remove extra pixels from ascender */
-/* FUTURE [x]gradient scroll */
-/* NOTE [x]↳ if projectcopy box is white w/ grad behind, mobile version might need to have light grey bg */ 
-/* FUTURE seo/crawl google */
-/* FUTURE 404 page */
-/* FUTURE smooth page load in (like standapart) */
-/* FUTURE investigate smooth scrolling? could be annoying? */
-
--->
