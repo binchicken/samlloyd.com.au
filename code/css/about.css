@@ -317,7 +317,8 @@ content: '';
     padding-top:5em
     }    
 .col-sm-3 {
-    width: 11%;    background-color: #fff
+    width: 11%;    
+    background-color: #fff
 }
 .col-sm-2 {
     width: 100%;
@@ -441,6 +442,7 @@ h5 {
     width: 85%;
     top: 0%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);        
 }
     .intro-about {
@@ -484,6 +486,7 @@ h5 {
     width: 85%;
     top: 0%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);        
 }
     }}
@@ -504,6 +507,7 @@ h5 {
     width: 75%;
     top: 0%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);        
 }
     .intro-about {
@@ -561,6 +565,7 @@ h5 {
     width: 68%;
     top: 0%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);        
 }
     .intro-about {
@@ -625,6 +630,7 @@ h5 {
     max-width: 80em;
     top: 0%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);        
 }
     .baselineshift {
