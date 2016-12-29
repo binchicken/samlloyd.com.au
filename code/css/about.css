@@ -295,6 +295,9 @@ content: '';
     display:none
 } 
 .row-1 {
+    width: 96%;
+    -webkit-transform: translate3d(2%, 0, 0);
+    transform: translate3d(2%, 0, 0);
     background-color: #fff;
     height:58em; 
     padding-top:0em;
@@ -302,6 +305,9 @@ content: '';
     margin-bottom: 0em;
 } 
 .row-2 {
+    width: 96%;
+    -webkit-transform: translate3d(2%, 0, 0);
+    transform: translate3d(2%, 0, 0);
     height: 62em;
     padding-bottom: 0em;
     background-color: #fff;
@@ -317,7 +323,7 @@ content: '';
 }
 .col-sm-2 {
     width: 100%;
-    padding: 0em 0em 4em 18vw;
+    padding: 0em 0em 4em 17vw;
     background-color: #fff
 }  
 .firstblock {
