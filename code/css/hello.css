@@ -1,0 +1,228 @@
+/* typefaces */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700');
+
+/* page setup */ 
+
+.bg-layer1 {
+    min-height: 100%; 
+    height: 100%; 
+    width: 100%; 
+    margin: 0 auto;
+
+    
+    background-color: #000;
+    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb) fixed;
+    background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb) fixed;
+    background-size: 1000% 1500%; 
+    background-repeat: no-repeat;
+
+    -webkit-animation: Layer1 20s ease infinite;
+    animation: Layer1 20s ease infinite;
+    }
+    @-webkit-keyframes Layer1 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Layer1 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%}  
+}
+
+.bg-layer2 {
+
+    min-height: 100%; 
+    height: auto !important; 
+    margin: 0 auto;
+
+
+    background-color: #fff;
+    background: -webkit-linear-gradient(45deg, #b2e9cf, #ffd8d8) fixed;
+    background: linear-gradient(45deg, #b2e9cf, #ffd8d8) fixed;
+    background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
+        background-repeat: no-repeat;
+
+    -webkit-animation: Layer2 10s ease infinite;
+    animation: Layer2 10s ease infinite;
+    }
+    @-webkit-keyframes Layer2 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Layer2 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%} 
+}
+
+.layer-1 {
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    height: 1080px;
+    width: 1920px;
+}
+.layer-2 {
+    mix-blend-mode: multiply;
+    z-index: 5;
+    position: fixed;
+    top: 52%;
+    left: 52%;
+    transform: translate3d(-50%, -50%, 0);
+    height: 1080px;
+    width: 1920px;
+}
+
+
+body > .container-fluid { overflow: hidden; }        /* width fix */
+body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
+
+
+
+/* typography */
+
+p {
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    color: #000;
+} 
+h2 {
+    margin: 0em 0em 3em 0em;
+    font-family: 'Merriweather', "Lucida Grande", serif; 
+    font-size:0.9em;
+    font-weight: 400; 
+    line-height:1; 
+    letter-spacing:0.01em 
+}
+h5 {
+        margin: 0em 0em 0.6em 0em;
+    font-family: 'Merriweather', "Lucida Grande", serif; 
+    font-size:0.8em;
+    font-weight: 400; 
+    line-height:1.4; 
+    letter-spacing:0.01em 
+}
+
+.sidebar {
+    font-size: 0.78em
+}
+.sidebar a:hover {
+    text-decoration: none;
+}
+.sidebar p {
+    display: inline;
+}
+#sidebar1 {
+    background-color: #f3f8fe;
+    width: 12em;
+    margin: 0.5em 0em;
+}
+#sidebar2 {
+    background-color: #f7f7f7;
+    width: 12em;
+    margin: 0.5em 0em;
+}
+#sidebar3 {
+    background-color: #f7f7f7;
+    width: 12em;
+    margin: 0.5em 0em 1.5em 0em;
+}
+#sidebar4 {
+    background-color: #fff;
+    width: 12em;
+    margin: 0.5em 0em;
+}
+#sidebar1:hover, #sidebar2:hover, #sidebar3:hover, #sidebar4:hover {
+    background-color: #ffe4f2;
+}
+.currently {
+    font-size: 0.9em;
+    line-height: 1.4;
+    max-width: 20em
+}
+.useful {
+    font-size: 0.75em;
+    line-height: 1.1;
+    display: block;
+    padding: 1px 0px;    
+}
+.details {
+    font-size: 0.75em;
+    color: #525252;
+    letter-spacing:0.02em;
+    margin-bottom: 3em
+}
+
+.spacer {
+    margin-bottom: 3.7em
+}
+.kern-tighter {
+    letter-spacing: -0.05em
+}
+.kern-looser {
+    letter-spacing: 0.1em
+}
+a, a:link, a:visited, a:hover {
+    color: #000;
+    text-decoration: none;   
+}
+.underline {
+display: inline-block;
+  position: relative;     
+}
+.underline::after {
+content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 3px solid #e8f1fd;
+  margin-top: 6px;
+}
+.baselineshift {
+    position: relative; 
+    top: -.12rem
+}
+.arrowsize {
+    font-size: 1.5rem;
+}
+
+
+
+/* media queries ================================================ */
+
+
+/* XS ----------- */
+@media only screen and (max-width: 760px) {
+    
+}
+
+/* S ----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+
+/* M ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+
+
+/* L ----------- */
+@media (min-width: 1200px) and (max-width: 1499px) {
+    
+}
+
+
+/* XL ----------- */
+@media (min-width: 1500px) {
+    
+}
+
+
