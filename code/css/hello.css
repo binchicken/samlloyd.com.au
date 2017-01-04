@@ -37,8 +37,8 @@
 
 
     background-color: #fff;
-    background: -webkit-linear-gradient(45deg, #b2e9cf, #ffd8d8) fixed;
-    background: linear-gradient(45deg, #b2e9cf, #ffd8d8) fixed;
+    background: -webkit-linear-gradient(45deg, #ffd8d8,#b2e9cf) fixed;
+    background: linear-gradient(45deg, #ffd8d8,#b2e9cf) fixed;
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
         background-repeat: no-repeat;
 
@@ -106,6 +106,10 @@
     text-rendering: optimizeLegibility;
 }
 
+::-moz-selection {
+    background-color: #e8f1fd;
+}
+
 ::selection {
     background-color: #e8f1fd;
 }
@@ -146,6 +150,7 @@
     font-size: 1.05rem;
     top: 83%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     /*border: 1px solid transparent*/
 }
