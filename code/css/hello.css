@@ -38,7 +38,7 @@
 
     background-color: #fff;
     background: -webkit-linear-gradient(45deg, #ffd8d8,#b2e9cf) fixed;
-    background: linear-gradient(45deg, #ffd8d8,#b2e9cf) fixed;
+    background: linear-gradient(45deg, #b2e9cf, #ffd8d8) fixed;
     background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
         background-repeat: no-repeat;
 
