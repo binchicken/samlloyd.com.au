@@ -1,5 +1,5 @@
 /* typefaces */
-@import url('https://fonts.googleapis.com/css?family=Merriweather:700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700');
 
 /* background */ 
 
@@ -89,7 +89,7 @@
     position: fixed;
     z-index: 15 !important;
     width: 430px;
-    height: 647px;
+    height: 537px;
     top: 49%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -98,27 +98,62 @@
     box-shadow:0px 3px 4px rgba(50, 50, 50, 0.08);
 }
 .textwrapper {
-    padding: 4em;
+    padding: 3.8em;
 }
 .textwrapper p {
     background: #fff;
-    /*color: #2162b4;*/
     color: #414141;
     text-rendering: optimizeLegibility;
 }
 
-.body {
-    margin-top:6.5em;
+::selection {
+    background-color: #e8f1fd;
 }
 
 .greetings {
-    /*color: #c99474 !important;*/
-    letter-spacing: 0.03em;
-    font-size: 0.95rem;
-
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    padding-top: 2.6em;
 }
 
+.body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.17rem;
+    line-height: 1.7;
+    margin-top:5.3em;
+}
 
+.strikethrough {
+    position: relative;
+    padding-right: 0.1em
+}
+.strikethrough::after {
+  border-bottom: 0.1em solid #414141;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 60%;
+}
+
+.proceed {
+    position: fixed;
+    z-index: 5;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 1px solid transparent*/
+}
+.proceed a:hover {
+    background-color: #fff;
+    padding: 4px;
+    margin: -4px
+}
 
 body > .container-fluid { overflow: hidden; }        /* width fix */
 body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
@@ -131,78 +166,9 @@ p {
     font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
     color: #000;
 } 
-h2 {
-    margin: 0em 0em 3em 0em;
-    font-family: 'Merriweather', "Lucida Grande", serif; 
-    font-size:0.9em;
-    font-weight: 400; 
-    line-height:1; 
-    letter-spacing:0.01em 
-}
-h5 {
-        margin: 0em 0em 0.6em 0em;
-    font-family: 'Merriweather', "Lucida Grande", serif; 
-    font-size:0.8em;
-    font-weight: 400; 
-    line-height:1.4; 
-    letter-spacing:0.01em 
-}
 
-.sidebar {
-    font-size: 0.78em
-}
-.sidebar a:hover {
-    text-decoration: none;
-}
-.sidebar p {
-    display: inline;
-}
-#sidebar1 {
-    background-color: #f3f8fe;
-    width: 12em;
-    margin: 0.5em 0em;
-}
-#sidebar2 {
-    background-color: #f7f7f7;
-    width: 12em;
-    margin: 0.5em 0em;
-}
-#sidebar3 {
-    background-color: #f7f7f7;
-    width: 12em;
-    margin: 0.5em 0em 1.5em 0em;
-}
-#sidebar4 {
-    background-color: #fff;
-    width: 12em;
-    margin: 0.5em 0em;
-}
-#sidebar1:hover, #sidebar2:hover, #sidebar3:hover, #sidebar4:hover {
-    background-color: #ffe4f2;
-}
-.currently {
-    font-size: 0.9em;
-    line-height: 1.4;
-    max-width: 20em
-}
-.useful {
-    font-size: 0.75em;
-    line-height: 1.1;
-    display: block;
-    padding: 1px 0px;    
-}
-.details {
-    font-size: 0.75em;
-    color: #525252;
-    letter-spacing:0.02em;
-    margin-bottom: 3em
-}
-
-.spacer {
-    margin-bottom: 3.7em
-}
 .kern-tighter {
-    letter-spacing: -0.05em
+    letter-spacing: -0.1em
 }
 .kern-looser {
     letter-spacing: 0.1em
@@ -211,26 +177,15 @@ a, a:link, a:visited, a:hover {
     color: #000;
     text-decoration: none;   
 }
-.underline {
-display: inline-block;
-  position: relative;     
-}
-.underline::after {
-content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1em;
-  width: 100%;
-  border-bottom: 3px solid #e8f1fd;
-  margin-top: 6px;
-}
+
 .baselineshift {
     position: relative; 
-    top: -.12rem
+    top: 0.1rem
 }
 .arrowsize {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding-left: 0.4em;
+    font-family:'Inconsolata', "Times New Roman", Times, serif;
 }
 
 
