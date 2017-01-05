@@ -202,7 +202,7 @@ a, a:link, a:visited, a:hover {
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
     body, .container-fluid, .textbox {
-        overflow: scroll !important
+        overflow-y: scroll !important
     } 
     .textbox {
     width: 90%;
@@ -214,7 +214,6 @@ a, a:link, a:visited, a:hover {
     .bg-layer1 img, .bg-layer2 img {
     display: none;
 }
-
 }
 
 /* S ----------- */
