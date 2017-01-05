@@ -77,6 +77,12 @@ body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
 .row-height-about {
     height: 30em;
 } 
+::-moz-selection {
+    background-color: #e8f1fd;
+}
+::selection {
+    background-color: #e8f1fd;
+}
 
 /* header */
 

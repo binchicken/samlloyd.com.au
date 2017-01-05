@@ -206,6 +206,12 @@ p, h3, li {
     padding-left: 0em;
     padding-right: 7em;
 }
+::-moz-selection {
+    background-color: #e8f1fd;
+}
+::selection {
+    background-color: #e8f1fd;
+}
 /* XS --> SM - Small devices (tablets, 768px and up) */
 @media (max-width: 760px) {
     .left-col, .right-col {

@@ -85,7 +85,12 @@ table {
     /*font-family: 'Inconsolata', "Times New Roman", Times, serif;  */
     /*font-family:'Inconsolata', Courier, "Lucida Grande", monospace; */
 }
-
+::-moz-selection {
+    background-color: #e8f1fd;
+}
+::selection {
+    background-color: #e8f1fd;
+}
 
 
 /* typography */
