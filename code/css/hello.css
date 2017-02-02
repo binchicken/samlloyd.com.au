@@ -212,10 +212,10 @@ a, a:link, a:visited, a:hover {
 
 /* XS ----------- */
 @media only screen and (max-width: 760px) {
-    body, .container-fluid, .textbox {
+    body, .container-fluid, .textbox, .textbox-center {
         overflow-y: scroll !important
     } 
-    .textbox {
+    .textbox, .textbox-center {
     width: 90%;
     height: 44em;
 }
