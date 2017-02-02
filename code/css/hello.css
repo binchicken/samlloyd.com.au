@@ -101,7 +101,7 @@
     position: fixed;
     z-index: 15 !important;
     width: 500px;
-    height: 655px;
+    height: 660px;
     top: 49%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -137,7 +137,7 @@
 .body {
     font-family: 'Merriweather', serif;
     font-size: 1.17rem;
-    line-height: 1.7;
+    line-height: 1.9rem;
     margin-top:5.3em;
 }
 
