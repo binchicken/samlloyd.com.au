@@ -220,7 +220,12 @@ a, a:link, a:visited, a:hover {
     height: 44em;
 }
     .textwrapper {
-    padding: 3.2em;
+    padding: 2.5em;
+}
+    .body {
+    font-size: 1.12rem;
+    line-height: 1.7rem;
+    margin-top:5.3em;
 }
     .bg-layer1 img, .bg-layer2 img {
     display: none;
