@@ -272,7 +272,7 @@ content: '';
     width: 100%;
     }
     .xs-post img {
-    width: 100%;
+    width: 99.9%;
     height: auto;
     padding: 0px;
     }
