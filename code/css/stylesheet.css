@@ -170,6 +170,7 @@ p, h3, li {
     min-width: 10em;
     max-width: 100%;
     font-size: 1em;
+    background-color: transparent;
     }
 .projectinfo h3 {
     font-size: 1.5em;
@@ -182,6 +183,7 @@ p, h3, li {
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
+    background-color: transparent;
     }  
 .projectcopy {
     font-family: 'Merriweather', serif; 
@@ -327,20 +329,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .bg-short {
-background: rgba(255,255,255,1);
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(212,231,255,1)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4e7ff', GradientType=0 );
-}
-@media only screen and (max-width: 760px) {
-    .bg-short {
-    background: #fff;
-    background-color: #fff;
-    }
+background: #F2F2F2;
 }
 
 
@@ -348,6 +337,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .whitebg {
     background-color: #fff;
+    z-index: 2;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    height: 100%;
+    padding: 0px 15px;
+}
+
+.clearbg {
+    background-color: transparent;
     z-index: 2;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
@@ -367,17 +366,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .panel {
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,1);
     box-shadow: 0 1px 0 rgba(0,0,0,1);
+    background-color: transparent;
     border:none;
     border-radius: 0px;
     margin-bottom: 15px;
 }    
 .panel-primary, .panel-title, .panel-collapsed, .panel-heading {
     border:none;
-    background-color: #fff;
+    background-color: transparent;
 } 
 .panel-primary > .panel-heading {
     color: #000;
-    background-color: #fff;
+    background-color: transparent;
     border:none;
 }   
 .panel-heading {
@@ -393,6 +393,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .panel-body {
     display: none;
+    background-color: transparent;
     width: 100%;
     border-bottom: none;
     padding: 10px 0px 0px 0px;
@@ -701,5 +702,6 @@ a:active {
 }
     .projectinfo {
         margin-left: 0.2em;
+        background-color: transparent;
     }
 }
