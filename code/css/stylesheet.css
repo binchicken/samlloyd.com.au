@@ -66,7 +66,6 @@ body {
     }
 
 
-
 /* header */
 
 .row-height {
@@ -127,7 +126,15 @@ padding-left: 0.75em
 }*/
 .col-sm-8 img {
     width: 100%;
+    height: auto;
     z-index: 10;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    image-rendering: -moz-crisp-edges;
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
 }
 
 iframe {
@@ -196,6 +203,25 @@ p, h3, li {
 .padding-lg {
     padding: 7.5em 0em 7em 0em;
 }
+
+.padding-4up-t {
+    padding: 7.5em 0em 0em 0em;
+}
+
+.padding-4up-b {
+    padding: 6em 0em 7em 0em;
+}
+
+::-moz-selection { /* Code for Firefox ---- text selection */
+    color: #3E140B;
+    background: #F4B5E6;
+  }
+  
+  ::selection {
+    color: #3E140B;
+    background: #F4B5E6;
+  }
+
 .projectcopy h3 {
     font-size: 1em;
     font-weight: 400;
@@ -208,6 +234,16 @@ p, h3, li {
     padding-left: 0em;
     padding-right: 7em;
 }
+
+.left-col-tafe {
+    padding-left: 7em;
+    padding-right: 0em;
+}
+.right-col-tafe {
+    padding-left: 0em;
+    padding-right: 7em;
+}
+
 /* XS --> SM - Small devices (tablets, 768px and up) */
 @media (max-width: 760px) {
     .left-col, .right-col {
@@ -215,10 +251,24 @@ p, h3, li {
     padding: 0em;  
     min-width: 10em;    
 }
-    .copy {
+
+.left-col-tafe, .right-col-tafe {
+    margin: 0em 3em; /* 3em to match menu width  - (0.5em less) */
+    padding: 0em;  
+    min-width: 10em;    
+}
+.copy {
     padding: 7.5% 0em;
     }
+.copy-tafe-t {
+    padding: 3em 0em 0em 0em;
+        }
+.copy-tafe-b {
+    padding: 0em 0em 2em 0em;
+            }
+    
 }
+
 .copy {
     background-color: #fff;
 }
@@ -331,6 +381,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .bg-short {
 background: #F2F2F2;
 }
+
+.bg-cream {
+    background: #FFF5EA;
+    }
+
 
 
 
@@ -582,6 +637,14 @@ a, a:link, a:visited {
 a:active {
     color: #000;
     text-decoration: none;  
+}
+
+
+@media (min-width: 768px) {
+    .imgtesting {
+      float: left;
+      width: 66.66666667%;
+    }
 }
 
 /* Footer */
