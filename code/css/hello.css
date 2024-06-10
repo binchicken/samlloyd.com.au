@@ -1,0 +1,267 @@
+/* typefaces */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700');
+
+/* background */ 
+
+.bg-layer1 {
+    min-height: 100%; 
+    height: 100%; 
+    width: 100%; 
+    margin: 0 auto;
+
+    
+    background-color: #000;
+    background: -webkit-linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb) fixed;
+    background: linear-gradient(45deg, #d4e7ff, #ffd3ea, #d4e7ff, #ffd3ea, #c6ffff, #fdffdb) fixed;
+    background-size: 1000% 1500%; 
+    background-repeat: no-repeat;
+
+    -webkit-animation: Layer1 20s ease infinite;
+    animation: Layer1 20s ease infinite;
+    }
+    @-webkit-keyframes Layer1 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Layer1 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%}  
+}
+
+.bg-layer2 {
+    min-height: 100%; 
+    height: auto !important; 
+    margin: 0 auto;
+
+
+    background-color: #fff;
+    background: -webkit-linear-gradient(45deg, #ffd8d8,#b2e9cf) fixed;
+    background: linear-gradient(45deg, #b2e9cf, #ffd8d8) fixed;
+    background-size: 1000% 1500%; /* X Y -- Y must be longer than height of page */
+        background-repeat: no-repeat;
+
+    -webkit-animation: Layer2 10s ease infinite;
+    animation: Layer2 10s ease infinite;
+    }
+    @-webkit-keyframes Layer2 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Layer2 {
+        0%{background-position:0% 50%}
+        50%{background-position:50% 0%}
+        100%{background-position:0% 50%} 
+}
+
+.bg-layer1 img, .bg-layer2 img {
+    height: 110vh !important;
+    width: 100%;
+}
+
+.layer-1 {
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    height: 120%;
+    width: 100%;
+}
+.layer-2 {
+    mix-blend-mode: multiply;
+    z-index: 2;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    height: 120%;
+    width: 100%;
+}
+
+/* structure */
+
+.textbox {
+    position: fixed;
+    z-index: 15 !important;
+    width: 430px;
+    height: 537px;
+    top: 49%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    background-color: #fff;
+    box-shadow:0px 3px 4px rgba(50, 50, 50, 0.08);
+}
+.textbox-center {
+    position: fixed;
+    z-index: 15 !important;
+    width: 500px;
+    height: 660px;
+    top: 49%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    background-color: #fff;
+    box-shadow:0px 3px 4px rgba(50, 50, 50, 0.08);
+}
+.textwrapper {
+    padding: 3.8em;
+}
+.textwrapper p {
+    background: #fff;
+    color: #414141;
+    text-rendering: optimizeLegibility;
+}
+
+::-moz-selection {
+    background-color: #e8f1fd;
+}
+
+::selection {
+    background-color: #e8f1fd;
+}
+
+.greetings {
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    padding-top: 2.6em;
+    padding-right: 0.7em
+}
+
+.body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.17rem;
+    line-height: 1.9rem;
+    margin-top:5.3em;
+}
+
+.strikethrough {
+    position: relative;
+    padding-right: 0.1em
+}
+.strikethrough::after {
+  border-bottom: 0.1em solid #414141;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 60%;
+}
+
+.proceed {
+    position: fixed;
+    z-index: 5;
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    bottom: 5em;
+}
+.proceed a:hover {
+    background-color: #fff;
+    padding: 4px;
+    margin: -4px
+}
+
+body > .container-fluid { overflow: hidden; }        /* width fix */
+body > .container-fluid > * { overflow: visible; }   /* reset back to normal */
+
+
+
+/* typography */
+
+p {
+    font-family: 'Inconsolata', Courier, "Lucida Grande", monospace;
+    color: #000;
+} 
+
+.kern-tighter {
+    letter-spacing: -0.1em
+}
+.kern-looser {
+    letter-spacing: 0.1em
+}
+a, a:link, a:visited, a:hover {
+    color: #000;
+    text-decoration: none;   
+}
+
+.baselineshift {
+    position: relative; 
+    top: 0.1rem
+}
+.arrowsize {
+    font-size: 1.6rem;
+    padding-left: 0.4em;
+    font-family:'Inconsolata', "Times New Roman", Times, serif;
+}
+
+
+
+/* media queries ================================================ */
+
+
+/* XS ----------- */
+@media only screen and (max-width: 760px) {
+    body, .container-fluid, .textbox, .textbox-center {
+        overflow-y: scroll !important
+    } 
+    .textbox, .textbox-center {
+    width: 90%;
+    height: 44em;
+}
+    .textwrapper {
+    padding: 2.5em;
+}
+    .body {
+    font-size: 1.12rem;
+    line-height: 1.7rem;
+    margin-top:5.3em;
+}
+    .bg-layer1 img, .bg-layer2 img {
+    display: none;
+}
+}
+
+/* S ----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bg-layer1 img, .bg-layer2 img {
+    height: 110vh !important;
+    width: 150vw; 
+}   
+    .layer-1 {
+    left: 40%;
+    -webkit-transform: translate(-60%, 0%);
+    transform: translate(-60%, 0%);
+}
+}
+
+
+/* M ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+
+
+/* L ----------- */
+@media (min-width: 1200px) and (max-width: 1499px) {
+    
+}
+
+
+/* XL ----------- */
+@media (min-width: 1500px) {
+    
+}
+
+
