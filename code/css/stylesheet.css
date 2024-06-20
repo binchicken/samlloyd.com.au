@@ -562,6 +562,10 @@ a.clickable:hover {
     background-image: url("../../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_Video4.jpg");
 }
 
+#thumbnail-SB1 {
+    background-image: url("../../links/images/startingblocks/SamLloyd_StartingBlocks_Video1.jpg");
+}
+
 /* Footer */
     #mail-sm {
     height: 0.8rem !important;
