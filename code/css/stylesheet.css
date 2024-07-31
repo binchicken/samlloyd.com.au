@@ -572,8 +572,9 @@ a.clickable:hover {
     width: auto !important;
     line-height: 6em;
     vertical-align: middle;
-    position: relative;
-    top: -0.12rem
+    position: absolute;
+    top: 0.26em;
+    left: 0.5em;
     }
 .nopadding a:hover {
     text-decoration: none;
@@ -695,16 +696,16 @@ a:active {
     .baselineshift {
     top: -0.02em
 }
-    #mail {
+
+#mail {
     height: 1rem;
     width: auto;
     line-height: 6em;
     vertical-align: middle;
     position: absolute;
     top: 0.26rem;
+    left: 1em;
     }
-    
-}
 
 
 /* S ----------- */
@@ -771,4 +772,4 @@ a:active {
         margin-left: 0.2em;
         background-color: transparent;
     }
-}
+}}
