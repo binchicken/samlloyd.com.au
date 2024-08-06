@@ -422,7 +422,7 @@ h5 {
 /**
  * iPhone 5
  * To combat vh bug
- */
+
 @media screen and (device-aspect-ratio: 40/71) {
     .about-page {    
     width: 96%;
@@ -431,7 +431,7 @@ h5 {
     display:none
 
 } 
-}
+} */
 
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {

@@ -81,6 +81,7 @@ body {
     padding: 1.9em 0em 1.2em 0em;
 }
 #header-container img {
+    text-decoration: none;
     max-width: 100%;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
