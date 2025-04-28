@@ -81,10 +81,7 @@ table {
     font-size: 2em;
     padding: 12.75em 0em 0em 0em;
     }
-.arrow td p {
-    /*font-family: 'Inconsolata', "Times New Roman", Times, serif;  */
-    /*font-family:'Inconsolata', Courier, "Lucida Grande", monospace; */
-}
+
 
 
 
@@ -187,9 +184,7 @@ content: '';
     padding: 0px !important;
         margin: 0px;
 }
-    html, body {
-    /* overflow-x: hidden; */
-}
+
     body > .container-fluid { overflow: hidden; } /* width fix */
     body > .container-fluid > * { overflow: visible; } /* reset back to normal */
     
@@ -607,7 +602,7 @@ content: '';
     width: 98.5%;
 }
     .post, .arrow {
-    background-size: 662% auto;
+    background-size: 62% auto;
 }
     .footer-home {
     bottom: 10vh;

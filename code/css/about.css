@@ -345,7 +345,7 @@ content: '';
     font-size: 1.32rem;
     line-height: 1.8;
     width: 82%;
-    max-width: 19em;
+    max-width: 24em;
 }
 .intro-about > p {
     padding: 3px 0px 3px 0px;
@@ -389,6 +389,10 @@ h5 {
     padding-bottom: 0.25em;
     margin: 1.25em 0em 0em 0em;
 }
+#sidebar4 {
+    width: 6em;
+}    
+
 #sidebar1:hover, #sidebar2:hover, #sidebar3:hover, #sidebar4:hover {
     background-color: #fff;
 }    
@@ -405,6 +409,7 @@ h5 {
 }   
 .useful {
     font-size: 0.86em;
+    width: 18em;
     line-height: 1.1;
     display: block;
     padding: 1px 0px;    
@@ -417,7 +422,7 @@ h5 {
 /**
  * iPhone 5
  * To combat vh bug
- */
+
 @media screen and (device-aspect-ratio: 40/71) {
     .about-page {    
     width: 96%;
@@ -426,7 +431,7 @@ h5 {
     display:none
 
 } 
-}
+} */
 
 /* S ----------- */
 @media (min-width: 768px) and (max-width: 991px) {

@@ -66,7 +66,6 @@ body {
     }
 
 
-
 /* header */
 
 .row-height {
@@ -82,6 +81,7 @@ body {
     padding: 1.9em 0em 1.2em 0em;
 }
 #header-container img {
+    text-decoration: none;
     max-width: 100%;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
@@ -127,7 +127,15 @@ padding-left: 0.75em
 }*/
 .col-sm-8 img {
     width: 100%;
+    height: auto;
     z-index: 10;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    image-rendering: -moz-crisp-edges;
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
 }
 
 iframe {
@@ -170,6 +178,7 @@ p, h3, li {
     min-width: 10em;
     max-width: 100%;
     font-size: 1em;
+    background-color: transparent;
     }
 .projectinfo h3 {
     font-size: 1.5em;
@@ -182,6 +191,7 @@ p, h3, li {
     font-weight: 300;
     letter-spacing: 0.03em;
     padding-bottom: 0.5em;
+    background-color: transparent;
     }  
 .projectcopy {
     font-family: 'Merriweather', serif; 
@@ -194,6 +204,25 @@ p, h3, li {
 .padding-lg {
     padding: 7.5em 0em 7em 0em;
 }
+
+.padding-4up-t {
+    padding: 7.5em 0em 0em 0em;
+}
+
+.padding-4up-b {
+    padding: 6em 0em 7em 0em;
+}
+
+::-moz-selection { /* Code for Firefox ---- text selection */
+    color: #3E140B;
+    background: #F4B5E6;
+  }
+  
+  ::selection {
+    color: #3E140B;
+    background: #F4B5E6;
+  }
+
 .projectcopy h3 {
     font-size: 1em;
     font-weight: 400;
@@ -206,6 +235,16 @@ p, h3, li {
     padding-left: 0em;
     padding-right: 7em;
 }
+
+.left-col-tafe {
+    padding-left: 7em;
+    padding-right: 0em;
+}
+.right-col-tafe {
+    padding-left: 0em;
+    padding-right: 7em;
+}
+
 /* XS --> SM - Small devices (tablets, 768px and up) */
 @media (max-width: 760px) {
     .left-col, .right-col {
@@ -213,10 +252,24 @@ p, h3, li {
     padding: 0em;  
     min-width: 10em;    
 }
-    .copy {
+
+.left-col-tafe, .right-col-tafe {
+    margin: 0em 3em; /* 3em to match menu width  - (0.5em less) */
+    padding: 0em;  
+    min-width: 10em;    
+}
+.copy {
     padding: 7.5% 0em;
     }
+.copy-tafe-t {
+    padding: 3em 0em 0em 0em;
+        }
+.copy-tafe-b {
+    padding: 0em 0em 2em 0em;
+            }
+    
 }
+
 .copy {
     background-color: #fff;
 }
@@ -327,27 +380,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .bg-short {
-background: rgba(255,255,255,1);
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(212,231,255,1)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(212,231,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4e7ff', GradientType=0 );
+background: #F2F2F2;
 }
-@media only screen and (max-width: 760px) {
-    .bg-short {
-    background: #fff;
-    background-color: #fff;
+
+.bg-cream {
+    background: #FFF5EA;
     }
-}
+
 
 
 
 
 .whitebg {
     background-color: #fff;
+    z-index: 2;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    height: 100%;
+    padding: 0px 15px;
+}
+
+.clearbg {
+    background-color: transparent;
     z-index: 2;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
@@ -367,17 +422,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .panel {
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,1);
     box-shadow: 0 1px 0 rgba(0,0,0,1);
+    background-color: transparent;
     border:none;
     border-radius: 0px;
     margin-bottom: 15px;
 }    
 .panel-primary, .panel-title, .panel-collapsed, .panel-heading {
     border:none;
-    background-color: #fff;
+    background-color: transparent;
 } 
 .panel-primary > .panel-heading {
     color: #000;
-    background-color: #fff;
+    background-color: transparent;
     border:none;
 }   
 .panel-heading {
@@ -393,6 +449,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .panel-body {
     display: none;
+    background-color: transparent;
     width: 100%;
     border-bottom: none;
     padding: 10px 0px 0px 0px;
@@ -506,14 +563,19 @@ a.clickable:hover {
     background-image: url("../../links/images/sydneyoperahouse/SamLloyd_SydneyOperaHouse_Video4.jpg");
 }
 
+#thumbnail-SB1 {
+    background-image: url("../../links/images/startingblocks/SamLloyd_StartingBlocks_Video1.jpg");
+}
+
 /* Footer */
     #mail-sm {
     height: 0.8rem !important;
     width: auto !important;
     line-height: 6em;
     vertical-align: middle;
-    position: relative;
-    top: -0.12rem
+    position: absolute;
+    top: 0.26em;
+    left: 0.5em;
     }
 .nopadding a:hover {
     text-decoration: none;
@@ -583,6 +645,14 @@ a:active {
     text-decoration: none;  
 }
 
+
+@media (min-width: 768px) {
+    .imgtesting {
+      float: left;
+      width: 66.66666667%;
+    }
+}
+
 /* Footer */
     
     .footer-xs {
@@ -627,16 +697,16 @@ a:active {
     .baselineshift {
     top: -0.02em
 }
-    #mail {
+
+#mail {
     height: 1rem;
     width: auto;
     line-height: 6em;
     vertical-align: middle;
     position: absolute;
     top: 0.26rem;
+    left: 1em;
     }
-    
-}
 
 
 /* S ----------- */
@@ -701,5 +771,6 @@ a:active {
 }
     .projectinfo {
         margin-left: 0.2em;
+        background-color: transparent;
     }
-}
+}}
